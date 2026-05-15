@@ -7,12 +7,13 @@
   <style>
 :root {
   color-scheme: light;
-  --bg: #f6f7f9;
-  --text: #1d2733;
-  --muted: #697586;
-  --line: #d9dee7;
+  --bg: #f7f8fa;
+  --text: #20242a;
+  --muted: #69707d;
+  --line: #e3e6eb;
   --panel: #ffffff;
-  --accent: #176b87;
+  --accent: #1f6feb;
+  --soft: #f0f4f8;
 }
 * { box-sizing: border-box; }
 body {
@@ -20,53 +21,87 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
-  line-height: 1.65;
+  line-height: 1.62;
 }
-header, main, footer { max-width: 980px; margin: 0 auto; padding: 24px; }
-header { padding-top: 34px; }
-h1 { margin: 0 0 8px; font-size: 30px; letter-spacing: 0; }
-h2 { margin: 28px 0 14px; font-size: 20px; }
+header, main, footer { max-width: 920px; margin: 0 auto; padding: 20px; }
+header { padding-top: 30px; padding-bottom: 12px; }
+h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: 0; }
+h2 { margin: 28px 0 12px; font-size: 18px; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
-.meta { color: var(--muted); font-size: 14px; }
-.nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.meta, .badge, .source-meta { color: var(--muted); font-size: 13px; }
+.nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 .nav a {
   border: 1px solid var(--line);
   background: var(--panel);
-  padding: 6px 10px;
+  padding: 5px 10px;
   border-radius: 6px;
 }
-.item {
+.brief {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 16px 0;
+  margin: 12px 0 18px;
+}
+.brief h2 { margin-top: 0; }
+.brief p { margin: 0 0 8px; }
+.topic-list { display: grid; gap: 10px; }
+.topic {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 16px;
-  margin: 10px 0;
+  padding: 14px 16px;
 }
-.item h3 { margin: 0 0 8px; font-size: 17px; }
-.item p { margin: 0 0 10px; }
-.badge { color: var(--muted); font-size: 13px; }
+.topic-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: flex-start;
+}
+.topic-title { margin: 0; font-size: 17px; line-height: 1.45; }
+.topic-summary { margin: 8px 0 10px; color: #343a42; }
+.topic-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 8px;
+  background: var(--soft);
+  color: var(--muted);
+  font-size: 12px;
+}
+details.sources { margin-top: 10px; }
+details.sources summary { cursor: pointer; color: var(--accent); font-size: 14px; }
+.source-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+.source-item { padding: 0 0 8px; border-bottom: 1px dashed var(--line); }
+.source-item:last-child { border-bottom: 0; padding-bottom: 0; }
+.source-item h4 { margin: 0 0 4px; font-size: 15px; }
+.source-item p { margin: 4px 0; color: #3d444d; }
 .warning {
-  border: 1px solid #f0d29c;
+  border: 1px solid #efd5a6;
   background: #fff8e8;
   padding: 12px;
   border-radius: 8px;
+  margin: 12px 0;
 }
-.brief {
-  background: #eef6f8;
-  border: 1px solid #c9e3ea;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 16px 0;
-}
-.brief p { margin: 0 0 8px; }
 footer { color: var(--muted); font-size: 13px; }
+@media (max-width: 640px) {
+  header, main, footer { padding-left: 14px; padding-right: 14px; }
+  .topic-head { display: block; }
+}
 </style>
 </head>
 <body>
   <header>
     <h1>DailyHot 2026-05-15</h1>
-    <div class="meta">生成时间：2026-05-15T15:00:10+00:00 · 时间窗：最近 24 小时 · 条目：40</div>
+    <div class="meta">生成时间：2026-05-15T15:30:42+00:00 · 最近 24 小时 · 24 个主题 · 40 条来源</div>
     <nav class="nav">
       <a href="index.html">首页</a>
       <a href="daily/2026-05-15.html">完整日报</a>
@@ -77,86 +112,404 @@ footer { color: var(--muted); font-size: 13px; }
 
     <section class="brief">
       <h2>AI 总览</h2>
-      <p>科技领域，马斯克诉OpenAI案进入结案陈词，马斯克因陪特朗普访华缺席，奥特曼被曝内幕交易；OpenAI与苹果合作关系急剧恶化，或因违约诉诸法律，CFO透露算力荒下仍计划融资。高德推出鸿蒙首个生成式UI开源框架AGenUI；AI芯片商Cerebras完成IPO；SenseNova U1发布MoE架构开源模型。财经方面，存储芯片股闪迪、美光股价暴涨但市盈率降至不足9倍；百度AI开发者大会提出DAA，多线布局Agent。政治与战争类今日入选信息不足。</p>
-      <p><strong>科技</strong>：马斯克诉OpenAI案进入结案陈词，马斯克因陪同特朗普访华缺席庭审，其律师致歉；OpenAI与苹果合作关系急剧恶化，考虑以违约为由对苹果采取法律行动，CFO透露算力荒加剧仍计划融资。高德推出鸿蒙HarmonyOS首个生成式UI开源框架AGenUI；AI芯片制造商Cerebras完成IPO；SenseNova U1发布基于MoE架构的开源模型。谷歌Gemini智能体Spark曝光，可代用户清理邮件、修改文档。arXiv宣布对未核实AI生成内容导致错误的作者禁投一年。蔚来乐道L80上市，特斯拉拟建Cybercab大型洗车站，京东与万事达卡签署战略合作协议。</p><p><strong>金融财经</strong>：存储芯片需求爆发使闪迪、美光股价今年以来分别暴涨482%和172%，但分析师大幅上调盈利预期导致其预期市盈率被压缩至不足9倍，远低于标普500约21倍的平均水平。百度在AI开发者大会提出DAA概念，多线铺路Agent生态，试图以实际价值重新定义AI竞争规则。</p><p><strong>国际政治</strong>：今日入选信息不足</p><p><strong>战争与安全</strong>：今日入选信息不足</p>
-      <div class="badge">AI 总结：siliconflow · Pro/moonshotai/Kimi-K2.6 · ok</div>
+      <p>今日科技焦点集中在马斯克诉OpenAI案进入结案陈词，马斯克缺席审判，同时OpenAI被曝与苹果关系恶化并考虑起诉。技术方面，高德推出鸿蒙首个生成式UI框架AGenUI，商汤发布SenseNova U1技术报告，AI芯片巨头Cerebras上市遭疯抢。此外，英国多部门联合警告AI网络攻击能力超专业人员，arXiv宣布严惩AI生成虚假论文内容。</p>
+      <p><strong>科技</strong>：马斯克诉OpenAI案进入结案陈词，OpenAI与苹果关系恶化拟起诉；高德推出鸿蒙生成式UI框架AGenUI，商汤发布SenseNova U1；Cerebras上市遭疯抢，特斯拉拟建Cybercab洗车站；英国警告AI网络攻击风险，arXiv严惩AI生成虚假论文。</p><p><strong>金融财经</strong>：今日入选信息不足</p><p><strong>国际政治</strong>：今日入选信息不足</p><p><strong>战争与安全</strong>：今日入选信息不足</p>
+      <div class="badge">AI 总结：siliconflow · Pro/zai-org/GLM-4.7 · ok</div>
     </section>
 
+
         <h2>今日重点</h2>
+        <section class="topic-list">
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">马斯克诉OpenAI案进入结案陈词</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">马斯克诉OpenAI案在奥克兰联邦法院进入结案陈词阶段，马斯克因陪同特朗普访华缺席审判，律师致歉。庭审中OpenAI滤镜被摘掉，奥特曼被曝内幕交易，昔日兄弟反目成仇，案件裁决或将深刻影响AI产业未来。</p>
+      <div class="topic-tags">
+        <span class="tag">4 条来源</span>
+        <span class="tag">cnBeta、虎嗅</span>
+        <span class="tag">score 1.359</span>
+      </div>
 
-
-    <article class="item">
-      <h3><a href="https://www.huxiu.com/article/4858705.html?f=rss" target="_blank" rel="noopener noreferrer">马斯克到底是不是受害者</a></h3>
+      <details class="sources">
+        <summary>展开来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://www.huxiu.com/article/4858705.html?f=rss" target="_blank" rel="noopener noreferrer">马斯克到底是不是受害者</a></h4>
+      <div class="source-meta">虎嗅 · 科技 · score 1.159</div>
       <p>奥克兰联邦法院里，OpenAI的滤镜被一层层摘掉了</p>
-      <div class="badge">虎嗅 · 科技 · score 1.163</div>
-    </article>
+    </div>
 
-    <article class="item">
-      <h3><a href="https://www.ithome.com/0/951/131.htm" target="_blank" rel="noopener noreferrer">高德推出“华为鸿蒙 HarmonyOS 首个生成式 UI 开源框架”AGenUI，利用通用协议适配多终端界面</a></h3>
-      <p>IT之家 5 月 15 日消息，高德宣布推出“华为鸿蒙 HarmonyOS 系统首个生成式 UI 开源框架”AGenUI，号称能够大幅降低 AI 应用开发门槛，让多设备界面适配不再繁琐。目前已面向开发者和学术界全面开源，IT之家附项目 GitHub 地址（ https://github.com/AGenUI/AGenUI ）。 据介绍，该框架基于谷歌 A2UI 协议，以 C++ 为核心，能够将 AI 大模型生成的界面意图直接转化为鸿蒙原生组件渲染，只需一套通用界面协议就能无缝适配鸿蒙手机、平板、车机、智慧屏、穿戴等多种终端设备。 ▲ AGenUI 组件效果 高德表示，AGenUI 深度适配鸿蒙 1+8+N 全场景分布式架构，无需为不同设备单独适配调试。框架直连鸿蒙系统级渲染、动效及分布式核心能力，无中间层损耗，且与小艺、鸿蒙意图框架天然协同，推动生成式 UI 成为鸿蒙生态的系统级标准能力。 性能方面，鸿蒙版 AGenUI 相较 iOS、Android 端对应版本，渲染性能提升 20%，内存占用降低 18%，多设备界面呈现与交互体验高度统一，充分发挥出鸿蒙分布式多端协同的核心优势。技术路径上，传统 UI 开发面向确定性页面设计，往往不擅长处理 Agent 驱动的动态任务交互；AGenUI 用协议替代模板，在开发效率、AI 友好度、个性化、需求覆盖等方面都表现更优。</p>
-      <div class="badge">IT之家 · 科技 · score 1.16</div>
-    </article>
-
-    <article class="item">
-      <h3><a href="https://www.huxiu.com/article/4858750.html?f=rss" target="_blank" rel="noopener noreferrer">马斯克诉OpenAI案阶段性收官，奥特曼被曝内幕交易，昔日兄弟为何反目？</a></h3>
+    <div class="source-item">
+      <h4><a href="https://www.huxiu.com/article/4858750.html?f=rss" target="_blank" rel="noopener noreferrer">马斯克诉OpenAI案阶段性收官，奥特曼被曝内幕交易，昔日兄弟为何反目？</a></h4>
+      <div class="source-meta">虎嗅 · 科技 · score 1.118</div>
       <p>待进一步阅读原文确认：马斯克诉OpenAI案阶段性收官，奥特曼被曝内幕交易，昔日兄弟为何反目？</p>
-      <div class="badge">虎嗅 · 科技 · score 1.123</div>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://www.cnbeta.com.tw/articles/tech/1562532.htm" target="_blank" rel="noopener noreferrer">马斯克访华缺席审判 律师致歉：他本人高度关注本案</a></h4>
+      <div class="source-meta">cnBeta · 科技 · score 1.026</div>
+      <p>5月15日，据CNBC报道，埃隆·马斯克(Elon Musk)起诉OpenAI案周四进入结案陈词阶段，但是马斯克因为陪同美国总统特朗普访华，未能出席审判，他的律师就此致歉。 阅读全文</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://www.cnbeta.com.tw/articles/tech/1562528.htm" target="_blank" rel="noopener noreferrer">马斯克诉OpenAI案进入结案陈词阶段</a></h4>
+      <div class="source-meta">cnBeta · 科技 · score 1.022</div>
+      <p>美国加州奥克兰联邦法院当地时间周四进入关键一幕：埃隆·马斯克与 OpenAI 之间的标志性法律诉讼进入结案陈词阶段，这场官司的裁决被普遍认为可能深刻影响人工智能产业的未来走向。 马斯克是 OpenAI 的共同创始人之一，该机构于 2015 年成立，随后推出了引发全球关注的 ChatGPT 产品…</p>
+    </div>
+    </div>
+      </details>
+
     </article>
 
-    <article class="item">
-      <h3><a href="https://wallstreetcn.com/articles/3772377" target="_blank" rel="noopener noreferrer">闪迪、美光越涨越便宜？股价暴涨数倍，但华尔街只给9倍PE</a></h3>
-      <p>存储芯片需求的爆炸式增长正在颠覆传统估值逻辑——股价越涨，闪迪和美光反而越便宜。 闪迪今年以来股价累计上涨482%，高居标普500指数涨幅榜首，但其预期市盈率却从数月前的23倍骤降至不足9倍。 美光科技同期涨幅达172%，位列标普500第五，预期市盈率也从2月的约12倍压缩至不足9倍。 相比之下，标普500整体预期市盈率约为21倍。 这一反常现象的背后，是分析师对两家公司盈利预期的上调速度远超股价涨幅——过去12个月，闪迪2027年调整后每股收益预期上调幅度接近2000%，美光则达768%。 市场对AI基础设施建设周期的押注，正在重塑存储股的定价框架，但周期性风险的阴影始终未散。 供需失衡驱动估值压缩 推动这一估值悖论的逻辑并不复杂：存储芯片需求持续攀升，而供给短缺令价格维持高位，盈利预期的上修速度已将股价涨幅远远甩在身后。 Bokeh Capital Partners首席投资官Kim Forrest持有美光股票，她表示：&quot;所有高带宽内存都可以因供需关系而定出离谱的高价。只要供需如此运作，我就处于极度兴奋的状态。这是一件美好的事。它的定价并不算高，因为人们在买，而且已经售罄。所以人们会认为，如果价格高企，还可能有更多上行空间。&quot; Tortoise Capital高级投资组合经理Rob Thummel在其管理的Tortoise AI基础设施ETF中同时持有闪迪和美光股票。他表示：&quot;除非超大规模云计算厂商的资本支出出现重大变化——而目前我们看到的恰恰是上升而非下降——否则对存储和内存的需求将持续增长。&quot;该ETF今年以来已上涨70%，费城半导体指数同期涨幅达71%。 多头押注AI建设周期方兴未艾 看多者的核心逻辑在于，当前正处于AI基础设施大规模建设周期的早期阶段。AI技术对数据的海量消耗，意味着对存储芯片及相关产品的需求将在未来数年内保持高位。 Infrastructure Capital Management首席执行官Jay Hatfield表示：&quot;这就是一场全面的繁荣，我们认为在这个时候退出是个错误。估值为此提供了支撑，而这正是我们参与此类动量交易所要求的条件。&quot; 周期性风险不容忽视 然而，低估值本身也可能是一个警示信号——它或许意味着市场已在为盈利增速见顶定价。存储股历来具有高度周期性：需求旺盛时价格攀升，供给随之扩张；一旦订单放缓，过剩供给便会压制价格和盈利。 Huntington National Bank股票策略总监Randy Hare持有美光股票，他指出：&quot;你不能用看待盈利稳定增长公司的方式来看待这类股票。通常，买入这类股票的最佳时机是估值高企、盈利低迷之时，因为你是在押注未来的盈利增长周期。但这对大多数投资者来说并不直观。&quot;他表示，尽管仍看好存储板块的上行空间，但不建议投资者在当前价位追涨。&quot;我认为这只股票的容易赚的钱已经赚完了，接下来波动性会加大。&quot; Argent Capital Management投资组合经理Jed Ellerbroek因周期性顾虑而未持有存储股，他直言：&quot;短缺最终会导致供给过剩。&quot;他认为，鉴于当前的资本投入规模，供给追上需求可能还需数年时间，&quot;但我认为最终会发生&quot;。 历史案例近在眼前：2023年，美光报告调整后每股亏损4.45美元；2022年，随着盈利预期崩塌，其股价下跌46%，随后在新一轮周期启动后于2023年反弹。 并非所有存储股都在&quot;越涨越便宜&quot; 值得注意的是，这一估值压缩现象并非贯穿整个存储行业。 希捷科技和西部数据的预期市盈率均超过30倍，较3月底的约20倍大幅上升。两家公司主要深耕硬盘等存储设备领域，相较于存储芯片，其业务周期性更弱，估值逻辑也因此截然不同。 本文来自华尔街见闻，欢迎下载APP查看更多</p>
-      <div class="badge">华尔街见闻 · 金融财经 · score 1.116</div>
-    </article>
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">行业分析与AI社会影响</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">欧盟利用DMA法案试图“肢解”谷歌安卓，争夺AI生态控制权。分析指出中国AI产业或许正在重演丰田逆袭底特律的剧本。此外，GenZ AI创业团队在社交赛道密集获得百万级融资，AI对教育及安全的影响引发讨论。</p>
+      <div class="topic-tags">
+        <span class="tag">5 条来源</span>
+        <span class="tag">虎嗅</span>
+        <span class="tag">score 1.292</span>
+      </div>
 
-    <article class="item">
-      <h3><a href="https://www.cnbeta.com.tw/articles/tech/1562578.htm" target="_blank" rel="noopener noreferrer">OpenAI与苹果合作关系急剧恶化</a></h3>
-      <p>据知情人士透露，OpenAI 似乎正与又一家重量级合作方苹果陷入关系裂痕。一名了解内情的 OpenAI 员工表示，这家人工智能初创公司正考虑以违约为由对苹果采取法律行动，事由涉及双方两年前官宣的 ChatGPT 接入合作协议。 阅读全文</p>
-      <div class="badge">cnBeta · 科技 · score 1.071</div>
-    </article>
-
-    <article class="item">
-      <h3><a href="https://www.huxiu.com/article/4858801.html?f=rss" target="_blank" rel="noopener noreferrer">芯片领域又现巨头？ Cerebras上市遭疯抢</a></h3>
-      <p>AI芯片制造商Cerebras Systems完成IPO</p>
-      <div class="badge">虎嗅 · 科技 · score 1.071</div>
-    </article>
-
-    <article class="item">
-      <h3><a href="https://aihot.virxact.com/api/public/daily" target="_blank" rel="noopener noreferrer">SenseNova U1技术报告发布，基于MoE架构开放模型权重</a></h3>
-      <p>由联合创始人兼首席科学家李沐博士领导的团队发布了SenseNova U1技术报告，详细阐述了其架构、训练方案与创新突破。此次开源同步发布了基于混合专家模型（MoE）的新权重，旨在推动AI领域的透明度、可复现性与进一步创新。团队希望通过开放共享促进整个社区的技术发展。</p>
-      <div class="badge">AI HOT 每日精选 · 科技 · score 1.065</div>
-    </article>
-
-    <article class="item">
-      <h3><a href="https://www.ithome.com/0/951/143.htm" target="_blank" rel="noopener noreferrer">瑞安 · 雷诺兹新片《Mayday》官宣：间谍惊悚喜剧，9 月上线苹果 Apple TV</a></h3>
-      <p>IT之家 5 月 15 日消息，Apple TV 今年下半年将上线多部高预算电影，其中包括由瑞安 · 雷诺兹主演的新片《Mayday》，提前布局秋季档。 据IT之家了解，苹果将其定义为一部融合动作元素的搭档喜剧，会“彻底颠覆传统间谍惊悚片模式”，9 月 4 日正式登陆 Apple TV。 影片由瑞安 · 雷诺兹与肯尼思 · 布拉纳主演，两人在片中分别饰演 冷战时期不同阵营的军人 ，并在特殊情况下逐渐建立起友谊。 苹果公布的剧情显示，冷战高峰时期，美国海军飞行员 Troy “Assassin” Kelly 中尉被派往苏联执行绝密任务，但任务途中突然失控，最终被困敌后。随后，Troy 遇到了由肯尼思 · 布拉纳饰演的前克格勃特工 Nikolai Ustinov。这位脾气强硬、却对美国文化格外着迷的前特工，最终可能会成为帮助 Troy 脱困的关键人物。</p>
-      <div class="badge">IT之家 · 科技 · score 1.049</div>
-    </article>
-
-    <article class="item">
-      <h3><a href="https://www.huxiu.com/article/4858706.html?f=rss" target="_blank" rel="noopener noreferrer">怎样防止AI勒索人类？</a></h3>
+      <details class="sources">
+        <summary>展开来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://www.huxiu.com/article/4858706.html?f=rss" target="_blank" rel="noopener noreferrer">怎样防止AI勒索人类？</a></h4>
+      <div class="source-meta">虎嗅 · 科技 · score 1.042</div>
       <p>别给它喂坏科幻</p>
-      <div class="badge">虎嗅 · 科技 · score 1.046</div>
-    </article>
+    </div>
 
-    <article class="item">
-      <h3><a href="https://www.ithome.com/0/951/140.htm" target="_blank" rel="noopener noreferrer">京东集团与万事达卡签署战略合作协议，扩大国际游客支付选择</a></h3>
-      <p>IT之家 5 月 15 日消息，今日，京东集团与万事达卡战略合作协议签字仪式在北京举行。 IT之家从官方介绍获悉，在构建全球支付基础设施，支持中小企业成长方面，京东集团与万事达卡将进一步整合和优化全球支付连接，通过构建支付基础设施， 支持京东国际业务发展 ，并在全球商业中拓展更多应用场景。 此外，双方将共同探索跨境供应链金融生态，支持全球中小企业（SMB）提升融资可得性，使企业更高效参与国际贸易。双方将围绕提升跨境消费体验深化合作， 扩大来华国际游客的支付选择，包括更广泛地支持国际信用卡 ，并优化结账、购物及退税体验，覆盖京东电商平台及线下零售渠道。 同时，双方将探索通过万事达卡 Agent Pay 智能支付方案，为个人和企业提供 AI 代理支付服务，并推进 联合品牌信用卡 计划。 同时，京东集团与万事达卡将加深在风险管理、身份认证和智能反欺诈方面的合作。通过增强实时风险监控和防欺诈能力，提升交易安全性，加强数字商业的稳定性和抗风险能力。</p>
-      <div class="badge">IT之家 · 科技 · score 1.043</div>
-    </article>
+    <div class="source-item">
+      <h4><a href="https://www.huxiu.com/article/4858845.html?f=rss" target="_blank" rel="noopener noreferrer">AI生态控制权之争：欧盟利用DMA“肢解”谷歌的安卓</a></h4>
+      <div class="source-meta">虎嗅 · 科技 · score 1.036</div>
+      <p>待进一步阅读原文确认：AI生态控制权之争：欧盟利用DMA“肢解”谷歌的安卓</p>
+    </div>
 
-    <article class="item">
-      <h3><a href="https://www.ithome.com/0/951/129.htm" target="_blank" rel="noopener noreferrer">蔚来乐道 L80 大五座 SUV 上市：24.28 万-27.98 万元，租电 15.68 万-19.38 万元</a></h3>
-      <p>IT之家 5 月 15 日消息，蔚来旗下乐道汽车全新车型 L80 今晚正式上市，新车定位智能双舱大五座旗舰 SUV，售价为 24.28 万-27.98 万元，租电方案的售价区间为 15.68 万-19.38 万元。 IT之家汇总新车主要信息如下： 乐道 L80 共有 6 种车身颜色搭配：岩脊棕、辰辉银、静岳黑、雪峰白、凝夜紫，以及专属的全新颜色「层峰绿」。内饰方面，新车提供桂庭黄、云缦米、曜夜黑、月榕棕四种主题。 新车长度 5145mm，轴距 3110mm，拥有 81.5% 的空间利用率 。官方表示，乐道 L80 是中国市场 装载空间最大的大 5 座 SUV ，其 240 升超大智能电动前备舱是 中国量产最大前备舱 ，拥有超低超宽开口，并可配合 6 种开启方式和全域防夹设计。 该车拥有 1200 升超大后备箱，同样号称中国量产最大，二排放倒后容积可拓展至 2600 升，加上前备舱总计 2840 升，纵深达 2.2 米，轻松容纳 2 米大床。后备箱采用双下层空间设计，外侧 106 升、里侧 63 升的超大下沉空间，实现双层三分区布局。前备舱与双下沉空间合计 409 升。 该车将提供激光雷达、纯视觉两种智驾方案。其中，激光雷达版搭载 神玑 NX9031 智能辅助驾驶芯片、蔚来世界模型智能辅助驾驶 ；纯视觉版则内置 英伟达 OrinX 芯片 。 乐道 L80 采用展翼电动踏板、四门静音电吸门和智能迎宾灯语，二排靠背支持 135 度电动调节， 标配座椅加热、通风和按摩功能 。 该车配备了 17.2 英寸 3K 中控沉浸屏，以及 23 定制扬声器、2048 瓦功率、24 路独立通道的乐道之声音响系统，采用 7.1.4 声道布局，支持杜比全景声。新车还 全系标配静音电吸门 ，全车 214 处声学隔音材料覆盖率高达 95%，并拥有超静音双层隔音玻璃和一线品牌超静音轮胎。 其他方面，全车还设计了多达 53 处储物空间，第一排拥有 13 处、第二排 17 处，整车储物空间最大可达 2840L。同时，后备舱配合数十种原厂开发的可拓展配件，随心解锁多元生活场景： 首发 3 人 3 车骑行装载平台，可完美收纳全家骑行装备； 专属定制随形巧思露营套装，随时随地开启露营生活； 首发专属定制集成三段式餐厨套装，配合车上外放电功能，轻松实现户外烹饪； 首发专属定制三段式随形贴合大床，满足多人舒适躺卧需求。 乐道 L80 提供 Coconut 和 Coconut+ 椰子两套智能系统选择，Coconut 拥有行业领先一代的数字架构和行业唯一面向 AI 的整车全域操作系统「SkyOS· 天枢」，Coconut+ 在 Coconut 基础上，搭载蔚来自研全球首颗 5nm 车规级智驾芯片「神玑 NX9031」及中国首个面向自动驾驶的「蔚来世界模型 NWM」。 新车全系标配 9 个安全气囊，第二排配备旗舰级 14L 超大侧气囊及 2920mm 超长超宽 56L 侧气帘，即便座椅调至大角度，也能为不同体型的乘客提供周全防护。 主动安全方面，全系标配 60 项行业领先的主动和智能安全辅助功能，搭载行业首个基于端到端技术框架的 AEB 功能。智能 ADB 大灯依托视觉感知与自研调光算法，实现 600 米超远识别、350 毫秒极速防眩目和高精度分区照明，会车不炫目，夜行更安心。 乐道 L80 整备质量仅 2250 公斤 ，相比同级车型普遍轻约 300 公斤。车身轻量化系数低至 2.12，采用 72 合 1 一体压铸铝合金后地板，减重 11.7 公斤。全新一代三元锂轻量化电池包重量仅 440 公斤，厚度 116 毫米，有效释放车内空间。 乐道 L80 标配 925 伏高性能永磁同步后电驱， 功率达 340 千瓦 ，重量仅 79 公斤，体积 37 升。后驱版百公里能耗仅 14.3 度电，为同级最低，综合工况续航达 615 公里； 四驱版百公里加速 4.5 秒 。敏捷掉头功能实现 5.7 米最小转弯半径。</p>
-      <div class="badge">IT之家 · 科技 · score 1.039</div>
-    </article>
+    <div class="source-item">
+      <h4><a href="https://www.huxiu.com/article/4858843.html?f=rss" target="_blank" rel="noopener noreferrer">中国AI，或许正在重演丰田逆袭底特律的剧本</a></h4>
+      <div class="source-meta">虎嗅 · 科技 · score 1.036</div>
+      <p>待进一步阅读原文确认：中国AI，或许正在重演丰田逆袭底特律的剧本</p>
+    </div>
 
-    <article class="item">
-      <h3><a href="https://www.huxiu.com/article/4858840.html?f=rss" target="_blank" rel="noopener noreferrer">AI正把文凭变成废纸，上学将变得像是上黄网</a></h3>
+    <div class="source-item">
+      <h4><a href="https://www.huxiu.com/article/4858840.html?f=rss" target="_blank" rel="noopener noreferrer">AI正把文凭变成废纸，上学将变得像是上黄网</a></h4>
+      <div class="source-meta">虎嗅 · 科技 · score 1.035</div>
       <p>待进一步阅读原文确认：AI正把文凭变成废纸，上学将变得像是上黄网</p>
-      <div class="badge">虎嗅 · 科技 · score 1.039</div>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://www.huxiu.com/article/4858828.html?f=rss" target="_blank" rel="noopener noreferrer">复盘16个GenZ AI创业团队：百万级融资密集出现，社交仍是最热赛道？</a></h4>
+      <div class="source-meta">虎嗅 · 科技 · score 1.025</div>
+      <p>待进一步阅读原文确认：复盘16个GenZ AI创业团队：百万级融资密集出现，社交仍是最热赛道？</p>
+    </div>
+    </div>
+      </details>
+
     </article>
 
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">高德推鸿蒙AGenUI框架，商汤发布U1模型</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">高德推出华为鸿蒙HarmonyOS首个生成式UI开源框架AGenUI，降低AI应用开发门槛。商汤科技发布SenseNova U1技术报告，开源基于MoE架构的模型权重，旨在推动AI领域透明度与创新。</p>
+      <div class="topic-tags">
+        <span class="tag">2 条来源</span>
+        <span class="tag">AI HOT 每日精选、IT之家</span>
+        <span class="tag">score 1.256</span>
+      </div>
+
+      <details class="sources">
+        <summary>展开来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://www.ithome.com/0/951/131.htm" target="_blank" rel="noopener noreferrer">高德推出“华为鸿蒙 HarmonyOS 首个生成式 UI 开源框架”AGenUI，利用通用协议适配多终端界面</a></h4>
+      <div class="source-meta">IT之家 · 科技 · score 1.156</div>
+      <p>IT之家 5 月 15 日消息，高德宣布推出“华为鸿蒙 HarmonyOS 系统首个生成式 UI 开源框架”AGenUI，号称能够大幅降低 AI 应用开发门槛，让多设备界面适配不再繁琐。目前已面向开发者和学术界全面开源，IT之家附项目 GitHub 地址（ https://github.com/A…</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://aihot.virxact.com/api/public/daily" target="_blank" rel="noopener noreferrer">SenseNova U1技术报告发布，基于MoE架构开放模型权重</a></h4>
+      <div class="source-meta">AI HOT 每日精选 · 科技 · score 1.061</div>
+      <p>由联合创始人兼首席科学家李沐博士领导的团队发布了SenseNova U1技术报告，详细阐述了其架构、训练方案与创新突破。此次开源同步发布了基于混合专家模型（MoE）的新权重，旨在推动AI领域的透明度、可复现性与进一步创新。团队希望通过开放共享促进整个社区的技术发展。</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">AI芯片与硬件动态</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">AI芯片制造商Cerebras Systems完成IPO遭疯抢。特斯拉拟在内华达州为Cybercab建设专用洗车设施，提供清洁、充电及维护服务。市场趋势显示AI交易正从芯片转向“物理AI”及机器人领域。</p>
+      <div class="topic-tags">
+        <span class="tag">3 条来源</span>
+        <span class="tag">IT之家、虎嗅</span>
+        <span class="tag">score 1.217</span>
+      </div>
+
+      <details class="sources">
+        <summary>展开来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://www.huxiu.com/article/4858801.html?f=rss" target="_blank" rel="noopener noreferrer">芯片领域又现巨头？ Cerebras上市遭疯抢</a></h4>
+      <div class="source-meta">虎嗅 · 科技 · score 1.067</div>
+      <p>AI芯片制造商Cerebras Systems完成IPO</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://www.huxiu.com/article/4858839.html?f=rss" target="_blank" rel="noopener noreferrer">芯片熄火，机器人暴走，AI交易开始切至“物理AI”？</a></h4>
+      <div class="source-meta">虎嗅 · 科技 · score 1.035</div>
+      <p>待进一步阅读原文确认：芯片熄火，机器人暴走，AI交易开始切至“物理AI”？</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://www.ithome.com/0/951/127.htm" target="_blank" rel="noopener noreferrer">特斯拉拟建 Cybercab 大型洗车站：提供清洁、充电、维护一条龙服务</a></h4>
+      <div class="source-meta">IT之家 · 科技 · score 1.032</div>
+      <p>IT之家 5 月 15 日消息，据外媒 Teslarati 今晚报道，特斯拉正在内华达州克拉克县靠近拉斯维加斯的地方，为 Cybercab 建设一座专用洗车设施。该设施面积约 3345 平方米，项目形态相当特殊，将服务于特斯拉未来 Robotaxi 车队。 文件显示，特斯拉此前已悄悄提交 Cybe…</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">OpenAI与苹果关系恶化拟起诉</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">OpenAI与苹果长达两年的合作关系陷入紧张。知情人士透露，因未能从合作中获得预期收益，OpenAI正考虑以违约为由对苹果采取法律行动。同时，OpenAI CFO透露融资计划以应对算力荒。</p>
+      <div class="topic-tags">
+        <span class="tag">3 条来源</span>
+        <span class="tag">cnBeta</span>
+        <span class="tag">score 1.216</span>
+      </div>
+
+      <details class="sources">
+        <summary>展开来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://www.cnbeta.com.tw/articles/tech/1562578.htm" target="_blank" rel="noopener noreferrer">OpenAI与苹果合作关系急剧恶化</a></h4>
+      <div class="source-meta">cnBeta · 科技 · score 1.066</div>
+      <p>据知情人士透露，OpenAI 似乎正与又一家重量级合作方苹果陷入关系裂痕。一名了解内情的 OpenAI 员工表示，这家人工智能初创公司正考虑以违约为由对苹果采取法律行动，事由涉及双方两年前官宣的 ChatGPT 接入合作协议。 阅读全文</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://www.cnbeta.com.tw/articles/tech/1562536.htm" target="_blank" rel="noopener noreferrer">算力荒加剧 OpenAI CFO透露融资计划、回应与苹果关系紧张</a></h4>
+      <div class="source-meta">cnBeta · 科技 · score 1.026</div>
+      <p>据彭博社报道，OpenAI CFO莎拉·弗里尔(Sarah Friar)周四表示，即使在完成了她所称的史上最大一轮私募融资之后，OpenAI仍可能进一步筹集更多资金，因为该公司正加紧获取算力，以应对飙升的AI需求。 阅读全文</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://www.cnbeta.com.tw/articles/tech/1562530.htm" target="_blank" rel="noopener noreferrer">消息人士透露：OpenAI 正考虑采取法律手段起诉苹果公司</a></h4>
+      <div class="source-meta">cnBeta · 科技 · score 1.025</div>
+      <p>知情人士周四透露，苹果公司与OpenAI长达两年的合作关系已然陷入紧张。这家人工智能初创企业未能从与苹果的合作中获得预期收益，目前正考虑采取法律行动。 阅读全文</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">AI安全与学术监管</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">英国多部门联合警告，当前最先进AI模型网络攻击能力已远超专业人员，企业需做好防范。预印本平台arXiv宣布收紧规则，作者须对论文内容负全责，若出现未经核实的AI生成内容将被禁投一年。</p>
+      <div class="topic-tags">
+        <span class="tag">3 条来源</span>
+        <span class="tag">IT之家、Solidot</span>
+        <span class="tag">score 1.197</span>
+      </div>
+
+      <details class="sources">
+        <summary>展开来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://www.ithome.com/0/951/144.htm" target="_blank" rel="noopener noreferrer">英国多部门联合警告：当前最先进 AI 模型网络攻击能力已远超专业人员，企业应做好防范措施</a></h4>
+      <div class="source-meta">IT之家 · 科技 · score 1.047</div>
+      <p>IT之家 5 月 15 日消息，据路透社报道，当地时间周五（今天），英国财政部、英格兰银行以及英国金融行为监管局发布联合警告称，英国企业需要提前针对新一代 AI 模型建立风险应对机制，并做好相关防范准备。 三家机构在声明中指出，目前最先进的 AI 模型，在网络攻击领域已经展现出 远超普通专业人员的…</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://www.solidot.org/story?sid=84308" target="_blank" rel="noopener noreferrer">arXiv 将对使用 AI 生成虚假引用等错误内容的用户处以封禁一年的惩罚</a></h4>
+      <div class="source-meta">Solidot · 科技 · score 1.029</div>
+      <p>最大计算机科学预印本平台 arXiv 在 ChatGPT 普及之后论文投稿数量大幅增长，为了遏制低质量的 AI 生成论文，ArXiv 计算机科学委员会主席 Thomas G. Dietterich 在社交媒体上强调，ArXiv 的行为准则规定，每位作者一旦署名成为论文作者，即对其所有内容承担全部责…</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://www.ithome.com/0/951/122.htm" target="_blank" rel="noopener noreferrer">arXiv：作者须对论文内容承担全部责任，若出现未经核实 AI 内容将被禁投一年</a></h4>
+      <div class="source-meta">IT之家 · 科技 · score 1.029</div>
+      <p>IT之家 5 月 15 日消息，arXiv 计算机科学板块主席托马斯 ·G· 迪特里希在 X 上宣布，平台将收紧 AI 生成内容规则。 IT之家注：arXiv 是全球研究人员在正式同行评审前发布论文的重要预印本平台。 按照 arXiv 行为准则，无论论文内容如何生成，作者都必须 对论文内容承担全部…</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">光帆科技旗下“行业首款带摄像头 AI 耳机”正式发布，首发价 1799 元起</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">IT之家 5 月 15 日消息，光帆科技今天正式推出了“行业首款带摄像头 AI 耳机”光帆全感 AI 耳机，首发价为 1799 元起，IT之家整理产品参数： 耳机本体：1999 元，首发价 1799 元 AI 全感穿戴设备（耳机本体 + 智能手表）：2099 元，首发价 1899 元 AI 全感穿…</p>
+      <div class="topic-tags">
+        <span class="tag">2 条来源</span>
+        <span class="tag">IT之家</span>
+        <span class="tag">score 1.18</span>
+      </div>
+
+      <details class="sources">
+        <summary>展开来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://www.ithome.com/0/951/106.htm" target="_blank" rel="noopener noreferrer">光帆科技旗下“行业首款带摄像头 AI 耳机”正式发布，首发价 1799 元起</a></h4>
+      <div class="source-meta">IT之家 · 科技 · score 1.02</div>
+      <p>IT之家 5 月 15 日消息，光帆科技今天正式推出了“行业首款带摄像头 AI 耳机”光帆全感 AI 耳机，首发价为 1799 元起，IT之家整理产品参数： 耳机本体：1999 元，首发价 1799 元 AI 全感穿戴设备（耳机本体 + 智能手表）：2099 元，首发价 1899 元 AI 全感穿…</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://www.ithome.com/0/951/091.htm" target="_blank" rel="noopener noreferrer">追觅推出 AI 录音名片 D・NOTE：支持一键录音后 AI 转写总结，899 元起</a></h4>
+      <div class="source-meta">IT之家 · 科技 · score 1.008</div>
+      <p>IT之家 5 月 15 日消息，追觅今天推出了一款名为“D·NOTE”的 AI 录音名片，主打“一键录音、转写、总结”， 其中 8GB 存储空间版本首发价 899 元，64GB 存储空间版本定价为 999 元 。 京东 追觅智能 AI 录音名片 D·NOTE 899 元起 直达链接 该机重量 30…</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">OpenAI宣布将Codex模型引入ChatGPT在iOS和Android平台上的移动应用</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">OpenAI 宣布将其 Codex 模型正式引入 ChatGPT 在 iOS 和 Android 平台上的移动应用，为开发者在手机上远程管理与监控编码任务提供了新的途径。 OpenAI 旗下的 Codex 模型在过去几个月增长迅速，目前每周活跃用户已超过 400 万。 为了方便开发者在移动场景中使…</p>
+      <div class="topic-tags">
+        <span class="tag">1 条来源</span>
+        <span class="tag">cnBeta</span>
+        <span class="tag">score 1.138</span>
+      </div>
+
+      <details class="sources">
+        <summary>查看来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://www.cnbeta.com.tw/articles/tech/1562516.htm" target="_blank" rel="noopener noreferrer">OpenAI宣布将Codex模型引入ChatGPT在iOS和Android平台上的移动应用</a></h4>
+      <div class="source-meta">cnBeta · 科技 · score 1.018</div>
+      <p>OpenAI 宣布将其 Codex 模型正式引入 ChatGPT 在 iOS 和 Android 平台上的移动应用，为开发者在手机上远程管理与监控编码任务提供了新的途径。 OpenAI 旗下的 Codex 模型在过去几个月增长迅速，目前每周活跃用户已超过 400 万。 为了方便开发者在移动场景中使…</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">DeepSeek新版本对中美AI格局的冲击，比想象中大得多</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">待进一步阅读原文确认：DeepSeek新版本对中美AI格局的冲击，比想象中大得多</p>
+      <div class="topic-tags">
+        <span class="tag">1 条来源</span>
+        <span class="tag">虎嗅</span>
+        <span class="tag">score 1.138</span>
+      </div>
+
+      <details class="sources">
+        <summary>查看来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://www.huxiu.com/article/4858810.html?f=rss" target="_blank" rel="noopener noreferrer">DeepSeek新版本对中美AI格局的冲击，比想象中大得多</a></h4>
+      <div class="source-meta">虎嗅 · 科技 · score 1.018</div>
+      <p>待进一步阅读原文确认：DeepSeek新版本对中美AI格局的冲击，比想象中大得多</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">OPPO Enco Air5 标准版耳机 5 月 20 日首销： 52dB 5KHz 超宽频降噪、54 小时续航</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">IT之家 5 月 15 日消息，OPPO 现已在京东上架 Enco Air5 标准版本，该耳机提供三色可选，将于 5 月 20 日 10:00 发售，价格尚未公布。参考官方介绍，该耳机支持 52dB 5KHz 超宽频降噪、54 小时续航。 作为比较，现款 OPPO Enco Air5 Pro 耳机…</p>
+      <div class="topic-tags">
+        <span class="tag">1 条来源</span>
+        <span class="tag">IT之家</span>
+        <span class="tag">score 1.133</span>
+      </div>
+
+      <details class="sources">
+        <summary>查看来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://www.ithome.com/0/951/097.htm" target="_blank" rel="noopener noreferrer">OPPO Enco Air5 标准版耳机 5 月 20 日首销： 52dB 5KHz 超宽频降噪、54 小时续航</a></h4>
+      <div class="source-meta">IT之家 · 科技 · score 1.013</div>
+      <p>IT之家 5 月 15 日消息，OPPO 现已在京东上架 Enco Air5 标准版本，该耳机提供三色可选，将于 5 月 20 日 10:00 发售，价格尚未公布。参考官方介绍，该耳机支持 52dB 5KHz 超宽频降噪、54 小时续航。 作为比较，现款 OPPO Enco Air5 Pro 耳机…</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">长剧还是短剧？真人还是AI？内容行业的“慢变量”从未改变</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">待进一步阅读原文确认：长剧还是短剧？真人还是AI？内容行业的“慢变量”从未改变</p>
+      <div class="topic-tags">
+        <span class="tag">1 条来源</span>
+        <span class="tag">虎嗅</span>
+        <span class="tag">score 1.131</span>
+      </div>
+
+      <details class="sources">
+        <summary>查看来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://www.huxiu.com/article/4858784.html?f=rss" target="_blank" rel="noopener noreferrer">长剧还是短剧？真人还是AI？内容行业的“慢变量”从未改变</a></h4>
+      <div class="source-meta">虎嗅 · 科技 · score 1.011</div>
+      <p>待进一步阅读原文确认：长剧还是短剧？真人还是AI？内容行业的“慢变量”从未改变</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">亚马逊“豪赌 AI”回报初现，市值逼近 3 万亿美元大关</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">IT之家 5 月 15 日消息，据彭博社报道，投资者正越来越看好亚马逊在人工智能领域的布局。受 AI 预期推动，亚马逊股价持续走强，市值已 升至 2.9 万亿美元（IT之家注：现汇率约合 19.72 万亿元人民币） ，距离 3 万亿美元大关越来越近。 持有亚马逊股票的 Logan Capital…</p>
+      <div class="topic-tags">
+        <span class="tag">1 条来源</span>
+        <span class="tag">IT之家</span>
+        <span class="tag">score 1.13</span>
+      </div>
+
+      <details class="sources">
+        <summary>查看来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://www.ithome.com/0/951/094.htm" target="_blank" rel="noopener noreferrer">亚马逊“豪赌 AI”回报初现，市值逼近 3 万亿美元大关</a></h4>
+      <div class="source-meta">IT之家 · 科技 · score 1.01</div>
+      <p>IT之家 5 月 15 日消息，据彭博社报道，投资者正越来越看好亚马逊在人工智能领域的布局。受 AI 预期推动，亚马逊股价持续走强，市值已 升至 2.9 万亿美元（IT之家注：现汇率约合 19.72 万亿元人民币） ，距离 3 万亿美元大关越来越近。 持有亚马逊股票的 Logan Capital…</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+    </section>
         </main>
   <footer>DailyHot 保留原文链接；摘要用于快速浏览，关键判断请回到原文核对。</footer>
 </body>
