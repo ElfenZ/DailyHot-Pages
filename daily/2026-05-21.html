@@ -30,10 +30,6 @@ h2 { margin: 28px 0 12px; font-size: 18px; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 .meta, .badge, .source-meta { color: var(--muted); font-size: 13px; }
-.quality-a { color: #116329; border-color: #b7e2c0; background: #eaf8ee; }
-.quality-b { color: #1f6feb; border-color: #bfd7ff; background: #eef5ff; }
-.quality-c { color: #8a5a00; border-color: #efd5a6; background: #fff8e8; }
-.quality-d { color: #8c2f0f; border-color: #f0c2b8; background: #fff1ee; }
 .nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 .nav a {
   border: 1px solid var(--line);
@@ -64,13 +60,6 @@ a:hover { text-decoration: underline; }
 }
 .topic-title { margin: 0; font-size: 17px; line-height: 1.45; }
 .topic-summary { margin: 8px 0 10px; color: #343a42; }
-.topic-body {
-  border-top: 1px solid var(--line);
-  padding-top: 10px;
-  margin-top: 10px;
-}
-.topic-body h4 { margin: 0 0 4px; font-size: 14px; color: #252b33; }
-.topic-body p { margin: 0 0 10px; color: #343a42; }
 .topic-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
 .tag {
   display: inline-flex;
@@ -95,21 +84,6 @@ details.sources summary { cursor: pointer; color: var(--accent); font-size: 14px
 .source-item:last-child { border-bottom: 0; padding-bottom: 0; }
 .source-item h4 { margin: 0 0 4px; font-size: 15px; }
 .source-item p { margin: 4px 0; color: #3d444d; }
-.event-review {
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  padding: 14px 0;
-  margin: 14px 0 10px;
-}
-.event-review h4 { margin: 0 0 8px; font-size: 16px; }
-.event-review p { margin: 0 0 10px; color: #252b33; }
-.event-review sup a { font-size: 12px; font-weight: 600; }
-.review-note { color: var(--muted); font-size: 12px; margin-top: 8px; }
-.reference-list {
-  margin: 8px 0 0;
-  padding-left: 20px;
-}
-.reference-list li { margin: 4px 0; font-size: 13px; color: #3d444d; }
 .warning {
   border: 1px solid #efd5a6;
   background: #fff8e8;
@@ -117,13 +91,6 @@ details.sources summary { cursor: pointer; color: var(--accent); font-size: 14px
   border-radius: 8px;
   margin: 12px 0;
 }
-.health-table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); }
-.health-table th, .health-table td { border-bottom: 1px solid var(--line); padding: 8px; text-align: left; vertical-align: top; font-size: 14px; }
-.health-table th { background: var(--soft); }
-.status-healthy { color: #116329; }
-.status-failed { color: #b42318; }
-.status-disabled, .status-reserved { color: var(--muted); }
-.status-stale, .status-low-yield { color: #8a5a00; }
 footer { color: var(--muted); font-size: 13px; }
 @media (max-width: 640px) {
   header, main, footer { padding-left: 14px; padding-right: 14px; }
@@ -134,95 +101,64 @@ footer { color: var(--muted); font-size: 13px; }
 <body>
   <header>
     <h1>DailyHot 日报 2026-05-21</h1>
-    <div class="meta">生成时间：2026-05-21T14:46:01+00:00 · 最近 24 小时 · 25 个主题 · 40 条来源</div>
+    <div class="meta">生成时间：2026-05-21T23:54:59+00:00 · 最近 24 小时 · 24 个主题 · 40 条来源</div>
     <nav class="nav">
       <a href="../index.html">首页</a>
       <a href="../daily/2026-05-21.html">完整日报</a>
-      <a href="../source-health.html">信源健康</a>
       <a href="../categories/tech.html">科技</a> <a href="../categories/finance.html">金融财经</a> <a href="../categories/politics.html">国际政治</a> <a href="../categories/war.html">战争与安全</a>
     </nav>
   </header>
   <main>
     <section class="brief">
       <h2>AI 总览</h2>
-      <p>今日焦点：2026北京亦庄AI+产业大会召开，强调AI在工业、农业及城市服务的实战落地与规模化。小鹏汽车预测Robotaxi海外落地将快于国内。市场方面，半导体与算力板块遭遇获利了结大幅回调，美股科技股与中概股普跌。唯品会财报显示SVIP贡献过半，茅台续签商标协议并换帅。</p>
-      <p><strong>科技</strong>：2026北京亦庄AI+产业大会聚焦产业落地，涵盖具身智能、工业制造及农业AI应用。小鹏汽车发布有监督L4车型规划。SpaceX计划五年内年发射万次并启动IPO。</p><p><strong>金融财经</strong>：半导体及算力板块重挫，对冲基金获利了结。唯品会Q1营收266亿，SVIP成增长引擎。茅台续签商标协议，*ST闻泰获实控人增持，利仁科技澄清转型传闻。</p><p><strong>国际政治</strong>：经济学人分析中国可借鉴日本经验应对通缩。海关总署发布措施支持粤港澳大湾区建设。</p><p><strong>战争与安全</strong>：今日入选信息不足</p>
+      <p>今日科技界聚焦AI竞争与监管，英伟达面临性价比挑战，特朗普推迟签署AI监管令，OpenAI一季度收入达57亿美元。金融方面，地缘政治动荡主导市场，伊朗局势致油价波动，土耳其法院判决引发股市暴跌，Arm股价大涨16%。医药领域，GLP-1类药物被指或能抑制癌症，诺和诺德与礼来股价迎利好。</p>
+      <p><strong>科技</strong>：AI行业竞争激烈，英伟达遭围猎，特朗普推迟监管令。产品端Codex更新、Qwen3.7发布、Google加码AI广告。应用上WordPress集成AI，Spotify推AI翻唱，摩根大通扩招AI专家，Waymo因暴雨暂停服务。</p><p><strong>金融财经</strong>：伊朗局势与土耳其判决冲击金融市场，美股震荡，土耳其股汇双杀。Arm大涨16%，IBM获量子拨款。OpenAI一季度收入57亿。GLP-1药物抗癌潜力利好诺和诺德与礼来。OPEC+或增产。</p><p><strong>国际政治</strong>：中国第九批赴南苏丹维和步兵营完成指挥权交接。</p><p><strong>战争与安全</strong>：今日入选信息不足</p>
       <div class="badge">AI 总结：siliconflow · Pro/zai-org/GLM-4.7 · ok</div>
     </section>
     <h2>科技</h2><section class="topic-list">
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">2026北京亦庄AI+产业大会：AI赋能千行百业</h3>
+        <h3 class="topic-title">AI行业竞争与政策博弈</h3>
         <span class="badge">科技</span>
       </div>
-      <p class="topic-summary">大会聚焦AI从概念走向实战，涵盖城市级机器人服务、工业制造全链路智能及农业AI应用。36氪发布消费品牌AI推荐力名册，探讨Token经济与基础设施重构，强调AI赋能千行百业的价值深水区。</p>
+      <p class="topic-summary">英伟达面临性价比围猎，AI巨头警示创始人价值。特朗普推迟签署监管行政令以避免拖慢发展，摩根大通计划扩招AI专家并缩减传统银行家。行业探讨物理AI潮下的生存之道。</p>
       <div class="topic-tags">
-        <span class="tag quality-a">质量 A</span>
-        <span class="tag">8 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.67</span>
+        <span class="tag">5 条来源</span>
+        <span class="tag">IT之家、cnBeta、虎嗅</span>
+        <span class="tag">score 1.335</span>
       </div>
-      <section class="topic-body"><h4>详情</h4><p>2026北京亦庄AI+产业大会聚焦AI实战应用，涵盖城市级机器人服务、工业制造全链路智能及农业AI。酷哇等企业已在50多城市实现机器人常态化运营，通过“以战养战”积累数据。大会探讨了Token经济与基础设施重构，强调AI赋能千行百业的价值深水区。</p><h4>评论</h4><p>AI技术正从概念验证迈向规模化落地，具身智能与工业制造成为关键突破口。数据积累与运营效率成为竞争核心，行业正从技术驱动转向价值驱动，重构产业基础设施。</p></section>
-
 
       <details class="sources">
         <summary>展开来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://36kr.com/p/3818889074557829?f=rss" target="_blank" rel="noopener noreferrer">城市级AI服务：从试点到常态化，机器人的实景作战与规模化落地| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.27 · quality A</div>
-      <p>当Robotaxi还在为L4苦苦挣扎时，酷哇的环卫机器人、无人小巴、机器狗已经在50多个城市“上岗”赚钱了。 具身智能最大的瓶颈不是算法，而是数据——没有量产就没有数据，没有数据就无法进化。酷哇的解法是“以战养战”：让机器人在真实运营中一边干活一边成长，用万台规模反哺模型迭代。李柯宏强调，中国是全…</p>
-      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="https://www.huxiu.com/article/4860085.html?f=rss" target="_blank" rel="noopener noreferrer">英伟达：算力霸主，正在被“性价比”围猎</a></h4>
+      <div class="source-meta">虎嗅 · 科技 · score 1.085</div>
+      <p>群雄逼宫、AI“堵点”生变，宇宙股也会“小失意”？</p>
     </div>
 
     <div class="source-item">
-      <h4><a href="https://36kr.com/p/3818927367046018?f=rss" target="_blank" rel="noopener noreferrer">新石器NewClaw：AI一体化解决方案，零门槛当无人车指挥官| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
-      <p>管理一千台无人车需要多少人？答案是：一个人，一部手机，一句话。当自动驾驶逐渐“平权”，真正的瓶颈从技术转向了规模化运营。 新石器用七年时间走完从合规落地、规模量产到万台运营的三级跳，如今推出AI Agent“Neo Claw”——让用户像聊天一样指挥车队，把单人管理效率从10台拉升到100台以上…</p>
-      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="https://www.huxiu.com/article/4860429.html?f=rss" target="_blank" rel="noopener noreferrer">3800亿AI巨头警示：当AI一下午就能干完你三个月的活，创始人还剩什么价值？</a></h4>
+      <div class="source-meta">虎嗅 · 科技 · score 1.037</div>
+      <p>待进一步阅读原文确认：3800亿AI巨头警示：当AI一下午就能干完你三个月的活，创始人还剩什么价值？</p>
     </div>
 
     <div class="source-item">
-      <h4><a href="https://36kr.com/p/3818903062004870?f=rss" target="_blank" rel="noopener noreferrer">从概念到产线一：AI在工业制造领域的深水区探索| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
-      <p>AI在工业制造领域，不是��锦上添花”的辅助工具，而是“重新设计工厂”的核心引擎。从AOI报废板的秒级识别，到刀具参数的动态优化，再到打通设计、生产、供应链的全链路智能——这场对话告诉我们，每1%的效率提升都是真金白银，AI的价值不是叠加功能，而是把“人等货”变成“货等人”。 演讲拆解了AI从概念…</p>
-      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="https://www.huxiu.com/article/4860425.html?f=rss" target="_blank" rel="noopener noreferrer">贾可对话余凯、沈劭劼：物理AI潮下，谁能活下来？</a></h4>
+      <div class="source-meta">虎嗅 · 科技 · score 1.034</div>
+      <p>待进一步阅读原文确认：贾可对话余凯、沈劭劼：物理AI潮下，谁能活下来？</p>
     </div>
 
     <div class="source-item">
-      <h4><a href="https://36kr.com/p/3818877539091333?f=rss" target="_blank" rel="noopener noreferrer">36氪x PureblueAI清蓝战略合作启动仪式暨《2026消费品牌AI推荐力名册》发布 | 2026 AI Partner·北京亦庄AI+产业大会</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
-      <p>5月19日，2026北京亦庄AI+产业大会上，36氪与PureblueAI清蓝正式达成战略合作，并联合发布《2026消费品牌AI推荐力名册》。随着AI逐渐成为新的信息入口和消费决策入口，品牌在AI回答中是否被提及、是否被推荐、排序是否靠前，正在成为新的竞争维度。36氪副总裁迟涵表示，36氪是最早发…</p>
-      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="https://www.cnbeta.com.tw/articles/tech/1563266.htm" target="_blank" rel="noopener noreferrer">担忧放缓美国AI发展 特朗普推迟签署监管行政令</a></h4>
+      <div class="source-meta">cnBeta · 科技 · score 0.983</div>
+      <p>5月22日，据《华尔街日报》报道，美国总统特朗普周四推迟签署一项旨在加强政府对AI行业监管的行政命令，并表示他不希望采取任何可能拖慢美国在AI领域竞争步伐的行动。 阅读全文</p>
     </div>
 
     <div class="source-item">
-      <h4><a href="https://36kr.com/p/3818800487679111?f=rss" target="_blank" rel="noopener noreferrer">把确定性，写进农业：四个外行、两次失败、三千万学费换来的答案| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
-      <p>两次失败、三千万学费——创业没有爽剧剧本，这是陆渔科技深耕农业AI真实的“入场券”。当99%的人还在用AI写文案、做设计时，有人把它扔进了鱼塘，只为解决一个最朴素的问题：不确定性。 鲁敏用18年IT男转型“新农民”的经历，揭开了水产养殖最残酷的真相：1.38万亿的市场，数字化渗透率不足5%，一叶方…</p>
-      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-
-    <div class="source-item">
-      <h4><a href="https://36kr.com/p/3817502775329667?f=rss" target="_blank" rel="noopener noreferrer">从算力到价值：AI时代的基础设施重构与产业增长新引擎| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
-      <p>token经济如何重塑AI产业链？从芯片到智算中心，从模型服务到终端应用，token正在成为贯穿全链的计价单位。而当推理算力需求超越训练，智算中心的角色正从算力仓库变为token工厂，一个万亿级市场的大门刚刚打开。 token正在成为AI时代的新质生产力单位。宋琛指出，随着Agent成为新交互入口…</p>
-      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-
-    <div class="source-item">
-      <h4><a href="https://36kr.com/p/3818784445465731?f=rss" target="_blank" rel="noopener noreferrer">开场致辞 建设“全域人工智能之城” | 2026AI Partner·北京亦庄AI+产业大会</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
-      <p>AI的聚光灯正从炫酷的C端应用，转向轰鸣的工厂、无声的手术室和奔跑的人形机器人。当“落地”成为当下的关键词，2026北京亦庄AI+产业大会吹响了“走！带着AI去前线”的号角，在产业第一线求解人工智能的真实生产力。我们记录下这场务实者的聚会，捕捉那些让技术扎根泥土的坚定声音。 5月19日，2026北…</p>
-      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-
-    <div class="source-item">
-      <h4><a href="https://36kr.com/p/3818651789182080?f=rss" target="_blank" rel="noopener noreferrer">开场致辞 从技术狂欢到价值深水区 | 2026AI Partner·北京亦庄AI+产业大会</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
-      <p>AI叙事不再是颠覆一切，真正值得关注的是那些沉默的行业壁垒和经验能否被智能照亮。 四年间，这场大会从趋势观察走向落地实践，36氪也从AI的观察者转型为助推者。36氪CEO冯大刚在2026北京亦庄AI+产业大会的开场中，为焦虑的商业世界开出一剂解药，AI不是一家公司的机会，而是千行百业的机会。两天会…</p>
-      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="https://www.ithome.com/0/953/664.htm" target="_blank" rel="noopener noreferrer">摩根大通未来将扩招 AI 专家、缩招传统银行家，迎战人工智能时代</a></h4>
+      <div class="source-meta">IT之家 · 科技 · score 0.976</div>
+      <p>IT之家 5 月 21 日消息，据彭博社 21 日（今天）报道，摩根大通 CEO 杰米 · 戴蒙明确指出，公司未来有望 增加 AI 专家的招聘比例 ，同时 缩减传统银行家的岗位规模 ，以应对 AI 技术的加速应用。“长远来看，AI 技术肯定会削减摩根大通的整体用工需求。未来金融圈会涌现出各种全新岗…</p>
     </div>
     </div>
       </details>
@@ -231,65 +167,35 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">何小鹏谈Robotaxi与L4落地</h3>
+        <h3 class="topic-title">AI产品迭代与商业化</h3>
         <span class="badge">科技</span>
       </div>
-      <p class="topic-summary">何小鹏表示Robotaxi规模化落地速度海外将快于国内，小鹏GX为首款有监督L4车型，将先行测试后反哺其他车型，预计有监督L4将率先规模化。</p>
+      <p class="topic-summary">Mac版Codex新增Appshots功能，Qwen3.7模型发布推动智能体发展。Google宣布在AI搜索模式中加入更多广告，探索商业化路径。</p>
       <div class="topic-tags">
-        <span class="tag quality-b">质量 B</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.2</span>
+        <span class="tag">3 条来源</span>
+        <span class="tag">AI HOT 每日精选、IT之家、Solidot</span>
+        <span class="tag">score 1.314</span>
       </div>
-      <section class="topic-body"><h4>详情</h4><p>小鹏汽车董事长何小鹏表示，Robotaxi规模化落地速度海外将快于国内。小鹏GX作为首款具备有监督L4能力的车型，将先行探索测试并将能力反哺至其他车型。他预计，有监督L4将率先实现规模化，随后是无监督L4。</p><h4>评论</h4><p>自动驾驶技术路线分化，有监督L4成为当前务实选择。海外落地速度预期快于国内，反映了不同市场环境对技术商业化的影响，车企正通过特定车型测试加速技术迭代。</p></section>
-
-
-      <details class="sources">
-        <summary>查看来源</summary>
-        <div class="source-list">
-    <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3819045913137544?f=rss" target="_blank" rel="noopener noreferrer">何小鹏：Robotaxi规模化海外将快于国内，小鹏GX为有监督L4首款车型</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.15 · quality B</div>
-      <p>36氪获悉，5月21日，小鹏汽车董事长何小鹏在采访中表示，Robotaxi的规模化落地速度海外将快于国内。他透露，小鹏GX是小鹏首款具备有监督L4能力的车型，将先行探索测试，再将能力反哺至其他车型。何小鹏预计，有监督L4将率先实现规模化，随后是无监督L4。</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">小米YU7 GT正式发布，售价38.99万元</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">36氪获悉，小米YU7 GT正式发布，售价38.99万元。搭载小米电机V8s EVO、相较上一代V8s电机，最高转速提升至28000rpm。配备双电机系统，最大马力可达1003PS、最高时速达300km/h、零百加速2.92s。此外，小米YU7 GT再以7分22秒755的成绩刷新纽北SUV圈速纪录…</p>
-      <div class="topic-tags">
-        <span class="tag quality-c">质量 C</span>
-        <span class="tag">2 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.19</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>小米YU7 GT正式发布，售价38.99万元。该车搭载小米电机V8s EVO，最高转速提升至28000rpm，双电机系统最大马力达1003PS，零百加速2.92s，并以7分22秒755刷新纽北SUV圈速纪录。此外，YU7标准版售价23.35万元起。</p><h4>评论</h4><p>小米以高性能参数和赛道成绩切入高端SUV市场，展现了其技术积累。通过GT版树立品牌形象，标准版覆盖主流市场，双产品线策略有助于提升品牌竞争力和市场份额。</p></section>
-
 
       <details class="sources">
         <summary>展开来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3819014010242436?f=rss" target="_blank" rel="noopener noreferrer">小米YU7 GT正式发布，售价38.99万元</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
-      <p>36氪获悉，小米YU7 GT正式发布，售价38.99万元。搭载小米电机V8s EVO、相较上一代V8s电机，最高转速提升至28000rpm。配备双电机系统，最大马力可达1003PS、最高时速达300km/h、零百加速2.92s。此外，小米YU7 GT再以7分22秒755的成绩刷新纽北SUV圈速纪录…</p>
-      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="https://www.ithome.com/0/953/675.htm" target="_blank" rel="noopener noreferrer">Mac 版 Codex 更新 Appshots 功能，窗口可直接“喂”给 AI</a></h4>
+      <div class="source-meta">IT之家 · 科技 · score 1.164</div>
+      <p>IT之家 5 月 22 日消息，OpenAI 公司今天（5 月 22 日）更新桌面版 Codex 应用程序， Mac 版新增 Appshots 功能，/goal 命令也从实验功能转正。 根据官方描述，Mac 用户按下左右 Command 按键（支持用户在设置中调整），即可把当前应用窗口截屏后发送给…</p>
     </div>
 
     <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3818978257684098?f=rss" target="_blank" rel="noopener noreferrer">小米YU7标准版发布，售价23.35万元起</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
-      <p>36氪获悉，小米YU7标准版发布，售价23.35万元起。性能方面，零百加速5.90s，最大马力320PS，最高时速220km/h；续航方面，73kWh CLTC续航643km；充电方面，10%-80% 最快充电时间只需20分钟，15分钟充电补能405km。</p>
-      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="https://aihot.virxact.com/api/public/daily" target="_blank" rel="noopener noreferrer">Qwen3.7：智能体前沿</a></h4>
+      <div class="source-meta">AI HOT 每日精选 · 科技 · score 0.991</div>
+      <p>Qwen Studio推出Qwen3.7模型，提供覆盖聊天机器人、图像与视频理解、图像生成、文档处理、网页搜索集成、工具调用及工件生成等功能。该模型整合了当前AI智能体的关键能力，旨在推动多模态交互与实际任务执行向更综合、自主的方向发展。</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://www.solidot.org/story?sid=84365" target="_blank" rel="noopener noreferrer">Google 宣布在 AI 模式下加入更多广告</a></h4>
+      <div class="source-meta">Solidot · 科技 · score 0.983</div>
+      <p>Google 本周二宣布搜索框将变成 AI 聊天机器人的对话框，那么它久经时间考虑的商业模式——搜索广告——自然也会跟着进入 AI 模式。Google 周三宣布将在 AI 模式中引入更多“富有帮助的广告（helpful ads）”。搜索巨人表示在测试两类新广告，提供相关产品的细节和有用的指导。作为…</p>
     </div>
     </div>
       </details>
@@ -298,298 +204,29 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">中邮科技：国华卫星拟减持公司不超2.7525%股份</h3>
+        <h3 class="topic-title">AI在内容与音乐领域的应用</h3>
         <span class="badge">科技</span>
       </div>
-      <p class="topic-summary">36氪获悉，中邮科技公告，持股2.7525%的股东国华卫星应用产业基金（南京）合伙企业（有限合伙）（简称“国华卫星”）计划2026年6月12日至9月11日期间，通过大宗交易、集中竞价交易减持公司股份合计不超过374.34万股（占公司总股本的2.7525%）。</p>
+      <p class="topic-summary">WordPress 7.0发布，原生集成AI优化建站体验。Spotify与环球音乐合作，允许订阅用户利用AI创作翻唱和混音音乐。</p>
       <div class="topic-tags">
-        <span class="tag quality-c">质量 C</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.15</span>
+        <span class="tag">2 条来源</span>
+        <span class="tag">IT之家</span>
+        <span class="tag">score 1.149</span>
       </div>
-      <section class="topic-body"><h4>详情</h4><p>中邮科技公告称，持股2.7525%的股东国华卫星计划在2026年6月12日至9月11日期间，通过大宗交易和集中竞价交易方式，减持公司股份合计不超过374.34万股，占公司总股本的2.7525%。</p><h4>评论</h4><p>股东减持是正常的资本运作行为，通常基于自身资金需求或投资策略调整。虽然短期内可能对股价造成心理压力，但只要合规进行，不会改变公司的长期基本面和经营逻辑。</p></section>
-
 
       <details class="sources">
-        <summary>查看来源</summary>
+        <summary>展开来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3819003066271107?f=rss" target="_blank" rel="noopener noreferrer">中邮科技：国华卫星拟减持公司不超2.7525%股份</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
-      <p>36氪获悉，中邮科技公告，持股2.7525%的股东国华卫星应用产业基金（南京）合伙企业（有限合伙）（简称“国华卫星”）计划2026年6月12日至9月11日期间，通过大宗交易、集中竞价交易减持公司股份合计不超过374.34万股（占公司总股本的2.7525%）。</p>
-      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="https://www.ithome.com/0/953/683.htm" target="_blank" rel="noopener noreferrer">WordPress 7.0 发布：AI 建站新起点，超 420 项增强与修复</a></h4>
+      <div class="source-meta">IT之家 · 科技 · score 1.049</div>
+      <p>IT之家 5 月 22 日消息，WordPress 于 5 月 20 日发布 7.0 正式版，代号 Armstrong， 原生集成 AI 外，还优化后台体验、响应式编辑、移动端导航和设计工具等。 IT之家援引博文介绍，官方表示 WordPress 7.0 是其 2026 年面向创作者、企业与开发者…</p>
     </div>
-    </div>
-      </details>
 
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">韩国政府第六轮成品油最高限价继续保持不变</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">韩国产业通商部21日表示，政府自22日零时起实施的第六轮成品油最高限价措施将继续维持现行水平，为期四周。这也是政府连续第四轮冻结成品油最高限价。（财联社）</p>
-      <div class="topic-tags">
-        <span class="tag quality-c">质量 C</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.15</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>韩国产业通商部宣布，自22日零时起实施的第六轮成品油最高限价措施将继续维持现行水平，为期四周。这是韩国政府连续第四轮冻结成品油最高限价，旨在稳定国内能源市场价格。</p><h4>评论</h4><p>连续冻结成品油限价体现了韩国政府稳定民生成本、应对通胀压力的政策导向。此举有助于缓解民众生活负担，但也需关注其对炼油企业及市场供需机制的长期影响。</p></section>
-
-
-      <details class="sources">
-        <summary>查看来源</summary>
-        <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3818992969090692?f=rss" target="_blank" rel="noopener noreferrer">韩国政府第六轮成品油最高限价继续保持不变</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
-      <p>韩国产业通商部21日表示，政府自22日零时起实施的第六轮成品油最高限价措施将继续维持现行水平，为期四周。这也是政府连续第四轮冻结成品油最高限价。（财联社）</p>
-      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">叮咚买菜：一季度营收58.93亿元，同比增长7.5%</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">36氪获悉，叮咚买菜发布2026年第一季度财报。财报显示，一季度叮咚买菜营收58.93亿元，同比增长7.5%；GMV 63.33亿元，同比增长 6.3%；净利润1.65亿元，同比增长19.6倍。叮咚买菜已连续14个季度在非 GAAP标准下实现盈利，连续9个季度在GAAP标准下盈利。</p>
-      <div class="topic-tags">
-        <span class="tag quality-c">质量 C</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.15</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>叮咚买菜发布2026年第一季度财报，营收58.93亿元，同比增长7.5%；净利润1.65亿元，同比增长19.6倍。公司已连续14个季度在非GAAP标准下实现盈利，连续9个季度在GAAP标准下盈利，经营质量持续提升。</p><h4>评论</h4><p>叮咚买菜连续多季度盈利证明其前置仓模式跑通，规模效应与效率优化显现。在生鲜电商竞争趋缓的背景下，企业通过精细化运营实现了健康可持续的增长。</p></section>
-
-
-      <details class="sources">
-        <summary>查看来源</summary>
-        <div class="source-list">
-    <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3818989906069126?f=rss" target="_blank" rel="noopener noreferrer">叮咚买菜：一季度营收58.93亿元，同比增长7.5%</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
-      <p>36氪获悉，叮咚买菜发布2026年第一季度财报。财报显示，一季度叮咚买菜营收58.93亿元，同比增长7.5%；GMV 63.33亿元，同比增长 6.3%；净利润1.65亿元，同比增长19.6倍。叮咚买菜已连续14个季度在非 GAAP标准下实现盈利，连续9个季度在GAAP标准下盈利。</p>
-      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">美多名参议员致函联邦通信委员会，呼吁审查派拉蒙华纳合并案外资背景</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">多名美国民主党参议员20日联合致函美国联邦通信委员会（FCC），对派拉蒙与华纳兄弟探索公司（Warner Bros Discovery）拟议中高达1110亿美元合并案的外国资本介入表达严重关切。 参议员们敦促监管机构严密审查相关中东主权财富基金及中国企业的投资背景，以评估其对美国国家安全及媒体编辑…</p>
-      <div class="topic-tags">
-        <span class="tag quality-c">质量 C</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.15</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 36氪。核心内容是：36氪报道，美多名参议员致函联邦通信委员会，呼吁审查派拉蒙华纳合并案外资背景：多名美国民主党参议员20日联合致函美国联邦通信委员会（FCC），对派拉蒙与华纳兄弟探索公司（Warner Bros Discovery）拟议中高达1110亿美元合并案的外国资本介入表达严重关切…。</p><h4>评论</h4><p>这条线索目前主要来自 36氪，可作为观察入口：多名美国民主党参议员20日联合致函美国联邦通信委员会（FCC），对派拉蒙与华纳兄弟探索公司（Warner Bros Discovery）拟议中高达1110亿美元合并案的外国资…。后续关键是观察技术变化是否能转化为真实产品、成本下降或组织效率提升。仍应回到原文核对，当前质量等级为 C。</p></section>
-
-
-      <details class="sources">
-        <summary>查看来源</summary>
-        <div class="source-list">
-    <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3818988273649033?f=rss" target="_blank" rel="noopener noreferrer">美多名参议员致函联邦通信委员会，呼吁审查派拉蒙华纳合并案外资背景</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
-      <p>多名美国民主党参议员20日联合致函美国联邦通信委员会（FCC），对派拉蒙与华纳兄弟探索公司（Warner Bros Discovery）拟议中高达1110亿美元合并案的外国资本介入表达严重关切。 参议员们敦促监管机构严密审查相关中东主权财富基金及中国企业的投资背景，以评估其对美国国家安全及媒体编辑…</p>
-      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">Stellantis计划到2030年投资约600亿欧元，推出超60款新车型</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">5月21日，据报道，Stellantis计划到2030年投资约600亿欧元（约合698亿美元），推出超60款新车型。该公司表示，约70%的支出将用于Jeep、Ram、Peugeot和Fiat等核心品牌，其余品牌（包括Dodge和Citroën）将更加聚焦区域市场。（界面）</p>
-      <div class="topic-tags">
-        <span class="tag quality-c">质量 C</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.15</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 36氪。核心内容是：36氪报道，Stellantis计划到2030年投资约600亿欧元，推出超60款新车型：5月21日，据报道，Stellantis计划到2030年投资约600亿欧元（约合698亿美元），推出超60款新车型。该公司表示，约70%的支出将用于Jeep、Ram、Peugeot和…。</p><h4>评论</h4><p>这条线索目前主要来自 36氪，可作为观察入口：5月21日，据报道，Stellantis计划到2030年投资约600亿欧元（约合698亿美元），推出超60款新车型。该公司表示，约70%的支出将用于Jeep、Ram、Peug…。后续关键是观察技术变化是否能转化为真实产品、成本下降或组织效率提升。仍应回到原文核对，当前质量等级为 C。</p></section>
-
-
-      <details class="sources">
-        <summary>查看来源</summary>
-        <div class="source-list">
-    <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3818986572842627?f=rss" target="_blank" rel="noopener noreferrer">Stellantis计划到2030年投资约600亿欧元，推出超60款新车型</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
-      <p>5月21日，据报道，Stellantis计划到2030年投资约600亿欧元（约合698亿美元），推出超60款新车型。该公司表示，约70%的支出将用于Jeep、Ram、Peugeot和Fiat等核心品牌，其余品牌（包括Dodge和Citroën）将更加聚焦区域市场。（界面）</p>
-      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">部分理财产品费率降至0% 理财产品迎大规模降费潮</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">5月20日，招银理财、建信理财、上银理财等多家理财公司发布公告，宣布调降旗下理财产品费率。据统计，5月份以来，理财公司发布的调整费率公告已超800份，调整对象主要覆盖理财产品的销售服务费与投资管理费，调整后，部分理财产品的部分费率甚至降至0%。业内人士指出，本轮降费潮是理财公司应对利率下行、债市收…</p>
-      <div class="topic-tags">
-        <span class="tag quality-c">质量 C</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.15</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 36氪。核心内容是：36氪报道，部分理财产品费率降至0% 理财产品迎大规模降费潮：5月20日，招银理财、建信理财、上银理财等多家理财公司发布公告，宣布调降旗下理财产品费率。据统计，5月份以来，理财公司发布的调整费率公告已超800份，调整对象主要覆盖理财产品的销售服务费与投资管理费，调整后…。</p><h4>评论</h4><p>这条线索目前主要来自 36氪，可作为观察入口：5月20日，招银理财、建信理财、上银理财等多家理财公司发布公告，宣布调降旗下理财产品费率。据统计，5月份以来，理财公司发布的调整费率公告已超800份，调整对象主要覆盖理财产品…。后续关键是观察技术变化是否能转化为真实产品、成本下降或组织效率提升。仍应回到原文核对，当前质量等级为 C。</p></section>
-
-
-      <details class="sources">
-        <summary>查看来源</summary>
-        <div class="source-list">
-    <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3818983927547523?f=rss" target="_blank" rel="noopener noreferrer">部分理财产品费率降至0% 理财产品迎大规模降费潮</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
-      <p>5月20日，招银理财、建信理财、上银理财等多家理财公司发布公告，宣布调降旗下理财产品费率。据统计，5月份以来，理财公司发布的调整费率公告已超800份，调整对象主要覆盖理财产品的销售服务费与投资管理费，调整后，部分理财产品的部分费率甚至降至0%。业内人士指出，本轮降费潮是理财公司应对利率下行、债市收…</p>
-      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">京东方A：截至目前，公司与英伟达暂未开展业务合作，部分媒体推论缺乏事实依据</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">36氪获悉，京东方A公告，公司于2026年5月21日披露了《关于与康宁公司签署合作备忘录的公告》市场对此关注度较高，存在个别外界错误解读，特再次提示风险如下：玻璃基封装载板业务、钙钛矿业务、光互连业务，尚在技术探讨和验证阶段，还未量产，也未产生量产营收，未来公司能否、以及何时量产并实现相关领域的预…</p>
-      <div class="topic-tags">
-        <span class="tag quality-c">质量 C</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.15</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 36氪。核心内容是：36氪报道，京东方A：截至目前，公司与英伟达暂未开展业务合作，部分媒体推论缺乏事实依据：36氪获悉，京东方A公告，公司于2026年5月21日披露了《关于与康宁公司签署合作备忘录的公告》市场对此关注度较高，存在个别外界错误解读，特再次提示风险如下：玻璃基封装载板业务、钙钛…。</p><h4>评论</h4><p>这条线索目前主要来自 36氪，可作为观察入口：36氪获悉，京东方A公告，公司于2026年5月21日披露了《关于与康宁公司签署合作备忘录的公告》市场对此关注度较高，存在个别外界错误解读，特再次提示风险如下：玻璃基封装载板业…。后续关键是观察技术变化是否能转化为真实产品、成本下降或组织效率提升。仍应回到原文核对，当前质量等级为 C。</p></section>
-
-
-      <details class="sources">
-        <summary>查看来源</summary>
-        <div class="source-list">
-    <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3818985639085443?f=rss" target="_blank" rel="noopener noreferrer">京东方A：截至目前，公司与英伟达暂未开展业务合作，部分媒体推论缺乏事实依据</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
-      <p>36氪获悉，京东方A公告，公司于2026年5月21日披露了《关于与康宁公司签署合作备忘录的公告》市场对此关注度较高，存在个别外界错误解读，特再次提示风险如下：玻璃基封装载板业务、钙钛矿业务、光互连业务，尚在技术探讨和验证阶段，还未量产，也未产生量产营收，未来公司能否、以及何时量产并实现相关领域的预…</p>
-      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">美能能源：拟终止神木市LNG应急调峰储配站工程项目并将募集资金用于收购上海立成90%股权</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">36氪获悉，美能能源公告，为提高募集资金使用效率，公司拟将“神木市LNG应急调峰储配站工程项目”终止并改变用途，将该项目将全部募集资金6951万元和截至公告披露日利息227.35万元用于收购公司关联方陕西美能投资有限责任公司持有的上海美能立成综合能源服务有限公司（简称“上海立成”）90%股权，不足…</p>
-      <div class="topic-tags">
-        <span class="tag quality-c">质量 C</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.15</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 36氪。核心内容是：36氪报道，美能能源：拟终止神木市LNG应急调峰储配站工程项目并将募集资金用于收购上海立成90%股权：36氪获悉，美能能源公告，为提高募集资金使用效率，公司拟将“神木市LNG应急调峰储配站工程项目”终止并改变用途，将该项目将全部募集资金6951万元和截至公告披露日利息2…。</p><h4>评论</h4><p>这条线索目前主要来自 36氪，可作为观察入口：36氪获悉，美能能源公告，为提高募集资金使用效率，公司拟将“神木市LNG应急调峰储配站工程项目”终止并改变用途，将该项目将全部募集资金6951万元和截至公告披露日利息227…。后续关键是观察技术变化是否能转化为真实产品、成本下降或组织效率提升。仍应回到原文核对，当前质量等级为 C。</p></section>
-
-
-      <details class="sources">
-        <summary>查看来源</summary>
-        <div class="source-list">
-    <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3818977332462980?f=rss" target="_blank" rel="noopener noreferrer">美能能源：拟终止神木市LNG应急调峰储配站工程项目并将募集资金用于收购上海立成90%股权</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
-      <p>36氪获悉，美能能源公告，为提高募集资金使用效率，公司拟将“神木市LNG应急调峰储配站工程项目”终止并改变用途，将该项目将全部募集资金6951万元和截至公告披露日利息227.35万元用于收购公司关联方陕西美能投资有限责任公司持有的上海美能立成综合能源服务有限公司（简称“上海立成”）90%股权，不足…</p>
-      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">宇信科技：拟出资3900万元参与设立专项基金，主要投资于人工智能、大数据及相关产业链早中期科技企业</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">36氪获悉，宇信科技公告，公司拟以自有资金出资3900万元，与专业投资机构汇垠德擎、关联方宇信数智共同投资设立专项基金“德擎宇信”，基金规模2亿元，主要投资于人工智能、大数据及相关产业链早中期科技企业。本次交易构成关联交易，已获董事会审议通过，关联董事回避表决。</p>
-      <div class="topic-tags">
-        <span class="tag quality-c">质量 C</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.15</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 36氪。核心内容是：36氪报道，宇信科技：拟出资3900万元参与设立专项基金，主要投资于人工智能、大数据及相关产业链早中期科技企业：36氪获悉，宇信科技公告，公司拟以自有资金出资3900万元，与专业投资机构汇垠德擎、关联方宇信数智共同投资设立专项基金“德擎宇信”，基金规模2亿元，主要投资于…。</p><h4>评论</h4><p>这条线索目前主要来自 36氪，可作为观察入口：36氪获悉，宇信科技公告，公司拟以自有资金出资3900万元，与专业投资机构汇垠德擎、关联方宇信数智共同投资设立专项基金“德擎宇信”，基金规模2亿元，主要投资于人工智能、大数据…。后续关键是观察技术变化是否能转化为真实产品、成本下降或组织效率提升。仍应回到原文核对，当前质量等级为 C。</p></section>
-
-
-      <details class="sources">
-        <summary>查看来源</summary>
-        <div class="source-list">
-    <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3818975876285829?f=rss" target="_blank" rel="noopener noreferrer">宇信科技：拟出资3900万元参与设立专项基金，主要投资于人工智能、大数据及相关产业链早中期科技企业</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
-      <p>36氪获悉，宇信科技公告，公司拟以自有资金出资3900万元，与专业投资机构汇垠德擎、关联方宇信数智共同投资设立专项基金“德擎宇信”，基金规模2亿元，主要投资于人工智能、大数据及相关产业链早中期科技企业。本次交易构成关联交易，已获董事会审议通过，关联董事回避表决。</p>
-      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">SpaceX宏大计划与大湾区新政</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">SpaceX计划五年内实现每年1万次发射，启动史上最大规模IPO。海关总署发布措施支持粤港澳大湾区建设，全国首张综合性司机服务地图上线。</p>
-      <div class="topic-tags">
-        <span class="tag quality-b">质量 B</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.08</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 36氪。核心内容是：36氪报道，氪星晚报｜马斯克旗下SpaceX启动史上最大规模IPO计划；全国首张综合性司机服务地图上线；海关总署在粤发布《海关支持粤港澳大湾区建设若干措施》：大公司： SpaceX据悉计划五年内实现每年1万次发射 据美国联邦航空管理局（FAA）局长周三透露，SpaceX…。</p><h4>评论</h4><p>这条线索目前主要来自 36氪，可作为观察入口：大公司： SpaceX据悉计划五年内实现每年1万次发射 据美国联邦航空管理局（FAA）局长周三透露，SpaceX正抛出一个宏大的计划，即在五年内实现每年10000次发射。但该…。后续关键是观察技术变化是否能转化为真实产品、成本下降或组织效率提升。仍应回到原文核对，当前质量等级为 B。</p></section>
-
-
-      <details class="sources">
-        <summary>查看来源</summary>
-        <div class="source-list">
-    <div class="source-item">
-      <h4><a href="https://36kr.com/p/3816942732133510?f=rss" target="_blank" rel="noopener noreferrer">氪星晚报｜马斯克旗下SpaceX启动史上最大规模IPO计划；全国首张综合性司机服务地图上线；海关总署在粤发布《海关支持粤港澳大湾区建设若干措施》</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
-      <p>大公司： SpaceX据悉计划五年内实现每年1万次发射 据美国联邦航空管理局（FAA）局长周三透露，SpaceX正抛出一个宏大的计划，即在五年内实现每年10000次发射。但该机构对此表示，在批准此类扩张计划之前，政府官员需要看到其可靠性有所提升。今年1月，SpaceX公司还曾表示，其计划发射并组建…</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="https://www.ithome.com/0/953/677.htm" target="_blank" rel="noopener noreferrer">允许订阅用户创作 AI 翻唱、Remix 音乐，Spotify 与环球音乐达成合作</a></h4>
+      <div class="source-meta">IT之家 · 科技 · score 1.046</div>
+      <p>IT之家 5 月 22 日消息，据《卫报》昨日报道，Spotify 与环球音乐集团达成授权协议，未来将允许订阅用户利用 AI 创作翻唱歌曲和混音作品。 据报道，该功能预计将通过付费服务形式推出， 订阅 Spotify Premium 的用户可对参与授权计划的艺人歌曲进行混音（IT之家注：Remix…</p>
     </div>
     </div>
       </details>
@@ -598,49 +235,41 @@ footer { color: var(--muted); font-size: 13px; }
     </section><h2>金融财经</h2><section class="topic-list">
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">半导体板块回调与全球股市动态</h3>
+        <h3 class="topic-title">地缘政治与全球市场动态</h3>
         <span class="badge">金融财经</span>
       </div>
-      <p class="topic-summary">高盛称对冲基金抛售大涨芯片股获利，半导体及算力板块遭遇重挫，业内认为短期震荡释放高位风险。美股大型科技股盘前普跌，热门中概股普跌，蔚来逆势涨超7%。</p>
+      <p class="topic-summary">伊朗局势主导市场走势，美股震荡收涨，原油冲高转跌。土耳其法院判决罢免反对党领袖，引发股指暴跌，国有行抛售美元救市。OPEC+或将在6月会议增产。</p>
       <div class="topic-tags">
-        <span class="tag quality-b">质量 B</span>
-        <span class="tag">4 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.35</span>
+        <span class="tag">4 条来源</span>
+        <span class="tag">华尔街见闻</span>
+        <span class="tag">score 1.205</span>
       </div>
-      <section class="topic-body"><h4>详情</h4><p>高盛报告显示，对冲基金近期抛售大涨的美国半导体股以锁定利润，导致半导体及算力板块重挫。美股大型科技股盘前普跌，热门中概股亦普遍下跌，其中蔚来逆势涨超7%，市场短期震荡释放高位风险。</p><h4>评论</h4><p>获利了结引发半导体板块回调，属于市场正常波动，但机构仍维持AI主题整体敞口，显示长期看好。短期调整有助于释放高位风险，投资者需关注基本面与估值的匹配度。</p></section>
-
 
       <details class="sources">
         <summary>展开来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3818980165617284?f=rss" target="_blank" rel="noopener noreferrer">高盛称对冲基金对大涨的芯片股获利了结，同时维持AI主题整体敞口</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.15 · quality B</div>
-      <p>据高盛集团交易员称，对冲基金一直在卖出大涨的美国半导体股，以锁定利润，同时仍维持对人工智能主题的整体敞口。高盛主经纪团队在发给客户的一份报告中表示，过去一个月，半导体和半导体设备是美国股市中被净卖出最多的子板块。与此同时，这些基金增加了对美国股票宏观产品、指数及交易所交易基金（ETF）工具的做空头…</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="https://wallstreetcn.com/articles/3772874" target="_blank" rel="noopener noreferrer">华尔街见闻早餐FM-Radio | 2026年5月22日</a></h4>
+      <div class="source-meta">华尔街见闻 · 金融财经 · score 1.005</div>
+      <p>华见早安之声 市场概述 伊朗局势主导资产走势。美股早盘中东局势紧张，一度打压美股走低； 午盘报道称协议最终草案达成，原油跳水、三大指数探底回升、 小幅收涨，道指创新高。 英伟达绩后走低1.8% ，领跌科技七巨头。 Arm大涨16%，总市值首次突破3000亿美元 。 沃尔玛股价大跌7.3% ，拖累消…</p>
     </div>
 
     <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3819049493565575?f=rss" target="_blank" rel="noopener noreferrer">热门中概股美股盘前普跌，蔚来涨超7%</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
-      <p>36氪获悉，热门中概股美股盘前普跌，截至发稿，网易跌超4%，阿里巴巴、百度、哔哩哔哩跌超3%，京东跌超2%，拼多多、理想汽车跌超1%；蔚来涨超7%。</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="https://wallstreetcn.com/articles/3772777" target="_blank" rel="noopener noreferrer">伊朗局势主导市场，纳指惊险收涨，道指收创新高，原油冲高转跌，美债走势分化</a></h4>
+      <div class="source-meta">华尔街见闻 · 金融财经 · score 1.002</div>
+      <p>伊朗局势主导资产走势。美股早盘中东局势紧张，一度打压美股走低。午盘报道称协议最终草案达成，原油跳水、三大指数探底回升、小幅收涨，道指创新高。美债则在油价回落和强劲宏观数据下走势分化。 （美股债油日内走势） 霍尔木兹海峡局势依然是市场最核心的风险变量。交易员全天紧盯谈判进展，油价与股市随每一则报道剧…</p>
     </div>
 
     <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3819042557759623?f=rss" target="_blank" rel="noopener noreferrer">美股大型科技股盘前普跌，英特尔跌超2%</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
-      <p>36氪获悉，美股大型科技股盘前普跌，截至发稿，英特尔跌超2%，英伟达低0.66%，微软跌0.44%，Meta跌0.35%，苹果跌0.24%，亚马逊跌0.22%，谷歌跌0.13%，特斯拉涨超1%。</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="https://wallstreetcn.com/articles/3772871" target="_blank" rel="noopener noreferrer">土耳其法院判决“颠覆”最大反对党，股指暴跌6%，国有行紧急抛售60亿美元捍卫里拉</a></h4>
+      <div class="source-meta">华尔街见闻 · 金融财经 · score 0.99</div>
+      <p>土耳其法院宣布罢免该国最大反对党的领袖。这一具有里程碑意义的判决不但在国内政坛掀起轩然大波，也重创了金融市场， 当地时间周四，土耳其安卡拉一家上诉法院宣布，国内最大反对党共和人民党（CHP）的2023年全国代表大会选举结果无效，意味着现任党主席Ozgur Ozel被解除职务，前党魁Kemal Ki…</p>
     </div>
 
     <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3819007008458374?f=rss" target="_blank" rel="noopener noreferrer">半导体、算力板块遭遇重挫，业内机构：短期震荡调整有助于释放高位风险</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
-      <p>5月21日，近期接连大涨的半导体板块迎来大幅回调，此外，光通信、光模块等算力板块今日也遭遇重挫。业内机构分析认为，受美联储政策预期波动、短期获利盘兑现压力影响，短期板块或呈震荡整固走势，但从中长期来看，存储高景气周期、半导体自主可控的核心逻辑持续强化，短期震荡调整有助于释放高位风险。（中证报）</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="https://wallstreetcn.com/articles/3772864" target="_blank" rel="noopener noreferrer">报道：OPEC+或在6月7日会议上将7月石油产量提高18.8万桶/日</a></h4>
+      <div class="source-meta">华尔街见闻 · 金融财经 · score 0.971</div>
+      <p>伊朗战争重创海湾产能，石油出口渠道受阻，但OPEC+核心成员仍预计在6月7日会议上继续推进增产议程。 据路透社援引四位知情人士消息，七个OPEC+核心产油国将于6月7日举行会议，预计届时将就7月产量目标达成一致，拟议涨幅约为每日18.8万桶。知情人士均要求匿名，并强调最终决定尚未作出。 OPEC数…</p>
     </div>
     </div>
       </details>
@@ -649,56 +278,41 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">上市公司业绩与治理动态</h3>
+        <h3 class="topic-title">企业财报与行业突破</h3>
         <span class="badge">金融财经</span>
       </div>
-      <p class="topic-summary">唯品会Q1净营收266亿元，SVIP贡献超50%。贵州茅台拟续签商标许可协议并聘任新董秘。*ST闻泰实控人增持，利仁科技澄清半导体转型传闻。</p>
+      <p class="topic-summary">受AI需求推动，Arm市值破3000亿美元大涨16%，IBM获政府拨款涨12%。OpenAI一季度收入57亿美元。研究显示GLP-1类药物或能抑制癌症，诺和诺德与礼来迎利好。</p>
       <div class="topic-tags">
-        <span class="tag quality-b">质量 B</span>
-        <span class="tag">5 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.28</span>
+        <span class="tag">4 条来源</span>
+        <span class="tag">华尔街见闻</span>
+        <span class="tag">score 1.201</span>
       </div>
-      <section class="topic-body"><h4>详情</h4><p>唯品会一季度净营收266亿元，SVIP用户贡献超50%线上销售额。贵州茅台拟与集团续签商标许可协议，费率为年销售收入的1.5%，并聘任余思明为董秘。此外，*ST闻泰实控人增持，利仁科技澄清半导体转型传闻。</p><h4>评论</h4><p>唯品会SVIP的高贡献凸显高净值用户价值，茅台续签商标保障品牌资产安全。上市公司治理动态频繁，显示企业通过增持、澄清传闻等方式维护市场信心，注重长期稳健发展。</p></section>
-
 
       <details class="sources">
         <summary>展开来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://36kr.com/p/3818915823764610?f=rss" target="_blank" rel="noopener noreferrer">业绩快报 | 唯品会一季度净营收266亿元，SVIP用户贡献超50%线上销售额</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
-      <p>5月21日美股盘前，唯品会发布2025年第一季度财报。一季度内，唯品会实现净营收266亿元（人民币，下同），Non-GAAP净利润23亿元。 观察核心运营数据，一季度其实现商品交易总额（GMV）569亿元，同比增长8.6%，订单量1.73亿单，同比增长3.2%。同时，平台于该季度活跃用户数为417…</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="https://wallstreetcn.com/articles/3772873" target="_blank" rel="noopener noreferrer">减重神药或能抑制癌症发展，诺和诺德、礼来迎重磅利好</a></h4>
+      <div class="source-meta">华尔街见闻 · 金融财经 · score 1.001</div>
+      <p>全球最畅销的减重与糖尿病药物或将迎来又一重大突破。 四项新研究显示， 诺和诺德的Ozempic和礼来的Mounjaro等GLP-1类药物，与癌症患者更好的治疗结局之间存在关联 ，可能进一步扩大这类已拥有数以千万用户的药物的市场前景，并为上述两家全球市值最高的制药公司提供新的增长动力。 上述研究将于…</p>
     </div>
 
     <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3819052491264136?f=rss" target="_blank" rel="noopener noreferrer">贵州茅台：拟与茅台集团续签商标许可协议</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
-      <p>36氪获悉，贵州茅台公告，公司拟与控股股东茅台集团续签《商标许可协议》，许可使用“贵州茅台”“茅台”等106件商标，许可期限为2027年1月1日至2029年12月31日，许可使用费按相关酒类产品年销售收入的1.5%计算，按季度支付。该交易需提交股东会审议，关联股东将回避表决。</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="https://wallstreetcn.com/articles/3772859" target="_blank" rel="noopener noreferrer">Arm收涨16%！市值破3000亿美元大关，孙正义豪赚2200亿美元</a></h4>
+      <div class="source-meta">华尔街见闻 · 金融财经 · score 0.998</div>
+      <p>受全球AI算力需求暴涨推动，Arm总市值首次突破3000亿美元大关。 5月21日， Arm股价收涨16.16%，续创历史新高，市值达3173亿美元。 前一交易日，该股已大涨15.05%，收于256.73美元，盘中曾创下259.44美元的历史高点。 这一里程碑使大股东软银及孙正义迎来回报最丰厚的投资…</p>
     </div>
 
     <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3819051490349185?f=rss" target="_blank" rel="noopener noreferrer">贵州茅台：聘任余思明为董事会秘书</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
-      <p>36氪获悉，贵州茅台公告，2026年5月21日，贵州茅台酒股份有限公司召开第四届董事会2026年度第八次会议，会议审议通过了《关于聘任高级管理人员的议案》，董事会决定聘任余思明为公司董事会秘书。</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="https://wallstreetcn.com/articles/3772872" target="_blank" rel="noopener noreferrer">报道：OpenAI一季度收入57亿美元</a></h4>
+      <div class="source-meta">华尔街见闻 · 金融财经 · score 0.995</div>
+      <p>据媒体报道，受Codex、商业销售与广告驱动，OpenAI在第一季度创造了57亿美元的收入，领先竞争对手Anthropic约10亿美元。其中2月份产生250亿美元年化收入。 据 华尔街见闻此前发布文章 ，Anthropic二季度营收预计达109亿美元，增幅约130%，并将首次实现运营利润5.59亿…</p>
     </div>
 
     <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3819028683163269?f=rss" target="_blank" rel="noopener noreferrer">利仁科技：公司主营业务不包括电子布相关业务 参股公司上海超纤尚未开展任何业务</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
-      <p>36氪获悉，利仁科技公告，公司关注到有关媒体传播不实言论，称公司2025年底收购半导体分销公司及转型电子布行业。公司关注到有关媒体在网络平台传播关于公司的不实言论，称“利仁2025年底收购了一家半导体分销公司”“转型电子布行业，布局二代Low-DK布和三代Q布”。对此公司澄清并郑重声明：公司202…</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-
-    <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3819021341345412?f=rss" target="_blank" rel="noopener noreferrer">*ST闻泰：实控人张学政增持0.04%股份</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
-      <p>36氪获悉，*ST闻泰公告，公司实际控制人张学政先生基于对公司未来发展的信心以及对公司长期投资价值的认可，近日通过上海证券交易所交易系统以集中竞价的方式，以自有资金增持公司股份499,930股，占公司总股本的0.04%，累计增持金额8,364,035.88元（不含交易费用）。</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="https://wallstreetcn.com/articles/3772866" target="_blank" rel="noopener noreferrer">IBM收涨12%，创近一年最大涨幅，特朗普政府宣布20亿美元量子计算扶持计划</a></h4>
+      <div class="source-meta">华尔街见闻 · 金融财经 · score 0.987</div>
+      <p>特朗普政府宣布向量子计算领域注入逾20亿美元联邦资金，IBM获批10亿美元政府拨款，用于建设量子芯片代工厂，消息刺激相关个股全线飙升。 周四，IBM股价收涨12.48%，创2025年1月份以来最大单日涨幅。IBM同时宣布将自行投资10亿美元，成立一家名为Anderon的新公司，专门负责量子处理器的…</p>
     </div>
     </div>
       </details>
@@ -707,28 +321,23 @@ footer { color: var(--muted); font-size: 13px; }
     </section><h2>国际政治</h2><section class="topic-list">
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">在线报导</h3>
+        <h3 class="topic-title">习近平将向《生物多样性公约》第十五次缔约方大会第二阶段高级别会议开幕式致辞</h3>
         <span class="badge">国际政治</span>
       </div>
-      <p class="topic-summary">待进一步阅读原文确认：在线报导</p>
+      <p class="topic-summary">外交部发言人华春莹14日宣布：国家主席习近平将于12月15日以视频方式向《生物多样性公约》第十五次缔约方大会第二阶段高级别会议开幕式致辞。</p>
       <div class="topic-tags">
-        <span class="tag quality-c">质量 C</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">DW 中文</span>
-        <span class="tag">score 1.12</span>
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
       </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 DW 中文。核心内容是：DW 中文报道，待进一步阅读原文确认：在线报导。</p><h4>评论</h4><p>这条线索目前主要来自 DW 中文，可作为观察入口：待进一步阅读原文确认：在线报导。后续关键是观察相关行动背后的制度安排、外交信号和后续谈判空间。仍应回到原文核对，当前质量等级为 C。</p></section>
-
 
       <details class="sources">
         <summary>查看来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="http://www.dw.com/chinese/?maca=chi-GK-Inoreader-Chinese-21711-xml-media" target="_blank" rel="noopener noreferrer">在线报导</a></h4>
-      <div class="source-meta">DW 中文 · 国际政治 · score 1.0 · quality C</div>
-      <p>待进一步阅读原文确认：在线报导</p>
-      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.80；有可读摘要；发布时间较新</p>
+      <h4><a href="http://www.news.cn/world/2022-12/14/c_1129206906.htm" target="_blank" rel="noopener noreferrer">习近平将向《生物多样性公约》第十五次缔约方大会第二阶段高级别会议开幕式致辞</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>外交部发言人华春莹14日宣布：国家主席习近平将于12月15日以视频方式向《生物多样性公约》第十五次缔约方大会第二阶段高级别会议开幕式致辞。</p>
     </div>
     </div>
       </details>
@@ -737,28 +346,23 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">美國起訴古巴前領導人勞爾・卡斯特羅涉犯謀殺罪</h3>
+        <h3 class="topic-title">学习进行时｜二十大后重要外交活动，这些关键词习近平总书记反复提及</h3>
         <span class="badge">国际政治</span>
       </div>
-      <p class="topic-summary">圖像來源， Reuters Article Information Author, 凱拉・愛普斯坦（Kayla Epstein）、塞西莉亞·巴里亞（Cecilia Barría）、帕斯卡・弗萊徹（Pascal Fletcher） Role, BBC新聞部、BBC西班牙語組、BBC國際媒體監察部 P…</p>
+      <p class="topic-summary">二十大后重要外交活动，这些关键词习近平总书记反复提及</p>
       <div class="topic-tags">
-        <span class="tag quality-d">质量 D</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">BBC 中国</span>
-        <span class="tag">score 1.114</span>
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
       </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 BBC 中国。核心内容是：BBC 中国报道，美國起訴古巴前領導人勞爾・卡斯特羅涉犯謀殺罪：圖像來源， Reuters Article Information Author, 凱拉・愛普斯坦（Kayla Epstein）、塞西莉亞·巴里亞（Cecilia Barría）、帕斯卡・弗萊徹（Pascal F…。</p><h4>评论</h4><p>这条线索目前主要来自 BBC 中国，可作为观察入口：圖像來源， Reuters Article Information Author, 凱拉・愛普斯坦（Kayla Epstein）、塞西莉亞·巴里亞（Cecilia Barrí…。后续关键是观察相关行动背后的制度安排、外交信号和后续谈判空间。仍应回到原文核对，当前质量等级为 D。</p></section>
-
 
       <details class="sources">
         <summary>查看来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://www.bbc.com/zhongwen/articles/cx21yjzvzjyo/trad?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">美國起訴古巴前領導人勞爾・卡斯特羅涉犯謀殺罪</a></h4>
-      <div class="source-meta">BBC 中国 · 国际政治 · score 0.994 · quality D</div>
-      <p>圖像來源， Reuters Article Information Author, 凱拉・愛普斯坦（Kayla Epstein）、塞西莉亞·巴里亞（Cecilia Barría）、帕斯卡・弗萊徹（Pascal Fletcher） Role, BBC新聞部、BBC西班牙語組、BBC國際媒體監察部 P…</p>
-      <p class="source-meta">D 级：按今日候选内容动态分位数计算；来源权重 0.82；有可读摘要；发布时间较新</p>
+      <h4><a href="http://www.news.cn/world/2022-12/14/c_1129206651.htm" target="_blank" rel="noopener noreferrer">学习进行时｜二十大后重要外交活动，这些关键词习近平总书记反复提及</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>二十大后重要外交活动，这些关键词习近平总书记反复提及</p>
     </div>
     </div>
       </details>
@@ -767,28 +371,23 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">黄仁勋：英伟达基本将中国AI晶片市场让给华为</h3>
+        <h3 class="topic-title">中国多家驻土机构参加土耳其创新周</h3>
         <span class="badge">国际政治</span>
       </div>
-      <p class="topic-summary">2026-05-21T12:40:26+08:00 英伟达首席执行官黄仁勋1月5日在美国拉斯维加斯举行的一场活动上发表讲话。（法新社档案照） 英伟达的首席执行官黄仁勋说，随着美国出口限制持续重塑全球人工智能半导体格局，公司已基本上将中国人工智能晶片市场让给华为。 黄仁勋接受美国消费者新闻与商业频道…</p>
+      <p class="topic-summary">土耳其创新周活动12日和13日在伊斯坦布尔金角湾会议中心举办，多家中国驻土机构参加。</p>
       <div class="topic-tags">
-        <span class="tag quality-d">质量 D</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">联合早报</span>
-        <span class="tag">score 1.109</span>
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
       </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 联合早报。核心内容是：联合早报报道，黄仁勋：英伟达基本将中国AI晶片市场让给华为：2026-05-21T12:40:26+08:00 英伟达首席执行官黄仁勋1月5日在美国拉斯维加斯举行的一场活动上发表讲话。（法新社档案照） 英伟达的首席执行官黄仁勋说，随着美国出口限制持续重塑全球人工智能半导体…。</p><h4>评论</h4><p>这条线索目前主要来自 联合早报，可作为观察入口：2026-05-21T12:40:26+08:00 英伟达首席执行官黄仁勋1月5日在美国拉斯维加斯举行的一场活动上发表讲话。（法新社档案照） 英伟达的首席执行官黄仁勋说，随着…。后续关键是观察相关行动背后的制度安排、外交信号和后续谈判空间。仍应回到原文核对，当前质量等级为 D。</p></section>
-
 
       <details class="sources">
         <summary>查看来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://www.zaobao.com/news/china/story20260521-9083450" target="_blank" rel="noopener noreferrer">黄仁勋：英伟达基本将中国AI晶片市场让给华为</a></h4>
-      <div class="source-meta">联合早报 · 国际政治 · score 0.989 · quality D</div>
-      <p>2026-05-21T12:40:26+08:00 英伟达首席执行官黄仁勋1月5日在美国拉斯维加斯举行的一场活动上发表讲话。（法新社档案照） 英伟达的首席执行官黄仁勋说，随着美国出口限制持续重塑全球人工智能半导体格局，公司已基本上将中国人工智能晶片市场让给华为。 黄仁勋接受美国消费者新闻与商业频道…</p>
-      <p class="source-meta">D 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="http://www.news.cn/world/2022-12/14/c_1129206416.htm" target="_blank" rel="noopener noreferrer">中国多家驻土机构参加土耳其创新周</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>土耳其创新周活动12日和13日在伊斯坦布尔金角湾会议中心举办，多家中国驻土机构参加。</p>
     </div>
     </div>
       </details>
@@ -797,28 +396,23 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">一线城市房价上涨，中国房地产市场有望复苏吗？</h3>
+        <h3 class="topic-title">匈牙利说就解冻恢复基金与欧盟达成协议</h3>
         <span class="badge">国际政治</span>
       </div>
-      <p class="topic-summary">数据显示，今年2-4月北上广深的二手房价微涨2%。有乐观分析认为主要城市房价有望在下半年企稳。但全国市场仍然面临巨大的过剩，据估有9000万套空置或未完工的公寓。 The New York Times 许多中国家庭将积蓄投入房产——它们曾被视为积累财富的安全途径，结果却眼睁睁看着房产价值崩塌。</p>
+      <p class="topic-summary">匈牙利区域发展与欧盟资金利用部长瑙夫劳契奇13日在新闻发布会上表示，匈牙利与欧盟就解冻其数十亿欧元欧盟恢复基金达成协议。</p>
       <div class="topic-tags">
-        <span class="tag quality-d">质量 D</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">纽约时报中文</span>
-        <span class="tag">score 1.108</span>
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
       </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 纽约时报中文。核心内容是：纽约时报中文报道，一线城市房价上涨，中国房地产市场有望复苏吗？：数据显示，今年2-4月北上广深的二手房价微涨2%。有乐观分析认为主要城市房价有望在下半年企稳。但全国市场仍然面临巨大的过剩，据估有9000万套空置或未完工的公寓。 The New York Times 许多中国家…。</p><h4>评论</h4><p>这条线索目前主要来自 纽约时报中文，可作为观察入口：数据显示，今年2-4月北上广深的二手房价微涨2%。有乐观分析认为主要城市房价有望在下半年企稳。但全国市场仍然面临巨大的过剩，据估有9000万套空置或未完工的公寓。 The N…。后续关键是观察相关行动背后的制度安排、外交信号和后续谈判空间。仍应回到原文核对，当前质量等级为 D。</p></section>
-
 
       <details class="sources">
         <summary>查看来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://cn.nytimes.com/business/20260521/china-housing-slump/?utm_source=RSS" target="_blank" rel="noopener noreferrer">一线城市房价上涨，中国房地产市场有望复苏吗？</a></h4>
-      <div class="source-meta">纽约时报中文 · 国际政治 · score 0.988 · quality D</div>
-      <p>数据显示，今年2-4月北上广深的二手房价微涨2%。有乐观分析认为主要城市房价有望在下半年企稳。但全国市场仍然面临巨大的过剩，据估有9000万套空置或未完工的公寓。 The New York Times 许多中国家庭将积蓄投入房产——它们曾被视为积累财富的安全途径，结果却眼睁睁看着房产价值崩塌。</p>
-      <p class="source-meta">D 级：按今日候选内容动态分位数计算；来源权重 0.82；有可读摘要；发布时间较新</p>
+      <h4><a href="http://www.news.cn/world/2022-12/14/c_1129206410.htm" target="_blank" rel="noopener noreferrer">匈牙利说就解冻恢复基金与欧盟达成协议</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>匈牙利区域发展与欧盟资金利用部长瑙夫劳契奇13日在新闻发布会上表示，匈牙利与欧盟就解冻其数十亿欧元欧盟恢复基金达成协议。</p>
     </div>
     </div>
       </details>
@@ -827,28 +421,23 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">中国应对通缩的路径探讨</h3>
+        <h3 class="topic-title">刚果（金）首都暴雨致141人死亡</h3>
         <span class="badge">国际政治</span>
       </div>
-      <p class="topic-summary">经济学人刊文探讨中国可从日本“去通缩化”经验中学到的教训，分析正确的“日本化”路径，为宏观经济政策提供参考。</p>
+      <p class="topic-summary">刚果（金）首都金沙萨12日夜间至13日凌晨遭遇暴雨，多个地区发生洪涝和山体滑坡，导致至少141人死亡。</p>
       <div class="topic-tags">
-        <span class="tag quality-b">质量 B</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">经济学者</span>
-        <span class="tag">score 1.104</span>
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
       </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 经济学者。核心内容是：经济学者报道，What China can learn from Japan about escaping deflation：The right kind of Japanification。</p><h4>评论</h4><p>这条线索目前主要来自 经济学者，可作为观察入口：The right kind of Japanification。后续关键是观察相关行动背后的制度安排、外交信号和后续谈判空间。仍应回到原文核对，当前质量等级为 B。</p></section>
-
 
       <details class="sources">
         <summary>查看来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://www.economist.com/china/2026/05/21/what-china-can-learn-from-japan-about-escaping-deflation" target="_blank" rel="noopener noreferrer">What China can learn from Japan about escaping deflation</a></h4>
-      <div class="source-meta">经济学者 · 国际政治 · score 1.054 · quality B</div>
-      <p>The right kind of Japanification</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.82；有可读摘要；发布时间较新</p>
+      <h4><a href="http://www.news.cn/world/2022-12/14/c_1129206388.htm" target="_blank" rel="noopener noreferrer">刚果（金）首都暴雨致141人死亡</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>刚果（金）首都金沙萨12日夜间至13日凌晨遭遇暴雨，多个地区发生洪涝和山体滑坡，导致至少141人死亡。</p>
     </div>
     </div>
       </details>
@@ -857,28 +446,23 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">BBC俄羅斯編輯：普京享受了習近平的中式歡迎，卻沒把輸油管合同帶回家</h3>
+        <h3 class="topic-title">COP15主席黄润秋：将通过高级别会议解决关键难点议题</h3>
         <span class="badge">国际政治</span>
       </div>
-      <p class="topic-summary">圖像來源， EPA 圖像加註文字， 普京與習近平已見過不下40次。 Article Information Author, 史蒂夫·羅森伯格（Steve Rosenberg） Role, BBC俄羅斯編輯 Reporting from, 莫斯科 Published 閱讀時間: 3 分鐘 有那麼一刻…</p>
+      <p class="topic-summary">《生物多样性公约》第十五次缔约方大会（COP15）主席、中国生态环境部部长黄润秋13日在加拿大蒙特利尔表示，将通过高级别会议凝聚共识，解决一些突出的关键难点议题。预期到17日第二次进程盘点时，除少数关键元素外，第二阶段会议最重要的标志性预期成果“2020年后全球生物多样性框架”（简称“框架”）将高…</p>
       <div class="topic-tags">
-        <span class="tag quality-d">质量 D</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">BBC 中国</span>
-        <span class="tag">score 1.104</span>
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
       </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 BBC 中国。核心内容是：BBC 中国报道，BBC俄羅斯編輯：普京享受了習近平的中式歡迎，卻沒把輸油管合同帶回家：圖像來源， EPA 圖像加註文字， 普京與習近平已見過不下40次。 Article Information Author, 史蒂夫·羅森伯格（Steve Rosenberg） Role…。</p><h4>评论</h4><p>这条线索目前主要来自 BBC 中国，可作为观察入口：圖像來源， EPA 圖像加註文字， 普京與習近平已見過不下40次。 Article Information Author, 史蒂夫·羅森伯格（Steve Rosenberg）…。后续关键是观察相关行动背后的制度安排、外交信号和后续谈判空间。仍应回到原文核对，当前质量等级为 D。</p></section>
-
 
       <details class="sources">
         <summary>查看来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://www.bbc.com/zhongwen/articles/cg4pee61p2xo/trad?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">BBC俄羅斯編輯：普京享受了習近平的中式歡迎，卻沒把輸油管合同帶回家</a></h4>
-      <div class="source-meta">BBC 中国 · 国际政治 · score 0.984 · quality D</div>
-      <p>圖像來源， EPA 圖像加註文字， 普京與習近平已見過不下40次。 Article Information Author, 史蒂夫·羅森伯格（Steve Rosenberg） Role, BBC俄羅斯編輯 Reporting from, 莫斯科 Published 閱讀時間: 3 分鐘 有那麼一刻…</p>
-      <p class="source-meta">D 级：按今日候选内容动态分位数计算；来源权重 0.82；有可读摘要；发布时间较新</p>
+      <h4><a href="http://www.news.cn/world/2022-12/14/c_1129206317.htm" target="_blank" rel="noopener noreferrer">COP15主席黄润秋：将通过高级别会议解决关键难点议题</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>《生物多样性公约》第十五次缔约方大会（COP15）主席、中国生态环境部部长黄润秋13日在加拿大蒙特利尔表示，将通过高级别会议凝聚共识，解决一些突出的关键难点议题。预期到17日第二次进程盘点时，除少数关键元素外，第二阶段会议最重要的标志性预期成果“2020年后全球生物多样性框架”（简称“框架”）将高…</p>
     </div>
     </div>
       </details>
@@ -887,28 +471,23 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">美司法部起诉古巴前总统卡斯特罗，特朗普施压行动升级</h3>
+        <h3 class="topic-title">胡春华会见伊朗总统莱希</h3>
         <span class="badge">国际政治</span>
       </div>
-      <p class="topic-summary">司法部指控劳尔·卡斯特罗犯有谋杀罪和阴谋杀害美国公民罪，涉及30年前两架飞机在古巴海岸附近水域被击落的事件。特朗普政府针对古巴共产主义政府的施压行动再次升级。 Ismael Francisco/Associated Press 古巴前领导人劳尔·卡斯特罗遭美国起诉之时，该国正面临国内及发电厂石油供…</p>
+      <p class="topic-summary">胡春华向莱希总统转达习近平主席的亲切问候和良好祝愿，介绍了中共二十大取得的重大成果和深远意义。他表示，今年7月和9月，习近平主席同总统阁下先后通电话和会见，就深化中伊关系达成重要共识。中方从战略高度看待中伊关系，同伊朗发展全面战略伙伴关系的决心不会动摇，坚定支持伊方反对外部干涉，维护国家主权、领土…</p>
       <div class="topic-tags">
-        <span class="tag quality-d">质量 D</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">纽约时报中文</span>
-        <span class="tag">score 1.092</span>
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
       </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 纽约时报中文。核心内容是：纽约时报中文报道，美司法部起诉古巴前总统卡斯特罗，特朗普施压行动升级：司法部指控劳尔·卡斯特罗犯有谋杀罪和阴谋杀害美国公民罪，涉及30年前两架飞机在古巴海岸附近水域被击落的事件。特朗普政府针对古巴共产主义政府的施压行动再次升级。 Ismael Francisco/Associ…。</p><h4>评论</h4><p>这条线索目前主要来自 纽约时报中文，可作为观察入口：司法部指控劳尔·卡斯特罗犯有谋杀罪和阴谋杀害美国公民罪，涉及30年前两架飞机在古巴海岸附近水域被击落的事件。特朗普政府针对古巴共产主义政府的施压行动再次升级。 Ismael…。后续关键是观察相关行动背后的制度安排、外交信号和后续谈判空间。仍应回到原文核对，当前质量等级为 D。</p></section>
-
 
       <details class="sources">
         <summary>查看来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://cn.nytimes.com/usa/20260521/raul-castro-cuba-doj-indictment/?utm_source=RSS" target="_blank" rel="noopener noreferrer">美司法部起诉古巴前总统卡斯特罗，特朗普施压行动升级</a></h4>
-      <div class="source-meta">纽约时报中文 · 国际政治 · score 0.972 · quality D</div>
-      <p>司法部指控劳尔·卡斯特罗犯有谋杀罪和阴谋杀害美国公民罪，涉及30年前两架飞机在古巴海岸附近水域被击落的事件。特朗普政府针对古巴共产主义政府的施压行动再次升级。 Ismael Francisco/Associated Press 古巴前领导人劳尔·卡斯特罗遭美国起诉之时，该国正面临国内及发电厂石油供…</p>
-      <p class="source-meta">D 级：按今日候选内容动态分位数计算；来源权重 0.82；有可读摘要；发布时间较新</p>
+      <h4><a href="http://www.news.cn/world/2022-12/14/c_1129206095.htm" target="_blank" rel="noopener noreferrer">胡春华会见伊朗总统莱希</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>胡春华向莱希总统转达习近平主席的亲切问候和良好祝愿，介绍了中共二十大取得的重大成果和深远意义。他表示，今年7月和9月，习近平主席同总统阁下先后通电话和会见，就深化中伊关系达成重要共识。中方从战略高度看待中伊关系，同伊朗发展全面战略伙伴关系的决心不会动摇，坚定支持伊方反对外部干涉，维护国家主权、领土…</p>
     </div>
     </div>
       </details>
@@ -917,28 +496,23 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">习近平多次提及“修昔底德陷阱”，它是什么意思？</h3>
+        <h3 class="topic-title">世卫组织：全球累计新冠确诊病例达645630482例</h3>
         <span class="badge">国际政治</span>
       </div>
-      <p class="topic-summary">习近平与特朗普会晤时再次援引古希腊历史，警告美国一个新兴大国遇到一个既得利益大国时会发生什么。十多年来习近平和中共高层多次提及这一概念，视其为一个警示故事。 Eye Ubiquitous/Universal Images Group, via Getty Images 维也纳议会大厦外矗立着雅典将…</p>
+      <p class="topic-summary">世界卫生组织13日公布的最新数据显示，全球累计新冠确诊病例达645630482例。</p>
       <div class="topic-tags">
-        <span class="tag quality-d">质量 D</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">纽约时报中文</span>
-        <span class="tag">score 1.089</span>
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
       </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 纽约时报中文。核心内容是：纽约时报中文报道，习近平多次提及“修昔底德陷阱”，它是什么意思？：习近平与特朗普会晤时再次援引古希腊历史，警告美国一个新兴大国遇到一个既得利益大国时会发生什么。十多年来习近平和中共高层多次提及这一概念，视其为一个警示故事。 Eye Ubiquitous/Universal I…。</p><h4>评论</h4><p>这条线索目前主要来自 纽约时报中文，可作为观察入口：习近平与特朗普会晤时再次援引古希腊历史，警告美国一个新兴大国遇到一个既得利益大国时会发生什么。十多年来习近平和中共高层多次提及这一概念，视其为一个警示故事。 Eye Ubiq…。后续关键是观察相关行动背后的制度安排、外交信号和后续谈判空间。仍应回到原文核对，当前质量等级为 D。</p></section>
-
 
       <details class="sources">
         <summary>查看来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://cn.nytimes.com/china/20260521/trump-xi-thucydides-trap-us-china/?utm_source=RSS" target="_blank" rel="noopener noreferrer">习近平多次提及“修昔底德陷阱”，它是什么意思？</a></h4>
-      <div class="source-meta">纽约时报中文 · 国际政治 · score 0.969 · quality D</div>
-      <p>习近平与特朗普会晤时再次援引古希腊历史，警告美国一个新兴大国遇到一个既得利益大国时会发生什么。十多年来习近平和中共高层多次提及这一概念，视其为一个警示故事。 Eye Ubiquitous/Universal Images Group, via Getty Images 维也纳议会大厦外矗立着雅典将…</p>
-      <p class="source-meta">D 级：按今日候选内容动态分位数计算；来源权重 0.82；有可读摘要；发布时间较新</p>
+      <h4><a href="http://www.news.cn/world/2022-12/14/c_1129206036.htm" target="_blank" rel="noopener noreferrer">世卫组织：全球累计新冠确诊病例达645630482例</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>世界卫生组织13日公布的最新数据显示，全球累计新冠确诊病例达645630482例。</p>
     </div>
     </div>
       </details>
@@ -947,28 +521,23 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">习近平会见普京，称赞中俄关系进入“更有作为”的阶段</h3>
+        <h3 class="topic-title">刘建超同委内瑞拉统一社会主义党第一副主席卡韦略举行视频通报会</h3>
         <span class="badge">国际政治</span>
       </div>
-      <p class="topic-summary">习近平在与普京会面时赞扬两国关系进入了“更有作为、更快发展的新阶段”。普京则将两国描绘为致力于共同构建“更加公正民主的世界秩序”的平等伙伴。 Pool photo by Maxim Shemetov 俄罗斯总统弗拉基米尔·V·普京与中国领导人习近平在周三于北京人民大会堂检阅仪仗队。</p>
+      <p class="topic-summary">12月13日，中共中央对外联络部部长刘建超同委内瑞拉统一社会主义党第一副主席卡韦略举行视频通报会，双方相互通报了中共二十大和委统社党五大主要情况，表示将落实好两国元首共识，加强党际交流合作，推动中委全面战略伙伴关系深入发展。</p>
       <div class="topic-tags">
-        <span class="tag quality-d">质量 D</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">纽约时报中文</span>
-        <span class="tag">score 1.087</span>
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
       </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 纽约时报中文。核心内容是：纽约时报中文报道，习近平会见普京，称赞中俄关系进入“更有作为”的阶段：习近平在与普京会面时赞扬两国关系进入了“更有作为、更快发展的新阶段”。普京则将两国描绘为致力于共同构建“更加公正民主的世界秩序”的平等伙伴。 Pool photo by Maxim Shemetov 俄罗斯…。</p><h4>评论</h4><p>这条线索目前主要来自 纽约时报中文，可作为观察入口：习近平在与普京会面时赞扬两国关系进入了“更有作为、更快发展的新阶段”。普京则将两国描绘为致力于共同构建“更加公正民主的世界秩序”的平等伙伴。 Pool photo by Ma…。后续关键是观察相关行动背后的制度安排、外交信号和后续谈判空间。仍应回到原文核对，当前质量等级为 D。</p></section>
-
 
       <details class="sources">
         <summary>查看来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://cn.nytimes.com/china/20260521/china-putin-trump-russia-xi/?utm_source=RSS" target="_blank" rel="noopener noreferrer">习近平会见普京，称赞中俄关系进入“更有作为”的阶段</a></h4>
-      <div class="source-meta">纽约时报中文 · 国际政治 · score 0.967 · quality D</div>
-      <p>习近平在与普京会面时赞扬两国关系进入了“更有作为、更快发展的新阶段”。普京则将两国描绘为致力于共同构建“更加公正民主的世界秩序”的平等伙伴。 Pool photo by Maxim Shemetov 俄罗斯总统弗拉基米尔·V·普京与中国领导人习近平在周三于北京人民大会堂检阅仪仗队。</p>
-      <p class="source-meta">D 级：按今日候选内容动态分位数计算；来源权重 0.82；有可读摘要；发布时间较新</p>
+      <h4><a href="http://www.news.cn/world/2022-12/14/c_1129206024.htm" target="_blank" rel="noopener noreferrer">刘建超同委内瑞拉统一社会主义党第一副主席卡韦略举行视频通报会</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>12月13日，中共中央对外联络部部长刘建超同委内瑞拉统一社会主义党第一副主席卡韦略举行视频通报会，双方相互通报了中共二十大和委统社党五大主要情况，表示将落实好两国元首共识，加强党际交流合作，推动中委全面战略伙伴关系深入发展。</p>
     </div>
     </div>
       </details>
@@ -977,28 +546,248 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">中国警告美国不要加征新关税，同时确认采购协议</h3>
+        <h3 class="topic-title">中国援马里巴马科大学卡巴拉校区二期项目举行竣工典礼</h3>
         <span class="badge">国际政治</span>
       </div>
-      <p class="topic-summary">中国政府称双方已同意不再进一步提高关税，同时暗示若华盛顿再次提高对华关税，中方将采取报复措施。中国还在元首峰会后首次确认了对美国牛肉和波音飞机的采购协议。 Kenny Holston/The New York Times 上周，特朗普总统在北京与中国最高领导人习近平共同出席国宴。</p>
+      <p class="topic-summary">巴马科消息：中国援马里巴马科大学卡巴拉校区二期项目12日在首都巴马科举行竣工典礼。马里过渡总理马伊加、高等教育和科研部长凯塔、中国驻马里大使陈志宏出席典礼。</p>
       <div class="topic-tags">
-        <span class="tag quality-d">质量 D</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">纽约时报中文</span>
-        <span class="tag">score 1.081</span>
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
       </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 纽约时报中文。核心内容是：纽约时报中文报道，中国警告美国不要加征新关税，同时确认采购协议：中国政府称双方已同意不再进一步提高关税，同时暗示若华盛顿再次提高对华关税，中方将采取报复措施。中国还在元首峰会后首次确认了对美国牛肉和波音飞机的采购协议。 Kenny Holston/The New York T…。</p><h4>评论</h4><p>这条线索目前主要来自 纽约时报中文，可作为观察入口：中国政府称双方已同意不再进一步提高关税，同时暗示若华盛顿再次提高对华关税，中方将采取报复措施。中国还在元首峰会后首次确认了对美国牛肉和波音飞机的采购协议。 Kenny Hol…。后续关键是观察相关行动背后的制度安排、外交信号和后续谈判空间。仍应回到原文核对，当前质量等级为 D。</p></section>
-
 
       <details class="sources">
         <summary>查看来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://cn.nytimes.com/business/20260521/china-boeing-planes-summit/?utm_source=RSS" target="_blank" rel="noopener noreferrer">中国警告美国不要加征新关税，同时确认采购协议</a></h4>
-      <div class="source-meta">纽约时报中文 · 国际政治 · score 0.961 · quality D</div>
-      <p>中国政府称双方已同意不再进一步提高关税，同时暗示若华盛顿再次提高对华关税，中方将采取报复措施。中国还在元首峰会后首次确认了对美国牛肉和波音飞机的采购协议。 Kenny Holston/The New York Times 上周，特朗普总统在北京与中国最高领导人习近平共同出席国宴。</p>
-      <p class="source-meta">D 级：按今日候选内容动态分位数计算；来源权重 0.82；有可读摘要；发布时间较新</p>
+      <h4><a href="http://www.news.cn/world/2022-12/13/c_1129205976.htm" target="_blank" rel="noopener noreferrer">中国援马里巴马科大学卡巴拉校区二期项目举行竣工典礼</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>巴马科消息：中国援马里巴马科大学卡巴拉校区二期项目12日在首都巴马科举行竣工典礼。马里过渡总理马伊加、高等教育和科研部长凯塔、中国驻马里大使陈志宏出席典礼。</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">“我要永远追求和平”——日本僧人大东仁不懈收集侵华日军史料的故事</h3>
+        <span class="badge">国际政治</span>
+      </div>
+      <p class="topic-summary">第九个南京大屠杀死难者国家公祭日到来之际，中日两位长期致力于收集和保存侵华日军史料的人士时隔3年再次在“云端”重逢。</p>
+      <div class="topic-tags">
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
+      </div>
+
+      <details class="sources">
+        <summary>查看来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="http://www.news.cn/world/2022-12/13/c_1129205959.htm" target="_blank" rel="noopener noreferrer">“我要永远追求和平”——日本僧人大东仁不懈收集侵华日军史料的故事</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>第九个南京大屠杀死难者国家公祭日到来之际，中日两位长期致力于收集和保存侵华日军史料的人士时隔3年再次在“云端”重逢。</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">中外人士共话“文明多样性与全球人权治理”</h3>
+        <span class="badge">国际政治</span>
+      </div>
+      <p class="topic-summary">研讨会上，结合中共二十大擘画的中国人权事业美好前景，来自中国、古巴、瑞士、巴基斯坦、英国、俄罗斯、法国等国家的近50位专家学者展开了热忱、富有洞察力的交流。</p>
+      <div class="topic-tags">
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
+      </div>
+
+      <details class="sources">
+        <summary>查看来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="http://www.news.cn/world/2022-12/13/c_1129205940.htm" target="_blank" rel="noopener noreferrer">中外人士共话“文明多样性与全球人权治理”</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>研讨会上，结合中共二十大擘画的中国人权事业美好前景，来自中国、古巴、瑞士、巴基斯坦、英国、俄罗斯、法国等国家的近50位专家学者展开了热忱、富有洞察力的交流。</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">专访：中国式现代化意味着中国与世界合作的大发展——访厄瓜多尔总统吉列尔莫·拉索</h3>
+        <span class="badge">国际政治</span>
+      </div>
+      <p class="topic-summary">厄瓜多尔总统吉列尔莫·拉索日前在首都基多总统府接受新华社记者采访时表示，厄方非常关注中国式现代化给包括厄瓜多尔在内的国际社会带来的新机遇。“中国式现代化意味着中国人民获得更大发展，也意味着中国与世界合作的大发展。”</p>
+      <div class="topic-tags">
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
+      </div>
+
+      <details class="sources">
+        <summary>查看来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="http://www.news.cn/world/2022-12/13/c_1129205920.htm" target="_blank" rel="noopener noreferrer">专访：中国式现代化意味着中国与世界合作的大发展——访厄瓜多尔总统吉列尔莫·拉索</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>厄瓜多尔总统吉列尔莫·拉索日前在首都基多总统府接受新华社记者采访时表示，厄方非常关注中国式现代化给包括厄瓜多尔在内的国际社会带来的新机遇。“中国式现代化意味着中国人民获得更大发展，也意味着中国与世界合作的大发展。”</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">王毅同匈牙利外长西雅尔多视频会晤</h3>
+        <span class="badge">国际政治</span>
+      </div>
+      <p class="topic-summary">12月13日，中共中央政治局委员、国务委员兼外长王毅同匈牙利外长西雅尔多举行视频会晤，并共同签署两国建立政府间“一带一路”合作委员会的协定。</p>
+      <div class="topic-tags">
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
+      </div>
+
+      <details class="sources">
+        <summary>查看来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="http://www.news.cn/world/2022-12/13/c_1129205894.htm" target="_blank" rel="noopener noreferrer">王毅同匈牙利外长西雅尔多视频会晤</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>12月13日，中共中央政治局委员、国务委员兼外长王毅同匈牙利外长西雅尔多举行视频会晤，并共同签署两国建立政府间“一带一路”合作委员会的协定。</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">阿富汗首都酒店爆炸袭击致5名中国公民受伤</h3>
+        <span class="badge">国际政治</span>
+      </div>
+      <p class="topic-summary">中国驻阿富汗大使王愚13日说，阿首都喀布尔一家酒店12日下午发生的爆炸袭击造成5名中国公民受伤。</p>
+      <div class="topic-tags">
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
+      </div>
+
+      <details class="sources">
+        <summary>查看来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="http://www.news.cn/world/2022-12/13/c_1129205834.htm" target="_blank" rel="noopener noreferrer">阿富汗首都酒店爆炸袭击致5名中国公民受伤</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>中国驻阿富汗大使王愚13日说，阿首都喀布尔一家酒店12日下午发生的爆炸袭击造成5名中国公民受伤。</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">外交部发言人介绍中美官员廊坊会谈情况</h3>
+        <span class="badge">国际政治</span>
+      </div>
+      <p class="topic-summary">12月11日至12日，外交部副部长谢锋在河北廊坊同来访的美国国务院亚太事务助理国务卿康达、白宫国安会中国事务高级主任罗森伯格举行了会谈。外交部发言人汪文斌13日在例行记者会上应询进一步介绍了有关情况。</p>
+      <div class="topic-tags">
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
+      </div>
+
+      <details class="sources">
+        <summary>查看来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="http://www.news.cn/world/2022-12/13/c_1129205823.htm" target="_blank" rel="noopener noreferrer">外交部发言人介绍中美官员廊坊会谈情况</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>12月11日至12日，外交部副部长谢锋在河北廊坊同来访的美国国务院亚太事务助理国务卿康达、白宫国安会中国事务高级主任罗森伯格举行了会谈。外交部发言人汪文斌13日在例行记者会上应询进一步介绍了有关情况。</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">全球连线｜科研人员通过技术手段保存“万人坑”日军侵华罪证</h3>
+        <span class="badge">国际政治</span>
+      </div>
+      <p class="topic-summary">在位于吉林省辽源市的辽源矿工墓陈列馆，吉林大学的科研人员从2015年开始，每隔一段时间都会利用最新的生物学技术，对全馆197具完整遗骸和20余具零散遗骸进行防腐处理。</p>
+      <div class="topic-tags">
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
+      </div>
+
+      <details class="sources">
+        <summary>查看来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="http://www.news.cn/world/2022-12/13/c_1129205356.htm" target="_blank" rel="noopener noreferrer">全球连线｜科研人员通过技术手段保存“万人坑”日军侵华罪证</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>在位于吉林省辽源市的辽源矿工墓陈列馆，吉林大学的科研人员从2015年开始，每隔一段时间都会利用最新的生物学技术，对全馆197具完整遗骸和20余具零散遗骸进行防腐处理。</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">第十届中韩公共外交论坛举行</h3>
+        <span class="badge">国际政治</span>
+      </div>
+      <p class="topic-summary">第十届中韩公共外交论坛13日以线上线下相结合的方式举行。两国政府官员、专家学者、企业家及媒体等各界人士参加，围绕“回首中韩建交30周年：站在新起点 续写新篇章”这一主题进行深入交流。</p>
+      <div class="topic-tags">
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
+      </div>
+
+      <details class="sources">
+        <summary>查看来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="http://www.news.cn/world/2022-12/13/c_1129205715.htm" target="_blank" rel="noopener noreferrer">第十届中韩公共外交论坛举行</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>第十届中韩公共外交论坛13日以线上线下相结合的方式举行。两国政府官员、专家学者、企业家及媒体等各界人士参加，围绕“回首中韩建交30周年：站在新起点 续写新篇章”这一主题进行深入交流。</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">外交部发言人：支持非洲发展是国际社会的共同责任</h3>
+        <span class="badge">国际政治</span>
+      </div>
+      <p class="topic-summary">外交部发言人汪文斌13日说，支持非洲发展是国际社会的共同责任。中方乐见国际社会各方加大对非洲关注，但坚决反对把非洲当作大国博弈的竞技场。</p>
+      <div class="topic-tags">
+        <span class="tag">1 条来源</span>
+        <span class="tag">新华网国际</span>
+        <span class="tag">score 1.09</span>
+      </div>
+
+      <details class="sources">
+        <summary>查看来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="http://www.news.cn/world/2022-12/13/c_1129205664.htm" target="_blank" rel="noopener noreferrer">外交部发言人：支持非洲发展是国际社会的共同责任</a></h4>
+      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
+      <p>外交部发言人汪文斌13日说，支持非洲发展是国际社会的共同责任。中方乐见国际社会各方加大对非洲关注，但坚决反对把非洲当作大国博弈的竞技场。</p>
     </div>
     </div>
       </details>
