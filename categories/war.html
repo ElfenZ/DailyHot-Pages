@@ -30,6 +30,10 @@ h2 { margin: 28px 0 12px; font-size: 18px; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 .meta, .badge, .source-meta { color: var(--muted); font-size: 13px; }
+.quality-a { color: #116329; border-color: #b7e2c0; background: #eaf8ee; }
+.quality-b { color: #1f6feb; border-color: #bfd7ff; background: #eef5ff; }
+.quality-c { color: #8a5a00; border-color: #efd5a6; background: #fff8e8; }
+.quality-d { color: #8c2f0f; border-color: #f0c2b8; background: #fff1ee; }
 .nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 .nav a {
   border: 1px solid var(--line);
@@ -91,6 +95,13 @@ details.sources summary { cursor: pointer; color: var(--accent); font-size: 14px
   border-radius: 8px;
   margin: 12px 0;
 }
+.health-table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); }
+.health-table th, .health-table td { border-bottom: 1px solid var(--line); padding: 8px; text-align: left; vertical-align: top; font-size: 14px; }
+.health-table th { background: var(--soft); }
+.status-healthy { color: #116329; }
+.status-failed { color: #b42318; }
+.status-disabled, .status-reserved { color: var(--muted); }
+.status-stale, .status-low-yield { color: #8a5a00; }
 footer { color: var(--muted); font-size: 13px; }
 @media (max-width: 640px) {
   header, main, footer { padding-left: 14px; padding-right: 14px; }
@@ -101,10 +112,11 @@ footer { color: var(--muted); font-size: 13px; }
 <body>
   <header>
     <h1>战争与安全 - DailyHot 2026-05-21</h1>
-    <div class="meta">生成时间：2026-05-21T00:02:18+00:00 · 最近 24 小时 · 24 个主题 · 40 条来源</div>
+    <div class="meta">生成时间：2026-05-21T04:31:17+00:00 · 最近 24 小时 · 24 个主题 · 40 条来源</div>
     <nav class="nav">
       <a href="../index.html">首页</a>
       <a href="../daily/2026-05-21.html">完整日报</a>
+      <a href="../source-health.html">信源健康</a>
       <a href="../categories/tech.html">科技</a> <a href="../categories/finance.html">金融财经</a> <a href="../categories/politics.html">国际政治</a> <a href="../categories/war.html">战争与安全</a>
     </nav>
   </header>
