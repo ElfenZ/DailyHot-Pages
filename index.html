@@ -49,6 +49,20 @@ a:hover { text-decoration: underline; }
 }
 .brief h2 { margin-top: 0; }
 .brief p { margin: 0 0 8px; }
+.daily-main { display: grid; gap: 18px; }
+.category-section {
+  display: grid;
+  gap: 10px;
+}
+.category-heading {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: baseline;
+}
+.category-heading h2 { margin: 0; }
 .topic-list { display: grid; gap: 10px; }
 .topic {
   background: var(--panel);
@@ -84,6 +98,12 @@ a:hover { text-decoration: underline; }
 }
 details.sources { margin-top: 10px; }
 details.sources summary { cursor: pointer; color: var(--accent); font-size: 14px; }
+.source-preview {
+  margin-top: 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+.source-preview h4 { margin: 0 0 8px; font-size: 14px; color: #252b33; }
 .source-list {
   display: grid;
   gap: 8px;
@@ -134,7 +154,7 @@ footer { color: var(--muted); font-size: 13px; }
 <body>
   <header>
     <h1>DailyHot 2026-05-22</h1>
-    <div class="meta">生成时间：2026-05-22T09:01:17+00:00 · 最近 24 小时 · 30 个主题 · 40 条来源</div>
+    <div class="meta">生成时间：2026-05-22T14:20:24+00:00 · 最近 24 小时 · 64 个主题 · 80 条来源</div>
     <nav class="nav">
       <a href="index.html">首页</a>
       <a href="daily/2026-05-22.html">完整日报</a>
@@ -146,33 +166,47 @@ footer { color: var(--muted); font-size: 13px; }
 
     <section class="brief">
       <h2>AI 总览</h2>
-      <p>今日科技新闻聚焦AI产业落地与基础设施。SpaceX的Grok因美国政府采用率低面临市场困境，而行业整体正从技术炫技转向实效交付，医疗、金融等领域涌现具体应用。小米发布YU7新车型，韩国邮政拟加码AI数据中心投资。政治方面，法航与空客因2009年空难被判过失杀人，美国起诉古巴官员引发局势关注。</p>
-      <p><strong>科技</strong>：AI行业强调实效落地，医疗、金融及视觉领域应用深化。SpaceX Grok遇冷，小米YU7推新，韩国邮政投资数据中心。</p><p><strong>金融财经</strong>：今日入选信息不足</p><p><strong>国际政治</strong>：法航空客被判过失杀人，美起诉古巴官员，世界杯票价暴涨引争议，亚马逊高管谈青年就业。</p><p><strong>战争与安全</strong>：今日入选信息不足</p>
+      <p>今日科技领域聚焦AI产业实效与生态重构，2026 AI Partner大会指出AI正从技术炫技转向解决临床、工业等真实痛点。京东618将推AI数字人晚会，Hark获7亿美元融资。小米发布YU7新车，荣耀回应IPO未终止。资本市场方面，中概股盘前普跌，富途跌超37%，美股科技股普涨。国城矿业与中国核建均有大额资本运作，*ST岩石退市。</p>
+      <p><strong>科技</strong>：AI行业正经历价值重构，2026 AI Partner大会强调从技术转向实效，医疗、工业及大健康场景应用加速。京东618将推AI数字人晚会，Hark获7亿美元融资。小米发布YU7新车，优步与JSW合作开发电动汽车。荣耀回应IPO未终止，三星工会启动薪资投票。</p><p><strong>金融财经</strong>：热门中概股美股盘前普跌，富途跌超37%，老虎跌超36%，老虎回应内地客户资产占比约10%。美股大型科技股盘前普涨。国城矿业拟23.68亿元收购股权，中国核建拟定增募资40亿元，*ST岩石被终止上市，一汽解放高管拟增持。</p><p><strong>国际政治</strong>：今日入选信息不足</p><p><strong>战争与安全</strong>：今日入选信息不足</p>
       <div class="badge">AI 总结：siliconflow · Pro/zai-org/GLM-4.7 · ok</div>
     </section>
 
 
         <h2>今日重点</h2>
         <section class="topic-list">
-    <article class="topic">
+    <article class="topic topic-card">
       <div class="topic-head">
-        <h3 class="topic-title">视觉技术与算力基建动态</h3>
+        <h3 class="topic-title">AI产业实效与场景落地</h3>
         <span class="badge">科技</span>
       </div>
-      <p class="topic-summary">大华股份探索CV与AI Agent结合的行业实践。神眸实现摄像头功耗数量级降低，推动无线化变革。韩国邮政拟加码AI数据中心投资，圣阳股份称未与美国客户达成AIDC合作。</p>
+      <p class="topic-summary">2026 AI Partner大会指出AI正从技术炫技转向产业实效，强调多端协同与物理AI落地。江行智能与大华股份展示了工业与视觉场景实践。医疗领域聚焦解决临床痛点，百度健康推动大健康供给侧改革。</p>
       <div class="topic-tags">
         <span class="tag quality-a">质量 A</span>
-        <span class="tag">4 篇文章</span>
+        <span class="tag">6 篇文章</span>
         <span class="tag">1 个信源</span>
         <span class="tag">36氪</span>
-        <span class="tag">score 1.35</span>
+        <span class="tag">score 1.45</span>
       </div>
-      <section class="topic-body"><h4>详情</h4><p>大华股份探索CV与AI Agent结合，构建星汉大模型提升视觉认知。神眸通过芯片设计将摄像头功耗降低一个数量级，实现无线化变革。韩国邮政拟加码AI数据中心投资，而圣阳股份澄清未与美国客户达成AIDC合作。</p><h4>评论</h4><p>视觉技术与低功耗芯片的突破正在重塑智能终端形态，推动行业向无线化、自主化演进。算力基建投资热度不减，但企业需明确市场定位，理性应对国际合作的复杂性与不确定性。</p></section>
+      <section class="topic-body"><h4>详情</h4><p>本主题收录 6 篇材料，主要来源包括 36氪。事实层面，36氪：AI时代核心终端生态定位与用户需求洞察| 2026AI Partner·北京亦庄AI+产业大会：AI不是某一个超级单品的故事，而是一个多端协同的生态故事，消费者的期待与顾虑，正在定义这个生态的进化方向。 AI与硬件的融合分为四个阶段，当前正处于从深度融合走向生态化的关键节点。AI渗透率在手机端已从…；36氪：江行智能：从感知环境到改变世界：物理AI的机遇、路径与实践| 2026AI Partner·北京亦庄AI+产业大会：中国工业物理AI的真正优势不在模型参数，而在全球12倍的工业机器人部署密度、两倍的发电量和密集的5G边缘节点——场景密度、基建底座和开源模型的合力，正在推动物理AI从实验室走向规模化…；36氪：让智能体看见世界：CV × AI Agent 的行业场景新实践| 2026AI Partner·北京亦庄AI+产业大会：让智能体“看见”世界，不是给它装上摄像头那么简单。当CV遇上AI Agent，乘数效应正在发生。AI Agent不等于Chatbot，真正的价值在于静默看护与自主决策。 AI进入…；36氪：能落地的请留下，讲故事的请离场：让合作当场发…</p><h4>评论</h4><p>这个主题目前主要来自 36氪，更适合作为线索入口。评论层面，后续关键是观察技术变化是否能转化为真实产品、成本下降、组织效率提升或新的产业分工。需要区分技术演示、商业落地和资本叙事；单来源内容不宜直接上升为确定判断。当前质量等级为 A，应结合后续新增来源再调整权重。</p></section>
 
 
-      <details class="sources">
-        <summary>展开来源</summary>
+      <section class="source-preview">
+        <h4>高分来源</h4>
         <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://36kr.com/p/3820318177841541?f=rss" target="_blank" rel="noopener noreferrer">AI时代核心终端生态定位与用户需求洞察| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
+      <p>AI不是某一个超级单品的故事，而是一个多端协同的生态故事，消费者的期待与顾虑，正在定义这个生态的进化方向。 AI与硬件的融合分为四个阶段，当前正处于从深度融合走向生态化的关键节点。AI渗透率在手机端已从15%涨到40%，但仍是“加分项”而非“决策项”。未来，AI硬件生态的四个步骤——感知、记忆、决…</p>
+      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://36kr.com/p/3820298219425924?f=rss" target="_blank" rel="noopener noreferrer">江行智能：从感知环境到改变世界：物理AI的机遇、路径与实践| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
+      <p>中国工业物理AI的真正优势不在模型参数，而在全球12倍的工业机器人部署密度、两倍的发电量和密集的5G边缘节点——场景密度、基建底座和开源模型的合力，正在推动物理AI从实验室走向规模化落地。 江行智能提出工业物理AI的三层模型，这套系统已在新能源场站和电网巡检场景落地——覆盖贵州、内蒙古等多地，核心…</p>
+      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+
     <div class="source-item">
       <h4><a href="https://36kr.com/p/3820220616495492?f=rss" target="_blank" rel="noopener noreferrer">让智能体看见世界：CV × AI Agent 的行业场景新实践| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
       <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
@@ -181,154 +215,6 @@ footer { color: var(--muted); font-size: 13px; }
     </div>
 
     <div class="source-item">
-      <h4><a href="https://36kr.com/p/3818843802665862?f=rss" target="_blank" rel="noopener noreferrer">算力浪潮下，AI智能影像的无线化变革| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
-      <p>神眸做的事情不是追逐英伟达，而是在算力浪潮的下游，用极致的低功耗芯片设计，让摄像头摆脱电线的束缚，打开一个千亿只智能视觉终端的未来。 杨作兴带领神眸实现了摄像头功耗降低一个数量级的突破——第一代芯片达业界三分之一功耗，第二代达十分之一，首次用1瓦太阳能板驱动全天候智能摄像机。他认为，当前全球安防摄…</p>
-      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-
-    <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3820169908179075?f=rss" target="_blank" rel="noopener noreferrer">圣阳股份：公司在AIDC数据中心领域尚未与美国客户达成合作</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.15 · quality B</div>
-      <p>36氪获悉，圣阳股份在互动平台表示，截至目前，公司在AIDC数据中心领域尚未与美国客户达成合作。</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-
-    <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3820157288157319?f=rss" target="_blank" rel="noopener noreferrer">韩国邮政拟加码AI数据中心和欧美地产投资</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.15 · quality B</div>
-      <p>韩国邮政（Korea Post）目前管理约157万亿韩元（约合1040亿美元）的储蓄与保险资金，是韩国最重要的长期机构投资者之一。在传统邮政业务持续亏损压力下，韩国邮政正加速转向高收益资产投资，重点布局AI数据中心、物流设施以及多户型住宅等欧美房地产资产，以提升整体投资回报率。韩国邮政已选定黑石和…</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">SpaceX的Grok遭美国政府冷待</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">文件显示SpaceX的AI业务Grok在美国政府采用率极低，400个项目中仅3个涉及，远低于OpenAI。作为最大客户的美国政府冷待Grok，凸显其市场困境。</p>
-      <div class="topic-tags">
-        <span class="tag quality-a">质量 A</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.32</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>文件显示，SpaceX的AI业务Grok在美国政府采购中采用率极低，400个项目仅3个涉及，远低于OpenAI等竞争对手。作为最大客户的美国政府冷待Grok，凸显了该公司面临的市场困境。</p><h4>评论</h4><p>政府采购数据直观反映了AI产品的市场竞争力与信任度。Grok在关键市场的遇冷，提示技术厂商需在安全合规与实际效能上建立更坚实的护城河，以应对激烈的商业竞争。</p></section>
-
-
-      <details class="sources">
-        <summary>查看来源</summary>
-        <div class="source-list">
-    <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3820226041352322?f=rss" target="_blank" rel="noopener noreferrer">SpaceX的AI前景遭质疑，400个美国政府项目只有3个涉及Grok</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.27 · quality A</div>
-      <p>文件显示，SpaceX的人工智能业务Grok在美国政府的采用率偏低，政府采购案例中仅3个涉及xAI或Grok，而OpenAI等公司模型应用相对更加广泛。作为xAI的最大客户，美国政府对Grok模型的冷待，凸显出该公司面临的市场困境，甚至意味着Grok在商业领域也可能遭到客户抛弃的现实。（财联社）</p>
-      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">AI赋能金融数智化与数据资产激活</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">企业通过数据治理激活沉睡数据以释放商业价值。金智维与银河期货合作落地数字员工，实现流程智能化；零点有数联合中国人寿推出AI宠物保险平台，拓展垂直应用。</p>
-      <div class="topic-tags">
-        <span class="tag quality-a">质量 A</span>
-        <span class="tag">3 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.3</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>企业通过数据治理激活沉睡数据释放价值。金智维与银河期货合作落地数字员工，覆盖50多个场景。零点有数联合中国人寿推出“真AI宠”宠物保险平台，拓展垂直领域应用。</p><h4>评论</h4><p>数据资产化与流程智能化是金融行业转型的关键。通过垂直场景的深度实践，AI技术正从概念验证走向业务实效，为企业降本增效提供了可复制的实战样本。</p></section>
-
-
-      <details class="sources">
-        <summary>展开来源</summary>
-        <div class="source-list">
-    <div class="source-item">
-      <h4><a href="https://36kr.com/p/3820136301728135?f=rss" target="_blank" rel="noopener noreferrer">AI+数字资产：激活企业沉睡数据，释放商业价值| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
-      <p>当AI开始帮投资机构“面试”企业、帮合作伙伴“背调”公司时，你的数据还在沉睡吗？艾迪普用22年经验告诉我们：AI时代的第一场战役，是数据治理战。 现在投资方、银行甚至客户都在用AI智能体“打听”你的企业——如果你的数据没有被主动整理、标注、推向市场，就等于在AI的“筛选网”里隐身。艾迪普推出元典大…</p>
-      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-
-    <div class="source-item">
-      <h4><a href="https://36kr.com/p/3820121808540034?f=rss" target="_blank" rel="noopener noreferrer">圆桌对话：降本增效 风控提智：数字员工驱动金融数智化转型的实战样本| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.15 · quality B</div>
-      <p>金智维与银河期货七年合作，从十万级的RPA项目走到百万级的智能流程重构，证明了一件事：企业级AI的价值不在于回答问题，而在于把事办成。 从RPA到Agentic Flow，金智维与银河期货用七年时间跑通了企业流程智能化的完整路径。如今，数字员工已在银河期货落地50多个场景，每天执行超三千条业务流程…</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-
-    <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3820211771838848?f=rss" target="_blank" rel="noopener noreferrer">零点有数联合中国人寿推出“真AI宠”宠物保险科技平台</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.15 · quality B</div>
-      <p>36氪获悉，近日，零点有数正式宣布将公司核心战略全面聚焦于AIKC战略（垂直知识智能），将垂直业务的知识模型、数据模型、流程模型整合形成完整知识体系。同时，零点有数与中国人寿财产保险签署战略合作协议，联合推出“真AI宠”宠物保险科技平台。目前，零点有数AIKC已在新消费、公共服务等领域落地。</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">让好项目，更早被看见</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">让好项目，更早被看见 ——36 氪「AI 寻求报道」：不止是曝光，更是早期价值的专业连接 提交报道链接： https://36kr.com/seek-report-new?t=1779418211266 36氪AI寻求报道 很多项目第一次被行业真正看见，往往已经不是它最需要被看见的时候。 那时候…</p>
-      <div class="topic-tags">
-        <span class="tag quality-a">质量 A</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.27</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>36氪推出“AI寻求报道”专题，旨在让好项目更早被看见。该活动不仅提供曝光机会，更致力于为早期项目提供专业价值连接，解决项目在发展初期难以被行业关注的痛点。</p><h4>评论</h4><p>早期项目的发掘与扶持对AI产业生态至关重要。媒体平台通过资源整合与专业连接，能有效降低创新项目的试错成本，促进技术成果与市场需求的精准对接。</p></section>
-
-
-      <details class="sources">
-        <summary>查看来源</summary>
-        <div class="source-list">
-    <div class="source-item">
-      <h4><a href="https://36kr.com/p/3820226045104257?f=rss" target="_blank" rel="noopener noreferrer">让好项目，更早被看见</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
-      <p>让好项目，更早被看见 ——36 氪「AI 寻求报道」：不止是曝光，更是早期价值的专业连接 提交报道链接： https://36kr.com/seek-report-new?t=1779418211266 36氪AI寻求报道 很多项目第一次被行业真正看见，往往已经不是它最需要被看见的时候。 那时候…</p>
-      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">AI行业转向实效落地与流程重构</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">2026年AI行业价值体系重构，产业方掌握定义权，强调真实场景交付。企业引入AI需平衡流程改造与思维转变，建议从小流程入手，用结果赢共识，避免贪大求全。</p>
-      <div class="topic-tags">
-        <span class="tag quality-a">质量 A</span>
-        <span class="tag">2 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.25</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>2026年AI行业价值体系重构，产业方掌握定义权，强调真实场景交付。企业引入AI需平衡流程改造与思维转变，建议从小流程入手，用结果赢共识，避免贪大求全。</p><h4>评论</h4><p>AI发展正从技术驱动转向价值驱动，务实落地成为行业共识。企业需摒弃浮躁，聚焦具体业务痛点，通过渐进式改造实现智能化转型，确保技术投入产生实际回报。</p></section>
-
-
-      <details class="sources">
-        <summary>展开来源</summary>
-        <div class="source-list">
-    <div class="source-item">
       <h4><a href="https://36kr.com/p/3820169156890759?f=rss" target="_blank" rel="noopener noreferrer">能落地的请留下，讲故事的请离场</a></h4>
       <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
       <p>让合作当场发生！ 2026年的AI行业，正在经历一次价值体系的深层重构。过去两年，聚光灯始终偏向技术侧——参数、算力、榜单排名。但今天，话语权正在向产业方转移：那些拥有真实需求、真实场景、真实业务压力的企业，开始掌握定义权。产业界最关切的问题变得具体而迫切：在必须交付结果的地方，AI到底靠不靠得住…</p>
@@ -336,42 +222,16 @@ footer { color: var(--muted); font-size: 13px; }
     </div>
 
     <div class="source-item">
-      <h4><a href="https://36kr.com/p/3820112276951170?f=rss" target="_blank" rel="noopener noreferrer">圆桌对话：进化的终极思考：引入AI，先改流程还是先换脑袋？| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.15 · quality B</div>
-      <p>企业引入AI，先改流程还是先换脑袋？没有标准答案，只有实战经验——学者、制造业主、工业赋能者三种视角碰撞出一个共识，不要指望把全公司的认知统一好再动手，也不要贪大求全一步到位，用小流程换结果，用结果赢共识，才是AI转型最稳的路径。 圆桌对话直面AI落地中“上热下冷”、过度追求全智能、数据治理欠账等…</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">AI+医疗进入临床刚需深水区</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">AI医疗从技术炫技转向解决痛点，旨在减轻医生负担而非替代。百度健康等企业推动从单点智能走向全局协同，利用AI缓解慢病管理供需矛盾，构建价值闭环。</p>
-      <div class="topic-tags">
-        <span class="tag quality-a">质量 A</span>
-        <span class="tag">2 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.25</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>AI医疗从技术炫技转向解决痛点，旨在减轻医生负担而非替代。百度健康等企业推动从单点智能走向全局协同，利用AI缓解慢病管理供需矛盾，构建价值闭环。</p><h4>评论</h4><p>AI医疗回归临床刚需，标志着行业进入成熟期。通过解决供需矛盾和提升诊疗效率，AI技术正成为医疗供给侧改革的重要基础设施，其价值在于赋能而非颠覆。</p></section>
-
-
-      <details class="sources">
-        <summary>展开来源</summary>
-        <div class="source-list">
-    <div class="source-item">
       <h4><a href="https://36kr.com/p/3820150778531972?f=rss" target="_blank" rel="noopener noreferrer">圆桌对话：看见实效：从技术到处方，AI +医疗的场景落地与价值闭环| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
       <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
       <p>从五年前的技术炫技到今天的临床刚需，AI+医疗终于走过了“证明我能”的喧嚣，进入“解决痛点”的深水区。不做替代医生的空想，只做减轻负担的助手——这场对话告诉我们，AI医疗落地的第一步不是说服院长，而是赢得科室主任的信任；关键不是单点突破，而是多元数据联动形成闭环 圆桌对话直面AI进医院的真实卡点：…</p>
       <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
     </div>
+    </div>
 
+        <details class="sources source-overflow">
+          <summary>另有 1 条来源</summary>
+          <div class="source-list">
     <div class="source-item">
       <h4><a href="https://36kr.com/p/3820143885455751?f=rss" target="_blank" rel="noopener noreferrer">以场景为锚，以AI为翼：大健康产业的实践与突破| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
       <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
@@ -379,201 +239,425 @@ footer { color: var(--muted); font-size: 13px; }
       <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
     </div>
     </div>
-      </details>
+        </details>
+
+      </section>
 
     </article>
 
-    <article class="topic">
+    <article class="topic topic-card">
       <div class="topic-head">
-        <h3 class="topic-title">企业中标与能源保障动态</h3>
-        <span class="badge">科技</span>
+        <h3 class="topic-title">A股资本运作与监管</h3>
+        <span class="badge">金融财经</span>
       </div>
-      <p class="topic-summary">圣晖集成控股子公司中标约2.23亿元印尼厂房项目。马来西亚拟采购海外资源以保障能源供应至年底。</p>
+      <p class="topic-summary">国城矿业拟23.68亿元收购国城实业40%股权，中国核建拟定增募资不超40亿元。东芯股份筹划H股上市，*ST闻泰起诉安世控股涉案80亿元。*ST岩石被上交所终止上市，一汽解放高管拟增持。</p>
       <div class="topic-tags">
-        <span class="tag quality-b">质量 B</span>
-        <span class="tag">2 篇文章</span>
+        <span class="tag quality-a">质量 A</span>
+        <span class="tag">7 篇文章</span>
         <span class="tag">1 个信源</span>
         <span class="tag">36氪</span>
-        <span class="tag">score 1.25</span>
+        <span class="tag">score 1.38</span>
       </div>
-      <section class="topic-body"><h4>详情</h4><p>圣晖集成控股子公司中标约2.23亿元印尼厂房项目，拓展海外业务。受全球能源危机影响，马来西亚政府拟采购海外资源，以确保国家能源供应维持至今年年底。</p><h4>评论</h4><p>企业出海与能源保障反映了当前全球经济的双重挑战。制造业积极拓展海外市场寻求增长，而国家层面则需加强能源战略储备，以应对供应链波动带来的风险。</p></section>
+      <section class="topic-body"><h4>详情</h4><p>本主题收录 7 篇材料，主要来源包括 36氪。事实层面，36氪：海科新源：拟出售不超过85.11万股已回购股份：36氪获悉，海科新源公告，公司拟以集中竞价方式出售已回购股份，拟出售回购股份不超过85.11万股（即占公司当前总股本的0.38%），出售价格根据二级市场价格确定。；36氪：国城矿业：拟23.68亿元购买国城实业40%股权：36氪获悉，国城矿业公告，公司拟通过支付现金方式购买中信信托（代表中信信托・信华57号权益类信托计划）持有的国城实业40%的股权，交易价格23.68亿元。交易完成后，国城实业成为公司全资子公司，公司钼矿资源储量的权益占比将得到提升，有利于强化公司整…；36氪：东芯股份：筹划发行H股股票并在香港联交所主板上市：36氪获悉，东芯股份公告，公司拟发行境外上市股份（H股）并在香港联交所主板挂牌上市。截至目前，公司正积极与相关中介机构就本次发行上市的相关工作进行商讨。；36氪：*ST闻泰：起诉安世控股等侵权案获受理，涉案金额暂计80亿元：36氪获悉，*ST闻泰公告，公司及子公司裕成控股有限公司（简称“裕成控股”）近期就与鲁本·埃弗拉德·赫拉德·利希滕贝格、阿希姆·阿尔伯特·肯佩、斯特凡·蒂尔格、安世控股有…</p><h4>评论</h4><p>这个主题目前主要来自 36氪，更适合作为线索入口。评论层面，后续关键是观察市场价格、企业融资、资产负债表、监管政策和投资者预期是否相互印证。需要警惕单日价格波动和观点文章造成的过度外推；单来源内容不宜直接上升为确定判断。当前质量等级为 A，应结合后续新增来源再调整权重。</p></section>
 
 
-      <details class="sources">
-        <summary>展开来源</summary>
+      <section class="source-preview">
+        <h4>高分来源</h4>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3820206689014149?f=rss" target="_blank" rel="noopener noreferrer">圣晖集成：控股子公司中标约2.23亿元项目</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.15 · quality B</div>
-      <p>36氪获悉，圣晖集成公告，公司控股子公司PT ACTER INTEGRATION TECHNOLOGY INDONESIA（简称“印尼合资公司”）于近日收到PT. Hardases Abadi Indonesia发来的通知，印尼合资公司中标“PT.HAI F12及F12-1胶底与鞋类生产厂房第二期…</p>
+      <h4><a href="https://36kr.com/newsflashes/3820462163103881?f=rss" target="_blank" rel="noopener noreferrer">海科新源：拟出售不超过85.11万股已回购股份</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality A</div>
+      <p>36氪获悉，海科新源公告，公司拟以集中竞价方式出售已回购股份，拟出售回购股份不超过85.11万股（即占公司当前总股本的0.38%），出售价格根据二级市场价格确定。</p>
+      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820447530782855?f=rss" target="_blank" rel="noopener noreferrer">国城矿业：拟23.68亿元购买国城实业40%股权</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
+      <p>36氪获悉，国城矿业公告，公司拟通过支付现金方式购买中信信托（代表中信信托・信华57号权益类信托计划）持有的国城实业40%的股权，交易价格23.68亿元。交易完成后，国城实业成为公司全资子公司，公司钼矿资源储量的权益占比将得到提升，有利于强化公司整体业务布局及产业整合，进一步增厚公司归母净利润。</p>
       <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
     </div>
 
     <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3820231868797318?f=rss" target="_blank" rel="noopener noreferrer">马来西亚拟采购海外资源，保障能源供应维持至年底</a></h4>
+      <h4><a href="https://36kr.com/newsflashes/3820436098994313?f=rss" target="_blank" rel="noopener noreferrer">东芯股份：筹划发行H股股票并在香港联交所主板上市</a></h4>
       <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
-      <p>马来西亚副总理兼能源及水务转型部部长法迪拉22日表示，在全球能源危机冲击产供链并推高能源成本背景下，马来西亚政府正积极采取措施，包括从海外寻求能源供应补充来源，以确保国家能源供应维持至今年12月。（财联社）</p>
+      <p>36氪获悉，东芯股份公告，公司拟发行境外上市股份（H股）并在香港联交所主板挂牌上市。截至目前，公司正积极与相关中介机构就本次发行上市的相关工作进行商讨。</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820430377521541?f=rss" target="_blank" rel="noopener noreferrer">*ST闻泰：起诉安世控股等侵权案获受理，涉案金额暂计80亿元</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
+      <p>36氪获悉，*ST闻泰公告，公司及子公司裕成控股有限公司（简称“裕成控股”）近期就与鲁本·埃弗拉德·赫拉德·利希滕贝格、阿希姆·阿尔伯特·肯佩、斯特凡·蒂尔格、安世控股有限公司、安世有限公司、安泰可有限公司侵权责任纠纷一案向人民法院提起诉讼。公司已收到广东省东莞市中级人民法院《受理案件通知书》。被…</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820427297476742?f=rss" target="_blank" rel="noopener noreferrer">中国核建：拟定增募资不超40亿元</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
+      <p>36氪获悉，中国核建公告，公司拟向特定对象发行股票募资不超过40亿元，扣除发行费用后用于江苏徐圩核能供热发电厂一期工程1、2号机组核岛及其配套BOP土建工程、浙江金七门核电厂1、2号机组核岛及其配套土建及安装工程、偿还银行借款。</p>
       <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
     </div>
     </div>
-      </details>
+
+        <details class="sources source-overflow">
+          <summary>另有 2 条来源</summary>
+          <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820423404048774?f=rss" target="_blank" rel="noopener noreferrer">*ST岩石：上交所决定终止公司股票上市</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
+      <p>36氪获悉，*ST岩石公告，公司收到上交所《关于上海君道酒企业发展股份有限公司股票终止上市的决定》，上交所决定终止公司股票上市。公司股票于2026年6月1日进入退市整理期交易，预计最后交易日期为6月22日。</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820406813118857?f=rss" target="_blank" rel="noopener noreferrer">一汽解放：部分董事、全体高管拟合计不低于120万元增持公司股份</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
+      <p>36氪获悉，一汽解放公告，公司部分董事、全体高级管理人员计划自本公告日起6个月内，通过深交所交易系统集中竞价交易的方式增持公司A股股份，合计增持金额不低于120万元。本次增持计划不设定价格区间。</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+    </div>
+        </details>
+
+      </section>
 
     </article>
 
-    <article class="topic">
+    <article class="topic topic-card">
       <div class="topic-head">
-        <h3 class="topic-title">世界杯票价暴涨与青年就业争议</h3>
+        <h3 class="topic-title">AI商业化与科技合作</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">优步与印度JSW集团合作开发电动汽车，神舟二十三号准备就绪。AI初创公司Hark获英伟达等7亿美元融资。京东618将推AI数字人直播晚会，观想科技拟投10亿元建设AI基地。</p>
+      <div class="topic-tags">
+        <span class="tag quality-a">质量 A</span>
+        <span class="tag">3 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.3</span>
+      </div>
+      <section class="topic-body"><h4>详情</h4><p>本主题收录 3 篇材料，主要来源包括 36氪。事实层面，36氪：氪星晚报｜优步与印度JSW集团达成协议，合作在印度开发及部署电动汽车；英伟达、AMD、英特尔参投，AI初创公司Hark完成7亿美元融资；神舟二十三号发射在即，各系统准备就绪：大公司： Jefferies预计7-Eleven日本业务营业利润将达2270亿日元，本财年同店销售增长势头强劲 投行杰富瑞（…；36氪：京东618将用AI数字人打造全网首档AI购物直播晚会：36氪获悉，京东宣布将于6月1日晚8点推出全网首档AI购物直播晚会《京东618·赛博联欢会》。据了解，晚会将以AI数字人形象演绎多个经典IP。；36氪：观想科技：拟约10亿元投资建设巴里坤AI科技成果转化总部基地项目：36氪获悉，观想科技公告，公司全资子公司云网智算（新疆）科技有限公司拟于新疆维吾尔自治区哈密市巴里坤哈萨克自治县投资建设巴里坤AI科技成果转化总部基地项目，项目计划总投资约10亿元。。这些材料提供了同一主题下的不同切面：标题给出事件入口，摘要补充关键数字、主体和动作，来源数量则决定当前判断的稳固程度。</p><h4>评论</h4><p>这个主题目前主要来自 36氪，更适合作为线索入口。评论层面，后续关键是观察技术变化是否能转化为真实产品、成本下降、组织效率提升或新的产业分工。需要区分技术演示、商业落地和资本叙事；单来源内容不宜直接上升为确定判断。当前质量等级为 A，应结合后续新增来源再调整权重。</p></section>
+
+
+      <section class="source-preview">
+        <h4>高分来源</h4>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://36kr.com/p/3816943010071427?f=rss" target="_blank" rel="noopener noreferrer">氪星晚报｜优步与印度JSW集团达成协议，合作在印度开发及部署电动汽车；英伟达、AMD、英特尔参投，AI初创公司Hark完成7亿美元融资；神舟二十三号发射在即，各系统准备就绪</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
+      <p>大公司： Jefferies预计7-Eleven日本业务营业利润将达2270亿日元，本财年同店销售增长势头强劲 投行杰富瑞（Jefferies）分析师栗山俊介在最新发布的研究报告中指出，凭借在现做食品领域的拓展及有效的营销策略，日本零售巨头零售集团7&amp;I控股（Seven &amp; i Holdings）…</p>
+      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820427661398407?f=rss" target="_blank" rel="noopener noreferrer">京东618将用AI数字人打造全网首档AI购物直播晚会</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
+      <p>36氪获悉，京东宣布将于6月1日晚8点推出全网首档AI购物直播晚会《京东618·赛博联欢会》。据了解，晚会将以AI数字人形象演绎多个经典IP。</p>
+      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820401895018631?f=rss" target="_blank" rel="noopener noreferrer">观想科技：拟约10亿元投资建设巴里坤AI科技成果转化总部基地项目</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
+      <p>36氪获悉，观想科技公告，公司全资子公司云网智算（新疆）科技有限公司拟于新疆维吾尔自治区哈密市巴里坤哈萨克自治县投资建设巴里坤AI科技成果转化总部基地项目，项目计划总投资约10亿元。</p>
+      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+    </div>
+
+      </section>
+
+    </article>
+
+    <article class="topic topic-card">
+      <div class="topic-head">
+        <h3 class="topic-title">让好项目，更早被看见</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">提交报道链接： https://36kr.com/seek-report-new?t=1779418211266 36氪AI寻求报道 很多项目第一次被行业真正看见，往往已经不是它最需要被看见的时候。 那时候，它可能已经拿了融资，跑出了数据，进入了热门赛道，也开始频繁出现在投资人、媒体和产业方的视野…</p>
+      <div class="topic-tags">
+        <span class="tag quality-a">质量 A</span>
+        <span class="tag">1 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.27</span>
+      </div>
+      <section class="topic-body"><h4>详情</h4><p>本主题目前是单来源线索，来自 36氪。事实层面，36氪：让好项目，更早被看见：提交报道链接： https://36kr.com/seek-report-new?t=1779418211266 36氪AI寻求报道 很多项目第一次被行业真正看见，往往已经不是它最需要被看见的时候。 那时候，它可能已经拿了融资，跑出了数据，进入了热门赛道，也开始频繁出现在投资…。阅读时应优先确认原文中的时间、主体、数字和上下文，再判断它是否值得进入后续跟踪。</p><h4>评论</h4><p>这个主题目前主要来自 36氪，更适合作为线索入口。评论层面，后续关键是观察技术变化是否能转化为真实产品、成本下降、组织效率提升或新的产业分工。需要区分技术演示、商业落地和资本叙事；单来源内容不宜直接上升为确定判断。当前质量等级为 A，应结合后续新增来源再调整权重。</p></section>
+
+
+      <section class="source-preview">
+        <h4>高分来源</h4>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://36kr.com/p/3820226045104257?f=rss" target="_blank" rel="noopener noreferrer">让好项目，更早被看见</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
+      <p>提交报道链接： https://36kr.com/seek-report-new?t=1779418211266 36氪AI寻求报道 很多项目第一次被行业真正看见，往往已经不是它最需要被看见的时候。 那时候，它可能已经拿了融资，跑出了数据，进入了热门赛道，也开始频繁出现在投资人、媒体和产业方的视野…</p>
+      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+    </div>
+
+      </section>
+
+    </article>
+
+    <article class="topic topic-card">
+      <div class="topic-head">
+        <h3 class="topic-title">全球股市动态</h3>
+        <span class="badge">金融财经</span>
+      </div>
+      <p class="topic-summary">热门中概股美股盘前普跌，富途控股跌超37%，老虎证券跌超36%。老虎国际回应监管称内地客户资产占比约10%。美股大型科技股盘前普涨，英特尔涨超1%。</p>
+      <div class="topic-tags">
+        <span class="tag quality-a">质量 A</span>
+        <span class="tag">3 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.18</span>
+      </div>
+      <section class="topic-body"><h4>详情</h4><p>本主题收录 3 篇材料，主要来源包括 36氪。事实层面，36氪：热门中概股美股盘前普跌，富途控股跌超37%：36氪获悉，热门中概股美股盘前普跌，截至发稿，富途控股跌超37%，老虎证券跌超36%，拼多多、爱奇艺、蔚来跌超5%，京东、理想汽车跌超4%，阿里巴巴跌超3%，百度跌超2%，网易、小鹏集团跌超1%。；36氪：美股大型科技股盘前普涨，英特尔涨超1%：36氪获悉，美股大型科技股盘前普涨，截至发稿，英特尔涨超1%，特斯拉涨0.8%，英伟达涨0.58%，奈飞涨0.47%，微软涨0.42%，苹果涨0.36%，谷歌涨0.21%，亚马逊涨0.16%，Meta涨0.07%。；36氪：老虎国际：内地客户资产占比约10%：中国证监会联合八部委发布《关于规范内地投资者跨境证券期货基金经营活动的相关通告》，就行业相关经营活动进一步明确监管要求。老虎国际表示，将严格按照监管机构出台的全行业规范要求，稳步推进相关合规工作。老虎国际称，2023年以来，公司已全面停止为中国内地身份用户开设账…。这些材料提供了同一主题下的不同切面：标题给出事件入口，摘要补充关键数字、主体和动作，来源数量则决定当前判断的稳固程度。</p><h4>评论</h4><p>这个主题目前主要来自 36氪，更适合作为线索入口。评论层面，后续关键是观察市场价格、企业融资、资产负债表、监管政策和投资者预期是否相互印证。需要警惕单日价格波动和观点文章造成的过度外推；单来源内容不宜直接上升为确定判断。当前质量等级为 A，应结合后续新增来源再调整权重。</p></section>
+
+
+      <section class="source-preview">
+        <h4>高分来源</h4>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820460116480385?f=rss" target="_blank" rel="noopener noreferrer">热门中概股美股盘前普跌，富途控股跌超37%</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality A</div>
+      <p>36氪获悉，热门中概股美股盘前普跌，截至发稿，富途控股跌超37%，老虎证券跌超36%，拼多多、爱奇艺、蔚来跌超5%，京东、理想汽车跌超4%，阿里巴巴跌超3%，百度跌超2%，网易、小鹏集团跌超1%。</p>
+      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820458165178499?f=rss" target="_blank" rel="noopener noreferrer">美股大型科技股盘前普涨，英特尔涨超1%</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality A</div>
+      <p>36氪获悉，美股大型科技股盘前普涨，截至发稿，英特尔涨超1%，特斯拉涨0.8%，英伟达涨0.58%，奈飞涨0.47%，微软涨0.42%，苹果涨0.36%，谷歌涨0.21%，亚马逊涨0.16%，Meta涨0.07%。</p>
+      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820454545559936?f=rss" target="_blank" rel="noopener noreferrer">老虎国际：内地客户资产占比约10%</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality A</div>
+      <p>中国证监会联合八部委发布《关于规范内地投资者跨境证券期货基金经营活动的相关通告》，就行业相关经营活动进一步明确监管要求。老虎国际表示，将严格按照监管机构出台的全行业规范要求，稳步推进相关合规工作。老虎国际称，2023年以来，公司已全面停止为中国内地身份用户开设账户，同步停止对外广告、营销推广及活动…</p>
+      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+    </div>
+
+      </section>
+
+    </article>
+
+    <article class="topic topic-card">
+      <div class="topic-head">
+        <h3 class="topic-title">炬坤机器人发布全球首款工业级五指灵巧手</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">36氪获悉，炬坤机器人近日发布全球首款工业五指灵巧手Torch-hand1，专为工业场景打造，可适配多种复杂场景作业需求。</p>
+      <div class="topic-tags">
+        <span class="tag quality-b">质量 B</span>
+        <span class="tag">1 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.15</span>
+      </div>
+      <section class="topic-body"><h4>详情</h4><p>本主题目前是单来源线索，来自 36氪。事实层面，36氪：炬坤机器人发布全球首款工业级五指灵巧手：36氪获悉，炬坤机器人近日发布全球首款工业五指灵巧手Torch-hand1，专为工业场景打造，可适配多种复杂场景作业需求。。阅读时应优先确认原文中的时间、主体、数字和上下文，再判断它是否值得进入后续跟踪。</p><h4>评论</h4><p>这个主题目前主要来自 36氪，更适合作为线索入口。评论层面，后续关键是观察技术变化是否能转化为真实产品、成本下降、组织效率提升或新的产业分工。需要区分技术演示、商业落地和资本叙事；单来源内容不宜直接上升为确定判断。当前质量等级为 B，应结合后续新增来源再调整权重。</p></section>
+
+
+      <section class="source-preview">
+        <h4>高分来源</h4>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820393192083592?f=rss" target="_blank" rel="noopener noreferrer">炬坤机器人发布全球首款工业级五指灵巧手</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
+      <p>36氪获悉，炬坤机器人近日发布全球首款工业五指灵巧手Torch-hand1，专为工业场景打造，可适配多种复杂场景作业需求。</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+    </div>
+
+      </section>
+
+    </article>
+
+    <article class="topic topic-card">
+      <div class="topic-head">
+        <h3 class="topic-title">澜起科技：股东拟询价转让公司约1%股份</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">36氪获悉，澜起科技公告，股东上海融迎企业管理合伙企业（有限合伙）拟询价转让公司股份1222.8万股，占公司总股本的比例约为1%。</p>
+      <div class="topic-tags">
+        <span class="tag quality-b">质量 B</span>
+        <span class="tag">1 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.15</span>
+      </div>
+      <section class="topic-body"><h4>详情</h4><p>本主题目前是单来源线索，来自 36氪。事实层面，36氪：澜起科技：股东拟询价转让公司约1%股份：36氪获悉，澜起科技公告，股东上海融迎企业管理合伙企业（有限合伙）拟询价转让公司股份1222.8万股，占公司总股本的比例约为1%。。阅读时应优先确认原文中的时间、主体、数字和上下文，再判断它是否值得进入后续跟踪。</p><h4>评论</h4><p>这个主题目前主要来自 36氪，更适合作为线索入口。评论层面，后续关键是观察技术变化是否能转化为真实产品、成本下降、组织效率提升或新的产业分工。需要区分技术演示、商业落地和资本叙事；单来源内容不宜直接上升为确定判断。当前质量等级为 B，应结合后续新增来源再调整权重。</p></section>
+
+
+      <section class="source-preview">
+        <h4>高分来源</h4>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820385253331074?f=rss" target="_blank" rel="noopener noreferrer">澜起科技：股东拟询价转让公司约1%股份</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
+      <p>36氪获悉，澜起科技公告，股东上海融迎企业管理合伙企业（有限合伙）拟询价转让公司股份1222.8万股，占公司总股本的比例约为1%。</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+    </div>
+
+      </section>
+
+    </article>
+
+    <article class="topic topic-card">
+      <div class="topic-head">
+        <h3 class="topic-title">喜力公布CEO选拔进展：现任CEO本月底离职，暂不任命临时CEO</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">5月22日，全球啤酒巨头喜力就首席执行官选拔进程的最新动态发表声明称，现任喜力CEO兼执行董事会主席多夫·范登·布林克（Dolf van den Brink）将于5月31日正式结束其任期，新任CEO的选拔工作进展顺利，预计将在短期内完成。在此之前，外界的任何相关猜测均属不实传言。喜力同时宣布，在正…</p>
+      <div class="topic-tags">
+        <span class="tag quality-b">质量 B</span>
+        <span class="tag">1 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.15</span>
+      </div>
+      <section class="topic-body"><h4>详情</h4><p>本主题目前是单来源线索，来自 36氪。事实层面，36氪：喜力公布CEO选拔进展：现任CEO本月底离职，暂不任命临时CEO：5月22日，全球啤酒巨头喜力就首席执行官选拔进程的最新动态发表声明称，现任喜力CEO兼执行董事会主席多夫·范登·布林克（Dolf van den Brink）将于5月31日正式结束其任期，新任CEO的选拔工作进展顺利，预计将在短期内…。阅读时应优先确认原文中的时间、主体、数字和上下文，再判断它是否值得进入后续跟踪。</p><h4>评论</h4><p>这个主题目前主要来自 36氪，更适合作为线索入口。评论层面，后续关键是观察技术变化是否能转化为真实产品、成本下降、组织效率提升或新的产业分工。需要区分技术演示、商业落地和资本叙事；单来源内容不宜直接上升为确定判断。当前质量等级为 B，应结合后续新增来源再调整权重。</p></section>
+
+
+      <section class="source-preview">
+        <h4>高分来源</h4>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820383518200195?f=rss" target="_blank" rel="noopener noreferrer">喜力公布CEO选拔进展：现任CEO本月底离职，暂不任命临时CEO</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
+      <p>5月22日，全球啤酒巨头喜力就首席执行官选拔进程的最新动态发表声明称，现任喜力CEO兼执行董事会主席多夫·范登·布林克（Dolf van den Brink）将于5月31日正式结束其任期，新任CEO的选拔工作进展顺利，预计将在短期内完成。在此之前，外界的任何相关猜测均属不实传言。喜力同时宣布，在正…</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+    </div>
+
+      </section>
+
+    </article>
+
+    <article class="topic topic-card">
+      <div class="topic-head">
+        <h3 class="topic-title">歌尔股份：目前未涉及光模块相关业务</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">36氪获悉，歌尔股份在互动平台表示，公司目前未涉及光模块相关业务。</p>
+      <div class="topic-tags">
+        <span class="tag quality-b">质量 B</span>
+        <span class="tag">1 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.15</span>
+      </div>
+      <section class="topic-body"><h4>详情</h4><p>本主题目前是单来源线索，来自 36氪。事实层面，36氪：歌尔股份：目前未涉及光模块相关业务：36氪获悉，歌尔股份在互动平台表示，公司目前未涉及光模块相关业务。。阅读时应优先确认原文中的时间、主体、数字和上下文，再判断它是否值得进入后续跟踪。</p><h4>评论</h4><p>这个主题目前主要来自 36氪，更适合作为线索入口。评论层面，后续关键是观察技术变化是否能转化为真实产品、成本下降、组织效率提升或新的产业分工。需要区分技术演示、商业落地和资本叙事；单来源内容不宜直接上升为确定判断。当前质量等级为 B，应结合后续新增来源再调整权重。</p></section>
+
+
+      <section class="source-preview">
+        <h4>高分来源</h4>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820380785905798?f=rss" target="_blank" rel="noopener noreferrer">歌尔股份：目前未涉及光模块相关业务</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
+      <p>36氪获悉，歌尔股份在互动平台表示，公司目前未涉及光模块相关业务。</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+    </div>
+
+      </section>
+
+    </article>
+
+    <article class="topic topic-card">
+      <div class="topic-head">
+        <h3 class="topic-title">中微公司：巽鑫投资拟减持公司不超2%股份</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">36氪获悉，中微公司公告，持股8.90%的股东巽鑫（上海）投资有限公司（简称“巽鑫投资”）计划15个交易日后的3个月内，通过集中竞价、大宗交易方式减持公司股票不超过总股本的2%。</p>
+      <div class="topic-tags">
+        <span class="tag quality-b">质量 B</span>
+        <span class="tag">1 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.15</span>
+      </div>
+      <section class="topic-body"><h4>详情</h4><p>本主题目前是单来源线索，来自 36氪。事实层面，36氪：中微公司：巽鑫投资拟减持公司不超2%股份：36氪获悉，中微公司公告，持股8.90%的股东巽鑫（上海）投资有限公司（简称“巽鑫投资”）计划15个交易日后的3个月内，通过集中竞价、大宗交易方式减持公司股票不超过总股本的2%。。阅读时应优先确认原文中的时间、主体、数字和上下文，再判断它是否值得进入后续跟踪。</p><h4>评论</h4><p>这个主题目前主要来自 36氪，更适合作为线索入口。评论层面，后续关键是观察技术变化是否能转化为真实产品、成本下降、组织效率提升或新的产业分工。需要区分技术演示、商业落地和资本叙事；单来源内容不宜直接上升为确定判断。当前质量等级为 B，应结合后续新增来源再调整权重。</p></section>
+
+
+      <section class="source-preview">
+        <h4>高分来源</h4>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820372899958913?f=rss" target="_blank" rel="noopener noreferrer">中微公司：巽鑫投资拟减持公司不超2%股份</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
+      <p>36氪获悉，中微公司公告，持股8.90%的股东巽鑫（上海）投资有限公司（简称“巽鑫投资”）计划15个交易日后的3个月内，通过集中竞价、大宗交易方式减持公司股票不超过总股本的2%。</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+    </div>
+
+      </section>
+
+    </article>
+
+    <article class="topic topic-card">
+      <div class="topic-head">
+        <h3 class="topic-title">翱捷科技：阿里网络拟减持公司不超3%股份</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">36氪获悉，翱捷科技公告，持股12.4333%的股东阿里巴巴（中国）网络技术有限公司（简称“阿里网络”）计划15个交易日后的3个月内，通过大宗交易方式、集中竞价交易方式减持公司股份合计不超过1254.9万股，减持比例不超过公司总股本的3%。</p>
+      <div class="topic-tags">
+        <span class="tag quality-b">质量 B</span>
+        <span class="tag">1 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.15</span>
+      </div>
+      <section class="topic-body"><h4>详情</h4><p>本主题目前是单来源线索，来自 36氪。事实层面，36氪：翱捷科技：阿里网络拟减持公司不超3%股份：36氪获悉，翱捷科技公告，持股12.4333%的股东阿里巴巴（中国）网络技术有限公司（简称“阿里网络”）计划15个交易日后的3个月内，通过大宗交易方式、集中竞价交易方式减持公司股份合计不超过1254.9万股，减持比例不超过公司总股本的3%。。阅读时应优先确认原文中的时间、主体、数字和上下文，再判断它是否值得进入后续跟踪。</p><h4>评论</h4><p>这个主题目前主要来自 36氪，更适合作为线索入口。评论层面，后续关键是观察技术变化是否能转化为真实产品、成本下降、组织效率提升或新的产业分工。需要区分技术演示、商业落地和资本叙事；单来源内容不宜直接上升为确定判断。当前质量等级为 B，应结合后续新增来源再调整权重。</p></section>
+
+
+      <section class="source-preview">
+        <h4>高分来源</h4>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820368143176070?f=rss" target="_blank" rel="noopener noreferrer">翱捷科技：阿里网络拟减持公司不超3%股份</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
+      <p>36氪获悉，翱捷科技公告，持股12.4333%的股东阿里巴巴（中国）网络技术有限公司（简称“阿里网络”）计划15个交易日后的3个月内，通过大宗交易方式、集中竞价交易方式减持公司股份合计不超过1254.9万股，减持比例不超过公司总股本的3%。</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+    </div>
+
+      </section>
+
+    </article>
+
+    <article class="topic topic-card">
+      <div class="topic-head">
+        <h3 class="topic-title">北京交通大学官网大量删除校长余祖俊信息</h3>
         <span class="badge">国际政治</span>
       </div>
-      <p class="topic-summary">世界杯门票价格暴涨五倍引发球迷不满。亚马逊英国负责人呼吁不要因失业问题责怪年轻人，引发关于就业责任归属的讨论。</p>
+      <p class="topic-summary">2026-05-22T17:37:49+08:00 北京交通大学校长余祖俊已有近一个月未在公众视野中现身，多次缺席必要活动。北交大官网现任领导一栏仍正常展示余祖俊的信息与职务，但已大量删除他过往的活动信息。（取自北京交通大学微博） 中国北京交通大学校长余祖俊已有近一个月未在公众视野中现身，多次缺席…</p>
       <div class="topic-tags">
         <span class="tag quality-b">质量 B</span>
-        <span class="tag">2 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">BBC 中国</span>
-        <span class="tag">score 1.162</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>世界杯门票价格暴涨五倍引发球迷强烈不满。与此同时，亚马逊英国负责人呼吁社会不要因失业问题责怪年轻人，引发关于就业责任归属的广泛讨论。</p><h4>评论</h4><p>商业赛事定价需兼顾公众承受力，过高的溢价可能损害品牌形象。就业问题的复杂性要求社会各界共同承担，而非简单归咎于特定群体，结构性改革才是解决之道。</p></section>
-
-
-      <details class="sources">
-        <summary>展开来源</summary>
-        <div class="source-list">
-    <div class="source-item">
-      <h4><a href="https://www.bbc.com/zhongwen/articles/cm2p1d71833o/trad?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">「我愛世界盃，但價格實在太離譜」：門票價暴漲五倍，球迷什麼反應？</a></h4>
-      <div class="source-meta">BBC 中国 · 国际政治 · score 1.062 · quality B</div>
-      <p>圖像來源， Getty Images Article Information Author, 奧爾加・薩夫丘克（Olga Sawczuk）、安東尼奧·古貝羅（Antonio Cubero） Published 閱讀時間: 4 分鐘 圭多・佩拉爾塔（Guido Peralta）是一名會計師，也是阿根…</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.82；有可读摘要；发布时间较新</p>
-    </div>
-
-    <div class="source-item">
-      <h4><a href="https://www.bbc.com/zhongwen/articles/cx21rjpz8e1o/trad?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">亞馬遜英國負責人：別再因失業問題責怪年輕人</a></h4>
-      <div class="source-meta">BBC 中国 · 国际政治 · score 1.032 · quality B</div>
-      <p>圖像來源， Amazon 圖像加註文字， 約翰·鮑姆弗里是亞馬遜英國區的負責人。 Article Information Author, 艾默・莫羅（Emer Moreau） Role, BBC商業記者 和 Author, 肖恩・法靈頓（Sean Farrington） Role, 《Big Bo…</p>
-      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.82；有可读摘要；发布时间较新</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">乘联分会：5月狭义乘用车零售预计152万辆，新能源预计95万辆</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">36氪获悉，据乘联分会，初步推算本月狭义乘用车总市场约为152万辆，其中新能源零售可达95万左右，渗透率有望突破62.5%。</p>
-      <div class="topic-tags">
-        <span class="tag quality-c">质量 C</span>
         <span class="tag">1 篇文章</span>
         <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.15</span>
+        <span class="tag">联合早报</span>
+        <span class="tag">score 1.146</span>
       </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 36氪。核心内容是：36氪报道，乘联分会：5月狭义乘用车零售预计152万辆，新能源预计95万辆：36氪获悉，据乘联分会，初步推算本月狭义乘用车总市场约为152万辆，其中新能源零售可达95万左右，渗透率有望突破62.5%。。</p><h4>评论</h4><p>这条线索目前主要来自 36氪，可作为观察入口：36氪获悉，据乘联分会，初步推算本月狭义乘用车总市场约为152万辆，其中新能源零售可达95万左右，渗透率有望突破62.5%。。后续关键是观察技术变化是否能转化为真实产品、成本下降或组织效率提升。仍应回到原文核对，当前质量等级为 C。</p></section>
+      <section class="topic-body"><h4>详情</h4><p>本主题目前是单来源线索，来自 联合早报。事实层面，联合早报：北京交通大学官网大量删除校长余祖俊信息：2026-05-22T17:37:49+08:00 北京交通大学校长余祖俊已有近一个月未在公众视野中现身，多次缺席必要活动。北交大官网现任领导一栏仍正常展示余祖俊的信息与职务，但已大量删除他过往的活动信息。（取自北京交通大学微博） 中国北京交通大学校长余祖俊…。阅读时应优先确认原文中的时间、主体、数字和上下文，再判断它是否值得进入后续跟踪。</p><h4>评论</h4><p>这个主题目前主要来自 联合早报，更适合作为线索入口。评论层面，后续关键是观察相关行动背后的制度安排、外交信号、国内政治约束和后续谈判空间。需要避免把单一表态直接理解为政策结果；单来源内容不宜直接上升为确定判断。当前质量等级为 B，应结合后续新增来源再调整权重。</p></section>
 
 
-      <details class="sources">
-        <summary>查看来源</summary>
+      <section class="source-preview">
+        <h4>高分来源</h4>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3820228917317764?f=rss" target="_blank" rel="noopener noreferrer">乘联分会：5月狭义乘用车零售预计152万辆，新能源预计95万辆</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
-      <p>36氪获悉，据乘联分会，初步推算本月狭义乘用车总市场约为152万辆，其中新能源零售可达95万左右，渗透率有望突破62.5%。</p>
-      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+      <h4><a href="https://www.zaobao.com/news/china/story20260522-9091152" target="_blank" rel="noopener noreferrer">北京交通大学官网大量删除校长余祖俊信息</a></h4>
+      <div class="source-meta">联合早报 · 国际政治 · score 1.026 · quality B</div>
+      <p>2026-05-22T17:37:49+08:00 北京交通大学校长余祖俊已有近一个月未在公众视野中现身，多次缺席必要活动。北交大官网现任领导一栏仍正常展示余祖俊的信息与职务，但已大量删除他过往的活动信息。（取自北京交通大学微博） 中国北京交通大学校长余祖俊已有近一个月未在公众视野中现身，多次缺席…</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
     </div>
     </div>
-      </details>
 
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">赛百味在合肥成立新餐饮管理公司，注册资本1000万</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">36氪获悉，天眼查App显示，近日，合肥赛百味餐饮管理有限公司成立，法定代表人为冯顺，注册资本1000万人民币，经营范围包括餐饮管理、工艺美术品及礼仪用品销售、玩具销售等，由赛百味餐饮管理（上海）有限公司全资持股。</p>
-      <div class="topic-tags">
-        <span class="tag quality-c">质量 C</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.15</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 36氪。核心内容是：36氪报道，赛百味在合肥成立新餐饮管理公司，注册资本1000万：36氪获悉，天眼查App显示，近日，合肥赛百味餐饮管理有限公司成立，法定代表人为冯顺，注册资本1000万人民币，经营范围包括餐饮管理、工艺美术品及礼仪用品销售、玩具销售等，由赛百味餐饮管理（上海）有限公司全…。</p><h4>评论</h4><p>这条线索目前主要来自 36氪，可作为观察入口：36氪获悉，天眼查App显示，近日，合肥赛百味餐饮管理有限公司成立，法定代表人为冯顺，注册资本1000万人民币，经营范围包括餐饮管理、工艺美术品及礼仪用品销售、玩具销售等，由…。后续关键是观察技术变化是否能转化为真实产品、成本下降或组织效率提升。仍应回到原文核对，当前质量等级为 C。</p></section>
-
-
-      <details class="sources">
-        <summary>查看来源</summary>
-        <div class="source-list">
-    <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3820227012890756?f=rss" target="_blank" rel="noopener noreferrer">赛百味在合肥成立新餐饮管理公司，注册资本1000万</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
-      <p>36氪获悉，天眼查App显示，近日，合肥赛百味餐饮管理有限公司成立，法定代表人为冯顺，注册资本1000万人民币，经营范围包括餐饮管理、工艺美术品及礼仪用品销售、玩具销售等，由赛百味餐饮管理（上海）有限公司全资持股。</p>
-      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">雅诗兰黛与Puig终止合并谈判，组建美妆巨头计划作罢</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">美国美妆巨头雅诗兰黛已终止与西班牙竞品Puig的合并谈判，这笔交易原本有望打造一家市值近400亿美元的美妆时尚行业巨头。雅诗兰黛周四表示，双方已终止此次并购磋商，Puig也证实谈判宣告结束。（新浪财经）</p>
-      <div class="topic-tags">
-        <span class="tag quality-c">质量 C</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.15</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 36氪。核心内容是：36氪报道，雅诗兰黛与Puig终止合并谈判，组建美妆巨头计划作罢：美国美妆巨头雅诗兰黛已终止与西班牙竞品Puig的合并谈判，这笔交易原本有望打造一家市值近400亿美元的美妆时尚行业巨头。雅诗兰黛周四表示，双方已终止此次并购磋商，Puig也证实谈判宣告结束。（新浪财经）。</p><h4>评论</h4><p>这条线索目前主要来自 36氪，可作为观察入口：美国美妆巨头雅诗兰黛已终止与西班牙竞品Puig的合并谈判，这笔交易原本有望打造一家市值近400亿美元的美妆时尚行业巨头。雅诗兰黛周四表示，双方已终止此次并购磋商，Puig也证…。后续关键是观察技术变化是否能转化为真实产品、成本下降或组织效率提升。仍应回到原文核对，当前质量等级为 C。</p></section>
-
-
-      <details class="sources">
-        <summary>查看来源</summary>
-        <div class="source-list">
-    <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3820222856237189?f=rss" target="_blank" rel="noopener noreferrer">雅诗兰黛与Puig终止合并谈判，组建美妆巨头计划作罢</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
-      <p>美国美妆巨头雅诗兰黛已终止与西班牙竞品Puig的合并谈判，这笔交易原本有望打造一家市值近400亿美元的美妆时尚行业巨头。雅诗兰黛周四表示，双方已终止此次并购磋商，Puig也证实谈判宣告结束。（新浪财经）</p>
-      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">马来西亚6月1日起推社交媒体监管新政：限制16岁以下用户使用</h3>
-        <span class="badge">科技</span>
-      </div>
-      <p class="topic-summary">马来西亚通信监管机构22日表示，将从6月1日起推出新措施，减少青少年在网络平台上接触有害内容。马来西亚通信与多媒体委员会在一份声明中指出，新规将要求网络服务提供商设置保护机制，限制16岁以下用户注册及拥有账户，并强化平台的内容治理。（财联社）</p>
-      <div class="topic-tags">
-        <span class="tag quality-c">质量 C</span>
-        <span class="tag">1 篇文章</span>
-        <span class="tag">1 个信源</span>
-        <span class="tag">36氪</span>
-        <span class="tag">score 1.15</span>
-      </div>
-      <section class="topic-body"><h4>详情</h4><p>这条信息来自 36氪。核心内容是：36氪报道，马来西亚6月1日起推社交媒体监管新政：限制16岁以下用户使用：马来西亚通信监管机构22日表示，将从6月1日起推出新措施，减少青少年在网络平台上接触有害内容。马来西亚通信与多媒体委员会在一份声明中指出，新规将要求网络服务提供商设置保护机制，限制16岁以下用户注…。</p><h4>评论</h4><p>这条线索目前主要来自 36氪，可作为观察入口：马来西亚通信监管机构22日表示，将从6月1日起推出新措施，减少青少年在网络平台上接触有害内容。马来西亚通信与多媒体委员会在一份声明中指出，新规将要求网络服务提供商设置保护机制…。后续关键是观察技术变化是否能转化为真实产品、成本下降或组织效率提升。仍应回到原文核对，当前质量等级为 C。</p></section>
-
-
-      <details class="sources">
-        <summary>查看来源</summary>
-        <div class="source-list">
-    <div class="source-item">
-      <h4><a href="https://36kr.com/newsflashes/3820217821417602?f=rss" target="_blank" rel="noopener noreferrer">马来西亚6月1日起推社交媒体监管新政：限制16岁以下用户使用</a></h4>
-      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
-      <p>马来西亚通信监管机构22日表示，将从6月1日起推出新措施，减少青少年在网络平台上接触有害内容。马来西亚通信与多媒体委员会在一份声明中指出，新规将要求网络服务提供商设置保护机制，限制16岁以下用户注册及拥有账户，并强化平台的内容治理。（财联社）</p>
-      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
-    </div>
-    </div>
-      </details>
+      </section>
 
     </article>
     </section>

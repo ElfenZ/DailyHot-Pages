@@ -49,6 +49,20 @@ a:hover { text-decoration: underline; }
 }
 .brief h2 { margin-top: 0; }
 .brief p { margin: 0 0 8px; }
+.daily-main { display: grid; gap: 18px; }
+.category-section {
+  display: grid;
+  gap: 10px;
+}
+.category-heading {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: baseline;
+}
+.category-heading h2 { margin: 0; }
 .topic-list { display: grid; gap: 10px; }
 .topic {
   background: var(--panel);
@@ -84,6 +98,12 @@ a:hover { text-decoration: underline; }
 }
 details.sources { margin-top: 10px; }
 details.sources summary { cursor: pointer; color: var(--accent); font-size: 14px; }
+.source-preview {
+  margin-top: 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+.source-preview h4 { margin: 0 0 8px; font-size: 14px; color: #252b33; }
 .source-list {
   display: grid;
   gap: 8px;
@@ -134,7 +154,7 @@ footer { color: var(--muted); font-size: 13px; }
 <body>
   <header>
     <h1>战争与安全 - DailyHot 2026-05-22</h1>
-    <div class="meta">生成时间：2026-05-22T09:01:17+00:00 · 最近 24 小时 · 30 个主题 · 40 条来源</div>
+    <div class="meta">生成时间：2026-05-22T14:20:24+00:00 · 最近 24 小时 · 64 个主题 · 80 条来源</div>
     <nav class="nav">
       <a href="../index.html">首页</a>
       <a href="../daily/2026-05-22.html">完整日报</a>
@@ -142,7 +162,15 @@ footer { color: var(--muted); font-size: 13px; }
       <a href="../categories/tech.html">科技</a> <a href="../categories/finance.html">金融财经</a> <a href="../categories/politics.html">国际政治</a> <a href="../categories/war.html">战争与安全</a>
     </nav>
   </header>
-  <main><h2>战争与安全</h2><p class="meta">今日暂无入选主题。</p></main>
+  <main>
+    <section class="category-section" id="category-war" data-category="war">
+      <div class="category-heading">
+        <h2>战争与安全</h2>
+        <div class="meta">0 个主题 · 0 条入选来源 · 0 条候选 · 保底缺口 8</div>
+      </div>
+      <p class="meta">今日暂无入选主题：该分类在当前时间窗口内没有候选内容。</p>
+    </section>
+    </main>
   <footer>DailyHot 保留原文链接；摘要用于快速浏览，关键判断请回到原文核对。</footer>
 </body>
 </html>

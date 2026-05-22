@@ -49,6 +49,20 @@ a:hover { text-decoration: underline; }
 }
 .brief h2 { margin-top: 0; }
 .brief p { margin: 0 0 8px; }
+.daily-main { display: grid; gap: 18px; }
+.category-section {
+  display: grid;
+  gap: 10px;
+}
+.category-heading {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: baseline;
+}
+.category-heading h2 { margin: 0; }
 .topic-list { display: grid; gap: 10px; }
 .topic {
   background: var(--panel);
@@ -84,6 +98,12 @@ a:hover { text-decoration: underline; }
 }
 details.sources { margin-top: 10px; }
 details.sources summary { cursor: pointer; color: var(--accent); font-size: 14px; }
+.source-preview {
+  margin-top: 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+.source-preview h4 { margin: 0 0 8px; font-size: 14px; color: #252b33; }
 .source-list {
   display: grid;
   gap: 8px;
@@ -134,7 +154,7 @@ footer { color: var(--muted); font-size: 13px; }
 <body>
   <header>
     <h1>信源健康 - DailyHot 2026-05-22</h1>
-    <div class="meta">生成时间：2026-05-22T09:01:17+00:00 · 最近 24 小时 · 30 个主题 · 40 条来源</div>
+    <div class="meta">生成时间：2026-05-22T14:20:24+00:00 · 最近 24 小时 · 64 个主题 · 80 条来源</div>
     <nav class="nav">
       <a href="index.html">首页</a>
       <a href="daily/2026-05-22.html">完整日报</a>
@@ -157,7 +177,7 @@ footer { color: var(--muted); font-size: 13px; }
       <td><strong>36氪</strong><br><span class="meta">36kr · rss · 科技</span></td>
       <td class="status-healthy">healthy</td>
       <td>30<br><span class="meta">近 7 天 30</span></td>
-      <td><span class="meta">first: 2026-05-22T17:01:09+08:00<br>last: 2026-05-22T17:01:09+08:00</span></td>
+      <td><span class="meta">first: 2026-05-22T22:20:17+08:00<br>last: 2026-05-22T22:20:17+08:00</span></td>
       <td>-</td>
     </tr>
 
@@ -165,7 +185,7 @@ footer { color: var(--muted); font-size: 13px; }
       <td><strong>BBC 中国</strong><br><span class="meta">bbc-zhongwen · rss · 国际政治</span></td>
       <td class="status-healthy">healthy</td>
       <td>5<br><span class="meta">近 7 天 5</span></td>
-      <td><span class="meta">first: 2026-05-22T08:20:48+08:00<br>last: 2026-05-22T16:00:44+08:00</span></td>
+      <td><span class="meta">first: 2026-05-22T08:20:48+08:00<br>last: 2026-05-22T16:52:03+08:00</span></td>
       <td>-</td>
     </tr>
 
@@ -173,7 +193,7 @@ footer { color: var(--muted); font-size: 13px; }
       <td><strong>DW 中文</strong><br><span class="meta">dw-zhongwen · rss · 国际政治</span></td>
       <td class="status-low-yield">low-yield</td>
       <td>1<br><span class="meta">近 7 天 1</span></td>
-      <td><span class="meta">first: 2026-05-22T17:01:12+08:00<br>last: 2026-05-22T17:01:12+08:00</span></td>
+      <td><span class="meta">first: 2026-05-22T22:20:18+08:00<br>last: 2026-05-22T22:20:18+08:00</span></td>
       <td>Source dw-zhongwen is low-yield</td>
     </tr>
 
@@ -189,7 +209,7 @@ footer { color: var(--muted); font-size: 13px; }
       <td><strong>端传媒</strong><br><span class="meta">theinitium-rss · rss · 国际政治</span></td>
       <td class="status-healthy">healthy</td>
       <td>15<br><span class="meta">近 7 天 15</span></td>
-      <td><span class="meta">first: 2026-05-19T10:50:43+08:00<br>last: 2026-05-22T07:00:59+08:00</span></td>
+      <td><span class="meta">first: 2026-05-20T06:59:06+08:00<br>last: 2026-05-22T20:30:12+08:00</span></td>
       <td>-</td>
     </tr>
 
@@ -205,7 +225,7 @@ footer { color: var(--muted); font-size: 13px; }
       <td><strong>三联生活周刊</strong><br><span class="meta">lifeweek · rss · 国际政治</span></td>
       <td class="status-healthy">healthy</td>
       <td>5<br><span class="meta">近 7 天 5</span></td>
-      <td><span class="meta">first: 2026-05-21T12:00:00+08:00<br>last: 2026-05-21T21:00:00+08:00</span></td>
+      <td><span class="meta">first: 2026-05-21T21:00:00+08:00<br>last: 2026-05-22T12:25:00+08:00</span></td>
       <td>-</td>
     </tr>
 
@@ -221,7 +241,7 @@ footer { color: var(--muted); font-size: 13px; }
       <td><strong>今日话题-雪球</strong><br><span class="meta">xueqiu-hot-topic · rss · 金融财经</span></td>
       <td class="status-healthy">healthy</td>
       <td>20<br><span class="meta">近 7 天 20</span></td>
-      <td><span class="meta">first: 2026-05-19T17:45:23+08:00<br>last: 2026-05-21T17:57:17+08:00</span></td>
+      <td><span class="meta">first: 2026-05-20T18:00:31+08:00<br>last: 2026-05-22T18:05:34+08:00</span></td>
       <td>-</td>
     </tr>
 
@@ -237,7 +257,7 @@ footer { color: var(--muted); font-size: 13px; }
       <td><strong>联合早报</strong><br><span class="meta">zaobao · rss · 国际政治</span></td>
       <td class="status-healthy">healthy</td>
       <td>20<br><span class="meta">近 7 天 20</span></td>
-      <td><span class="meta">first: 2026-05-22T09:48:01+08:00<br>last: 2026-05-22T12:48:02+08:00</span></td>
+      <td><span class="meta">first: 2026-05-22T10:18:02+08:00<br>last: 2026-05-22T21:48:02+08:00</span></td>
       <td>-</td>
     </tr>
     </tbody>
