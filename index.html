@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DailyHot 2026-05-21</title>
+  <title>DailyHot 2026-05-22</title>
   <style>
 :root {
   color-scheme: light;
@@ -30,6 +30,10 @@ h2 { margin: 28px 0 12px; font-size: 18px; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 .meta, .badge, .source-meta { color: var(--muted); font-size: 13px; }
+.quality-a { color: #116329; border-color: #b7e2c0; background: #eaf8ee; }
+.quality-b { color: #1f6feb; border-color: #bfd7ff; background: #eef5ff; }
+.quality-c { color: #8a5a00; border-color: #efd5a6; background: #fff8e8; }
+.quality-d { color: #8c2f0f; border-color: #f0c2b8; background: #fff1ee; }
 .nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 .nav a {
   border: 1px solid var(--line);
@@ -60,6 +64,13 @@ a:hover { text-decoration: underline; }
 }
 .topic-title { margin: 0; font-size: 17px; line-height: 1.45; }
 .topic-summary { margin: 8px 0 10px; color: #343a42; }
+.topic-body {
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.topic-body h4 { margin: 0 0 4px; font-size: 14px; color: #252b33; }
+.topic-body p { margin: 0 0 10px; color: #343a42; }
 .topic-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
 .tag {
   display: inline-flex;
@@ -84,6 +95,21 @@ details.sources summary { cursor: pointer; color: var(--accent); font-size: 14px
 .source-item:last-child { border-bottom: 0; padding-bottom: 0; }
 .source-item h4 { margin: 0 0 4px; font-size: 15px; }
 .source-item p { margin: 4px 0; color: #3d444d; }
+.event-review {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 14px 0;
+  margin: 14px 0 10px;
+}
+.event-review h4 { margin: 0 0 8px; font-size: 16px; }
+.event-review p { margin: 0 0 10px; color: #252b33; }
+.event-review sup a { font-size: 12px; font-weight: 600; }
+.review-note { color: var(--muted); font-size: 12px; margin-top: 8px; }
+.reference-list {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+.reference-list li { margin: 4px 0; font-size: 13px; color: #3d444d; }
 .warning {
   border: 1px solid #efd5a6;
   background: #fff8e8;
@@ -91,6 +117,13 @@ details.sources summary { cursor: pointer; color: var(--accent); font-size: 14px
   border-radius: 8px;
   margin: 12px 0;
 }
+.health-table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); }
+.health-table th, .health-table td { border-bottom: 1px solid var(--line); padding: 8px; text-align: left; vertical-align: top; font-size: 14px; }
+.health-table th { background: var(--soft); }
+.status-healthy { color: #116329; }
+.status-failed { color: #b42318; }
+.status-disabled, .status-reserved { color: var(--muted); }
+.status-stale, .status-low-yield { color: #8a5a00; }
 footer { color: var(--muted); font-size: 13px; }
 @media (max-width: 640px) {
   header, main, footer { padding-left: 14px; padding-right: 14px; }
@@ -100,11 +133,12 @@ footer { color: var(--muted); font-size: 13px; }
 </head>
 <body>
   <header>
-    <h1>DailyHot 2026-05-21</h1>
-    <div class="meta">生成时间：2026-05-21T23:54:59+00:00 · 最近 24 小时 · 24 个主题 · 40 条来源</div>
+    <h1>DailyHot 2026-05-22</h1>
+    <div class="meta">生成时间：2026-05-22T09:01:17+00:00 · 最近 24 小时 · 30 个主题 · 40 条来源</div>
     <nav class="nav">
       <a href="index.html">首页</a>
-      <a href="daily/2026-05-21.html">完整日报</a>
+      <a href="daily/2026-05-22.html">完整日报</a>
+      <a href="source-health.html">信源健康</a>
       <a href="categories/tech.html">科技</a> <a href="categories/finance.html">金融财经</a> <a href="categories/politics.html">国际政治</a> <a href="categories/war.html">战争与安全</a>
     </nav>
   </header>
@@ -112,8 +146,8 @@ footer { color: var(--muted); font-size: 13px; }
 
     <section class="brief">
       <h2>AI 总览</h2>
-      <p>今日科技界聚焦AI竞争与监管，英伟达面临性价比挑战，特朗普推迟签署AI监管令，OpenAI一季度收入达57亿美元。金融方面，地缘政治动荡主导市场，伊朗局势致油价波动，土耳其法院判决引发股市暴跌，Arm股价大涨16%。医药领域，GLP-1类药物被指或能抑制癌症，诺和诺德与礼来股价迎利好。</p>
-      <p><strong>科技</strong>：AI行业竞争激烈，英伟达遭围猎，特朗普推迟监管令。产品端Codex更新、Qwen3.7发布、Google加码AI广告。应用上WordPress集成AI，Spotify推AI翻唱，摩根大通扩招AI专家，Waymo因暴雨暂停服务。</p><p><strong>金融财经</strong>：伊朗局势与土耳其判决冲击金融市场，美股震荡，土耳其股汇双杀。Arm大涨16%，IBM获量子拨款。OpenAI一季度收入57亿。GLP-1药物抗癌潜力利好诺和诺德与礼来。OPEC+或增产。</p><p><strong>国际政治</strong>：中国第九批赴南苏丹维和步兵营完成指挥权交接。</p><p><strong>战争与安全</strong>：今日入选信息不足</p>
+      <p>今日科技新闻聚焦AI产业落地与基础设施。SpaceX的Grok因美国政府采用率低面临市场困境，而行业整体正从技术炫技转向实效交付，医疗、金融等领域涌现具体应用。小米发布YU7新车型，韩国邮政拟加码AI数据中心投资。政治方面，法航与空客因2009年空难被判过失杀人，美国起诉古巴官员引发局势关注。</p>
+      <p><strong>科技</strong>：AI行业强调实效落地，医疗、金融及视觉领域应用深化。SpaceX Grok遇冷，小米YU7推新，韩国邮政投资数据中心。</p><p><strong>金融财经</strong>：今日入选信息不足</p><p><strong>国际政治</strong>：法航空客被判过失杀人，美起诉古巴官员，世界杯票价暴涨引争议，亚马逊高管谈青年就业。</p><p><strong>战争与安全</strong>：今日入选信息不足</p>
       <div class="badge">AI 总结：siliconflow · Pro/zai-org/GLM-4.7 · ok</div>
     </section>
 
@@ -122,47 +156,49 @@ footer { color: var(--muted); font-size: 13px; }
         <section class="topic-list">
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">AI行业竞争与政策博弈</h3>
+        <h3 class="topic-title">视觉技术与算力基建动态</h3>
         <span class="badge">科技</span>
       </div>
-      <p class="topic-summary">英伟达面临性价比围猎，AI巨头警示创始人价值。特朗普推迟签署监管行政令以避免拖慢发展，摩根大通计划扩招AI专家并缩减传统银行家。行业探讨物理AI潮下的生存之道。</p>
+      <p class="topic-summary">大华股份探索CV与AI Agent结合的行业实践。神眸实现摄像头功耗数量级降低，推动无线化变革。韩国邮政拟加码AI数据中心投资，圣阳股份称未与美国客户达成AIDC合作。</p>
       <div class="topic-tags">
-        <span class="tag">5 条来源</span>
-        <span class="tag">IT之家、cnBeta、虎嗅</span>
-        <span class="tag">score 1.335</span>
+        <span class="tag quality-a">质量 A</span>
+        <span class="tag">4 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.35</span>
       </div>
+      <section class="topic-body"><h4>详情</h4><p>大华股份探索CV与AI Agent结合，构建星汉大模型提升视觉认知。神眸通过芯片设计将摄像头功耗降低一个数量级，实现无线化变革。韩国邮政拟加码AI数据中心投资，而圣阳股份澄清未与美国客户达成AIDC合作。</p><h4>评论</h4><p>视觉技术与低功耗芯片的突破正在重塑智能终端形态，推动行业向无线化、自主化演进。算力基建投资热度不减，但企业需明确市场定位，理性应对国际合作的复杂性与不确定性。</p></section>
+
 
       <details class="sources">
         <summary>展开来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://www.huxiu.com/article/4860085.html?f=rss" target="_blank" rel="noopener noreferrer">英伟达：算力霸主，正在被“性价比”围猎</a></h4>
-      <div class="source-meta">虎嗅 · 科技 · score 1.085</div>
-      <p>群雄逼宫、AI“堵点”生变，宇宙股也会“小失意”？</p>
+      <h4><a href="https://36kr.com/p/3820220616495492?f=rss" target="_blank" rel="noopener noreferrer">让智能体看见世界：CV × AI Agent 的行业场景新实践| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
+      <p>让智能体“看见”世界，不是给它装上摄像头那么简单。当CV遇上AI Agent，乘数效应正在发生。AI Agent不等于Chatbot，真正的价值在于静默看护与自主决策。 AI进入产业腹地仍面临两大鸿沟：视觉认知与行业的理解。为此，大华股份构建了星汉大模型系列——V系列视觉大模型让系统“看得懂”物理…</p>
+      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
     </div>
 
     <div class="source-item">
-      <h4><a href="https://www.huxiu.com/article/4860429.html?f=rss" target="_blank" rel="noopener noreferrer">3800亿AI巨头警示：当AI一下午就能干完你三个月的活，创始人还剩什么价值？</a></h4>
-      <div class="source-meta">虎嗅 · 科技 · score 1.037</div>
-      <p>待进一步阅读原文确认：3800亿AI巨头警示：当AI一下午就能干完你三个月的活，创始人还剩什么价值？</p>
+      <h4><a href="https://36kr.com/p/3818843802665862?f=rss" target="_blank" rel="noopener noreferrer">算力浪潮下，AI智能影像的无线化变革| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
+      <p>神眸做的事情不是追逐英伟达，而是在算力浪潮的下游，用极致的低功耗芯片设计，让摄像头摆脱电线的束缚，打开一个千亿只智能视觉终端的未来。 杨作兴带领神眸实现了摄像头功耗降低一个数量级的突破——第一代芯片达业界三分之一功耗，第二代达十分之一，首次用1瓦太阳能板驱动全天候智能摄像机。他认为，当前全球安防摄…</p>
+      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
     </div>
 
     <div class="source-item">
-      <h4><a href="https://www.huxiu.com/article/4860425.html?f=rss" target="_blank" rel="noopener noreferrer">贾可对话余凯、沈劭劼：物理AI潮下，谁能活下来？</a></h4>
-      <div class="source-meta">虎嗅 · 科技 · score 1.034</div>
-      <p>待进一步阅读原文确认：贾可对话余凯、沈劭劼：物理AI潮下，谁能活下来？</p>
+      <h4><a href="https://36kr.com/newsflashes/3820169908179075?f=rss" target="_blank" rel="noopener noreferrer">圣阳股份：公司在AIDC数据中心领域尚未与美国客户达成合作</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality B</div>
+      <p>36氪获悉，圣阳股份在互动平台表示，截至目前，公司在AIDC数据中心领域尚未与美国客户达成合作。</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
     </div>
 
     <div class="source-item">
-      <h4><a href="https://www.cnbeta.com.tw/articles/tech/1563266.htm" target="_blank" rel="noopener noreferrer">担忧放缓美国AI发展 特朗普推迟签署监管行政令</a></h4>
-      <div class="source-meta">cnBeta · 科技 · score 0.983</div>
-      <p>5月22日，据《华尔街日报》报道，美国总统特朗普周四推迟签署一项旨在加强政府对AI行业监管的行政命令，并表示他不希望采取任何可能拖慢美国在AI领域竞争步伐的行动。 阅读全文</p>
-    </div>
-
-    <div class="source-item">
-      <h4><a href="https://www.ithome.com/0/953/664.htm" target="_blank" rel="noopener noreferrer">摩根大通未来将扩招 AI 专家、缩招传统银行家，迎战人工智能时代</a></h4>
-      <div class="source-meta">IT之家 · 科技 · score 0.976</div>
-      <p>IT之家 5 月 21 日消息，据彭博社 21 日（今天）报道，摩根大通 CEO 杰米 · 戴蒙明确指出，公司未来有望 增加 AI 专家的招聘比例 ，同时 缩减传统银行家的岗位规模 ，以应对 AI 技术的加速应用。“长远来看，AI 技术肯定会削减摩根大通的整体用工需求。未来金融圈会涌现出各种全新岗…</p>
+      <h4><a href="https://36kr.com/newsflashes/3820157288157319?f=rss" target="_blank" rel="noopener noreferrer">韩国邮政拟加码AI数据中心和欧美地产投资</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality B</div>
+      <p>韩国邮政（Korea Post）目前管理约157万亿韩元（约合1040亿美元）的储蓄与保险资金，是韩国最重要的长期机构投资者之一。在传统邮政业务持续亏损压力下，韩国邮政正加速转向高收益资产投资，重点布局AI数据中心、物流设施以及多户型住宅等欧美房地产资产，以提升整体投资回报率。韩国邮政已选定黑石和…</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
     </div>
     </div>
       </details>
@@ -171,35 +207,28 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">AI产品迭代与商业化</h3>
+        <h3 class="topic-title">SpaceX的Grok遭美国政府冷待</h3>
         <span class="badge">科技</span>
       </div>
-      <p class="topic-summary">Mac版Codex新增Appshots功能，Qwen3.7模型发布推动智能体发展。Google宣布在AI搜索模式中加入更多广告，探索商业化路径。</p>
+      <p class="topic-summary">文件显示SpaceX的AI业务Grok在美国政府采用率极低，400个项目中仅3个涉及，远低于OpenAI。作为最大客户的美国政府冷待Grok，凸显其市场困境。</p>
       <div class="topic-tags">
-        <span class="tag">3 条来源</span>
-        <span class="tag">AI HOT 每日精选、IT之家、Solidot</span>
-        <span class="tag">score 1.314</span>
+        <span class="tag quality-a">质量 A</span>
+        <span class="tag">1 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.32</span>
       </div>
+      <section class="topic-body"><h4>详情</h4><p>文件显示，SpaceX的AI业务Grok在美国政府采购中采用率极低，400个项目仅3个涉及，远低于OpenAI等竞争对手。作为最大客户的美国政府冷待Grok，凸显了该公司面临的市场困境。</p><h4>评论</h4><p>政府采购数据直观反映了AI产品的市场竞争力与信任度。Grok在关键市场的遇冷，提示技术厂商需在安全合规与实际效能上建立更坚实的护城河，以应对激烈的商业竞争。</p></section>
+
 
       <details class="sources">
-        <summary>展开来源</summary>
+        <summary>查看来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://www.ithome.com/0/953/675.htm" target="_blank" rel="noopener noreferrer">Mac 版 Codex 更新 Appshots 功能，窗口可直接“喂”给 AI</a></h4>
-      <div class="source-meta">IT之家 · 科技 · score 1.164</div>
-      <p>IT之家 5 月 22 日消息，OpenAI 公司今天（5 月 22 日）更新桌面版 Codex 应用程序， Mac 版新增 Appshots 功能，/goal 命令也从实验功能转正。 根据官方描述，Mac 用户按下左右 Command 按键（支持用户在设置中调整），即可把当前应用窗口截屏后发送给…</p>
-    </div>
-
-    <div class="source-item">
-      <h4><a href="https://aihot.virxact.com/api/public/daily" target="_blank" rel="noopener noreferrer">Qwen3.7：智能体前沿</a></h4>
-      <div class="source-meta">AI HOT 每日精选 · 科技 · score 0.991</div>
-      <p>Qwen Studio推出Qwen3.7模型，提供覆盖聊天机器人、图像与视频理解、图像生成、文档处理、网页搜索集成、工具调用及工件生成等功能。该模型整合了当前AI智能体的关键能力，旨在推动多模态交互与实际任务执行向更综合、自主的方向发展。</p>
-    </div>
-
-    <div class="source-item">
-      <h4><a href="https://www.solidot.org/story?sid=84365" target="_blank" rel="noopener noreferrer">Google 宣布在 AI 模式下加入更多广告</a></h4>
-      <div class="source-meta">Solidot · 科技 · score 0.983</div>
-      <p>Google 本周二宣布搜索框将变成 AI 聊天机器人的对话框，那么它久经时间考虑的商业模式——搜索广告——自然也会跟着进入 AI 模式。Google 周三宣布将在 AI 模式中引入更多“富有帮助的广告（helpful ads）”。搜索巨人表示在测试两类新广告，提供相关产品的细节和有用的指导。作为…</p>
+      <h4><a href="https://36kr.com/newsflashes/3820226041352322?f=rss" target="_blank" rel="noopener noreferrer">SpaceX的AI前景遭质疑，400个美国政府项目只有3个涉及Grok</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.27 · quality A</div>
+      <p>文件显示，SpaceX的人工智能业务Grok在美国政府的采用率偏低，政府采购案例中仅3个涉及xAI或Grok，而OpenAI等公司模型应用相对更加广泛。作为xAI的最大客户，美国政府对Grok模型的冷待，凸显出该公司面临的市场困境，甚至意味着Grok在商业领域也可能遭到客户抛弃的现实。（财联社）</p>
+      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
     </div>
     </div>
       </details>
@@ -208,115 +237,42 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">地缘政治与全球市场动态</h3>
-        <span class="badge">金融财经</span>
-      </div>
-      <p class="topic-summary">伊朗局势主导市场走势，美股震荡收涨，原油冲高转跌。土耳其法院判决罢免反对党领袖，引发股指暴跌，国有行抛售美元救市。OPEC+或将在6月会议增产。</p>
-      <div class="topic-tags">
-        <span class="tag">4 条来源</span>
-        <span class="tag">华尔街见闻</span>
-        <span class="tag">score 1.205</span>
-      </div>
-
-      <details class="sources">
-        <summary>展开来源</summary>
-        <div class="source-list">
-    <div class="source-item">
-      <h4><a href="https://wallstreetcn.com/articles/3772874" target="_blank" rel="noopener noreferrer">华尔街见闻早餐FM-Radio | 2026年5月22日</a></h4>
-      <div class="source-meta">华尔街见闻 · 金融财经 · score 1.005</div>
-      <p>华见早安之声 市场概述 伊朗局势主导资产走势。美股早盘中东局势紧张，一度打压美股走低； 午盘报道称协议最终草案达成，原油跳水、三大指数探底回升、 小幅收涨，道指创新高。 英伟达绩后走低1.8% ，领跌科技七巨头。 Arm大涨16%，总市值首次突破3000亿美元 。 沃尔玛股价大跌7.3% ，拖累消…</p>
-    </div>
-
-    <div class="source-item">
-      <h4><a href="https://wallstreetcn.com/articles/3772777" target="_blank" rel="noopener noreferrer">伊朗局势主导市场，纳指惊险收涨，道指收创新高，原油冲高转跌，美债走势分化</a></h4>
-      <div class="source-meta">华尔街见闻 · 金融财经 · score 1.002</div>
-      <p>伊朗局势主导资产走势。美股早盘中东局势紧张，一度打压美股走低。午盘报道称协议最终草案达成，原油跳水、三大指数探底回升、小幅收涨，道指创新高。美债则在油价回落和强劲宏观数据下走势分化。 （美股债油日内走势） 霍尔木兹海峡局势依然是市场最核心的风险变量。交易员全天紧盯谈判进展，油价与股市随每一则报道剧…</p>
-    </div>
-
-    <div class="source-item">
-      <h4><a href="https://wallstreetcn.com/articles/3772871" target="_blank" rel="noopener noreferrer">土耳其法院判决“颠覆”最大反对党，股指暴跌6%，国有行紧急抛售60亿美元捍卫里拉</a></h4>
-      <div class="source-meta">华尔街见闻 · 金融财经 · score 0.99</div>
-      <p>土耳其法院宣布罢免该国最大反对党的领袖。这一具有里程碑意义的判决不但在国内政坛掀起轩然大波，也重创了金融市场， 当地时间周四，土耳其安卡拉一家上诉法院宣布，国内最大反对党共和人民党（CHP）的2023年全国代表大会选举结果无效，意味着现任党主席Ozgur Ozel被解除职务，前党魁Kemal Ki…</p>
-    </div>
-
-    <div class="source-item">
-      <h4><a href="https://wallstreetcn.com/articles/3772864" target="_blank" rel="noopener noreferrer">报道：OPEC+或在6月7日会议上将7月石油产量提高18.8万桶/日</a></h4>
-      <div class="source-meta">华尔街见闻 · 金融财经 · score 0.971</div>
-      <p>伊朗战争重创海湾产能，石油出口渠道受阻，但OPEC+核心成员仍预计在6月7日会议上继续推进增产议程。 据路透社援引四位知情人士消息，七个OPEC+核心产油国将于6月7日举行会议，预计届时将就7月产量目标达成一致，拟议涨幅约为每日18.8万桶。知情人士均要求匿名，并强调最终决定尚未作出。 OPEC数…</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">企业财报与行业突破</h3>
-        <span class="badge">金融财经</span>
-      </div>
-      <p class="topic-summary">受AI需求推动，Arm市值破3000亿美元大涨16%，IBM获政府拨款涨12%。OpenAI一季度收入57亿美元。研究显示GLP-1类药物或能抑制癌症，诺和诺德与礼来迎利好。</p>
-      <div class="topic-tags">
-        <span class="tag">4 条来源</span>
-        <span class="tag">华尔街见闻</span>
-        <span class="tag">score 1.201</span>
-      </div>
-
-      <details class="sources">
-        <summary>展开来源</summary>
-        <div class="source-list">
-    <div class="source-item">
-      <h4><a href="https://wallstreetcn.com/articles/3772873" target="_blank" rel="noopener noreferrer">减重神药或能抑制癌症发展，诺和诺德、礼来迎重磅利好</a></h4>
-      <div class="source-meta">华尔街见闻 · 金融财经 · score 1.001</div>
-      <p>全球最畅销的减重与糖尿病药物或将迎来又一重大突破。 四项新研究显示， 诺和诺德的Ozempic和礼来的Mounjaro等GLP-1类药物，与癌症患者更好的治疗结局之间存在关联 ，可能进一步扩大这类已拥有数以千万用户的药物的市场前景，并为上述两家全球市值最高的制药公司提供新的增长动力。 上述研究将于…</p>
-    </div>
-
-    <div class="source-item">
-      <h4><a href="https://wallstreetcn.com/articles/3772859" target="_blank" rel="noopener noreferrer">Arm收涨16%！市值破3000亿美元大关，孙正义豪赚2200亿美元</a></h4>
-      <div class="source-meta">华尔街见闻 · 金融财经 · score 0.998</div>
-      <p>受全球AI算力需求暴涨推动，Arm总市值首次突破3000亿美元大关。 5月21日， Arm股价收涨16.16%，续创历史新高，市值达3173亿美元。 前一交易日，该股已大涨15.05%，收于256.73美元，盘中曾创下259.44美元的历史高点。 这一里程碑使大股东软银及孙正义迎来回报最丰厚的投资…</p>
-    </div>
-
-    <div class="source-item">
-      <h4><a href="https://wallstreetcn.com/articles/3772872" target="_blank" rel="noopener noreferrer">报道：OpenAI一季度收入57亿美元</a></h4>
-      <div class="source-meta">华尔街见闻 · 金融财经 · score 0.995</div>
-      <p>据媒体报道，受Codex、商业销售与广告驱动，OpenAI在第一季度创造了57亿美元的收入，领先竞争对手Anthropic约10亿美元。其中2月份产生250亿美元年化收入。 据 华尔街见闻此前发布文章 ，Anthropic二季度营收预计达109亿美元，增幅约130%，并将首次实现运营利润5.59亿…</p>
-    </div>
-
-    <div class="source-item">
-      <h4><a href="https://wallstreetcn.com/articles/3772866" target="_blank" rel="noopener noreferrer">IBM收涨12%，创近一年最大涨幅，特朗普政府宣布20亿美元量子计算扶持计划</a></h4>
-      <div class="source-meta">华尔街见闻 · 金融财经 · score 0.987</div>
-      <p>特朗普政府宣布向量子计算领域注入逾20亿美元联邦资金，IBM获批10亿美元政府拨款，用于建设量子芯片代工厂，消息刺激相关个股全线飙升。 周四，IBM股价收涨12.48%，创2025年1月份以来最大单日涨幅。IBM同时宣布将自行投资10亿美元，成立一家名为Anderon的新公司，专门负责量子处理器的…</p>
-    </div>
-    </div>
-      </details>
-
-    </article>
-
-    <article class="topic">
-      <div class="topic-head">
-        <h3 class="topic-title">AI在内容与音乐领域的应用</h3>
+        <h3 class="topic-title">AI赋能金融数智化与数据资产激活</h3>
         <span class="badge">科技</span>
       </div>
-      <p class="topic-summary">WordPress 7.0发布，原生集成AI优化建站体验。Spotify与环球音乐合作，允许订阅用户利用AI创作翻唱和混音音乐。</p>
+      <p class="topic-summary">企业通过数据治理激活沉睡数据以释放商业价值。金智维与银河期货合作落地数字员工，实现流程智能化；零点有数联合中国人寿推出AI宠物保险平台，拓展垂直应用。</p>
       <div class="topic-tags">
-        <span class="tag">2 条来源</span>
-        <span class="tag">IT之家</span>
-        <span class="tag">score 1.149</span>
+        <span class="tag quality-a">质量 A</span>
+        <span class="tag">3 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.3</span>
       </div>
+      <section class="topic-body"><h4>详情</h4><p>企业通过数据治理激活沉睡数据释放价值。金智维与银河期货合作落地数字员工，覆盖50多个场景。零点有数联合中国人寿推出“真AI宠”宠物保险平台，拓展垂直领域应用。</p><h4>评论</h4><p>数据资产化与流程智能化是金融行业转型的关键。通过垂直场景的深度实践，AI技术正从概念验证走向业务实效，为企业降本增效提供了可复制的实战样本。</p></section>
+
 
       <details class="sources">
         <summary>展开来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="https://www.ithome.com/0/953/683.htm" target="_blank" rel="noopener noreferrer">WordPress 7.0 发布：AI 建站新起点，超 420 项增强与修复</a></h4>
-      <div class="source-meta">IT之家 · 科技 · score 1.049</div>
-      <p>IT之家 5 月 22 日消息，WordPress 于 5 月 20 日发布 7.0 正式版，代号 Armstrong， 原生集成 AI 外，还优化后台体验、响应式编辑、移动端导航和设计工具等。 IT之家援引博文介绍，官方表示 WordPress 7.0 是其 2026 年面向创作者、企业与开发者…</p>
+      <h4><a href="https://36kr.com/p/3820136301728135?f=rss" target="_blank" rel="noopener noreferrer">AI+数字资产：激活企业沉睡数据，释放商业价值| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
+      <p>当AI开始帮投资机构“面试”企业、帮合作伙伴“背调”公司时，你的数据还在沉睡吗？艾迪普用22年经验告诉我们：AI时代的第一场战役，是数据治理战。 现在投资方、银行甚至客户都在用AI智能体“打听”你的企业——如果你的数据没有被主动整理、标注、推向市场，就等于在AI的“筛选网”里隐身。艾迪普推出元典大…</p>
+      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
     </div>
 
     <div class="source-item">
-      <h4><a href="https://www.ithome.com/0/953/677.htm" target="_blank" rel="noopener noreferrer">允许订阅用户创作 AI 翻唱、Remix 音乐，Spotify 与环球音乐达成合作</a></h4>
-      <div class="source-meta">IT之家 · 科技 · score 1.046</div>
-      <p>IT之家 5 月 22 日消息，据《卫报》昨日报道，Spotify 与环球音乐集团达成授权协议，未来将允许订阅用户利用 AI 创作翻唱歌曲和混音作品。 据报道，该功能预计将通过付费服务形式推出， 订阅 Spotify Premium 的用户可对参与授权计划的艺人歌曲进行混音（IT之家注：Remix…</p>
+      <h4><a href="https://36kr.com/p/3820121808540034?f=rss" target="_blank" rel="noopener noreferrer">圆桌对话：降本增效 风控提智：数字员工驱动金融数智化转型的实战样本| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality B</div>
+      <p>金智维与银河期货七年合作，从十万级的RPA项目走到百万级的智能流程重构，证明了一件事：企业级AI的价值不在于回答问题，而在于把事办成。 从RPA到Agentic Flow，金智维与银河期货用七年时间跑通了企业流程智能化的完整路径。如今，数字员工已在银河期货落地50多个场景，每天执行超三千条业务流程…</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820211771838848?f=rss" target="_blank" rel="noopener noreferrer">零点有数联合中国人寿推出“真AI宠”宠物保险科技平台</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality B</div>
+      <p>36氪获悉，近日，零点有数正式宣布将公司核心战略全面聚焦于AIKC战略（垂直知识智能），将垂直业务的知识模型、数据模型、流程模型整合形成完整知识体系。同时，零点有数与中国人寿财产保险签署战略合作协议，联合推出“真AI宠”宠物保险科技平台。目前，零点有数AIKC已在新消费、公共服务等领域落地。</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
     </div>
     </div>
       </details>
@@ -325,23 +281,28 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">习近平将向《生物多样性公约》第十五次缔约方大会第二阶段高级别会议开幕式致辞</h3>
-        <span class="badge">国际政治</span>
+        <h3 class="topic-title">让好项目，更早被看见</h3>
+        <span class="badge">科技</span>
       </div>
-      <p class="topic-summary">外交部发言人华春莹14日宣布：国家主席习近平将于12月15日以视频方式向《生物多样性公约》第十五次缔约方大会第二阶段高级别会议开幕式致辞。</p>
+      <p class="topic-summary">让好项目，更早被看见 ——36 氪「AI 寻求报道」：不止是曝光，更是早期价值的专业连接 提交报道链接： https://36kr.com/seek-report-new?t=1779418211266 36氪AI寻求报道 很多项目第一次被行业真正看见，往往已经不是它最需要被看见的时候。 那时候…</p>
       <div class="topic-tags">
-        <span class="tag">1 条来源</span>
-        <span class="tag">新华网国际</span>
-        <span class="tag">score 1.09</span>
+        <span class="tag quality-a">质量 A</span>
+        <span class="tag">1 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.27</span>
       </div>
+      <section class="topic-body"><h4>详情</h4><p>36氪推出“AI寻求报道”专题，旨在让好项目更早被看见。该活动不仅提供曝光机会，更致力于为早期项目提供专业价值连接，解决项目在发展初期难以被行业关注的痛点。</p><h4>评论</h4><p>早期项目的发掘与扶持对AI产业生态至关重要。媒体平台通过资源整合与专业连接，能有效降低创新项目的试错成本，促进技术成果与市场需求的精准对接。</p></section>
+
 
       <details class="sources">
         <summary>查看来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="http://www.news.cn/world/2022-12/14/c_1129206906.htm" target="_blank" rel="noopener noreferrer">习近平将向《生物多样性公约》第十五次缔约方大会第二阶段高级别会议开幕式致辞</a></h4>
-      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
-      <p>外交部发言人华春莹14日宣布：国家主席习近平将于12月15日以视频方式向《生物多样性公约》第十五次缔约方大会第二阶段高级别会议开幕式致辞。</p>
+      <h4><a href="https://36kr.com/p/3820226045104257?f=rss" target="_blank" rel="noopener noreferrer">让好项目，更早被看见</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
+      <p>让好项目，更早被看见 ——36 氪「AI 寻求报道」：不止是曝光，更是早期价值的专业连接 提交报道链接： https://36kr.com/seek-report-new?t=1779418211266 36氪AI寻求报道 很多项目第一次被行业真正看见，往往已经不是它最需要被看见的时候。 那时候…</p>
+      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
     </div>
     </div>
       </details>
@@ -350,23 +311,35 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">学习进行时｜二十大后重要外交活动，这些关键词习近平总书记反复提及</h3>
-        <span class="badge">国际政治</span>
+        <h3 class="topic-title">AI行业转向实效落地与流程重构</h3>
+        <span class="badge">科技</span>
       </div>
-      <p class="topic-summary">二十大后重要外交活动，这些关键词习近平总书记反复提及</p>
+      <p class="topic-summary">2026年AI行业价值体系重构，产业方掌握定义权，强调真实场景交付。企业引入AI需平衡流程改造与思维转变，建议从小流程入手，用结果赢共识，避免贪大求全。</p>
       <div class="topic-tags">
-        <span class="tag">1 条来源</span>
-        <span class="tag">新华网国际</span>
-        <span class="tag">score 1.09</span>
+        <span class="tag quality-a">质量 A</span>
+        <span class="tag">2 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.25</span>
       </div>
+      <section class="topic-body"><h4>详情</h4><p>2026年AI行业价值体系重构，产业方掌握定义权，强调真实场景交付。企业引入AI需平衡流程改造与思维转变，建议从小流程入手，用结果赢共识，避免贪大求全。</p><h4>评论</h4><p>AI发展正从技术驱动转向价值驱动，务实落地成为行业共识。企业需摒弃浮躁，聚焦具体业务痛点，通过渐进式改造实现智能化转型，确保技术投入产生实际回报。</p></section>
+
 
       <details class="sources">
-        <summary>查看来源</summary>
+        <summary>展开来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="http://www.news.cn/world/2022-12/14/c_1129206651.htm" target="_blank" rel="noopener noreferrer">学习进行时｜二十大后重要外交活动，这些关键词习近平总书记反复提及</a></h4>
-      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
-      <p>二十大后重要外交活动，这些关键词习近平总书记反复提及</p>
+      <h4><a href="https://36kr.com/p/3820169156890759?f=rss" target="_blank" rel="noopener noreferrer">能落地的请留下，讲故事的请离场</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
+      <p>让合作当场发生！ 2026年的AI行业，正在经历一次价值体系的深层重构。过去两年，聚光灯始终偏向技术侧——参数、算力、榜单排名。但今天，话语权正在向产业方转移：那些拥有真实需求、真实场景、真实业务压力的企业，开始掌握定义权。产业界最关切的问题变得具体而迫切：在必须交付结果的地方，AI到底靠不靠得住…</p>
+      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://36kr.com/p/3820112276951170?f=rss" target="_blank" rel="noopener noreferrer">圆桌对话：进化的终极思考：引入AI，先改流程还是先换脑袋？| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality B</div>
+      <p>企业引入AI，先改流程还是先换脑袋？没有标准答案，只有实战经验——学者、制造业主、工业赋能者三种视角碰撞出一个共识，不要指望把全公司的认知统一好再动手，也不要贪大求全一步到位，用小流程换结果，用结果赢共识，才是AI转型最稳的路径。 圆桌对话直面AI落地中“上热下冷”、过度追求全智能、数据治理欠账等…</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
     </div>
     </div>
       </details>
@@ -375,23 +348,35 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">中国多家驻土机构参加土耳其创新周</h3>
-        <span class="badge">国际政治</span>
+        <h3 class="topic-title">AI+医疗进入临床刚需深水区</h3>
+        <span class="badge">科技</span>
       </div>
-      <p class="topic-summary">土耳其创新周活动12日和13日在伊斯坦布尔金角湾会议中心举办，多家中国驻土机构参加。</p>
+      <p class="topic-summary">AI医疗从技术炫技转向解决痛点，旨在减轻医生负担而非替代。百度健康等企业推动从单点智能走向全局协同，利用AI缓解慢病管理供需矛盾，构建价值闭环。</p>
       <div class="topic-tags">
-        <span class="tag">1 条来源</span>
-        <span class="tag">新华网国际</span>
-        <span class="tag">score 1.09</span>
+        <span class="tag quality-a">质量 A</span>
+        <span class="tag">2 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.25</span>
       </div>
+      <section class="topic-body"><h4>详情</h4><p>AI医疗从技术炫技转向解决痛点，旨在减轻医生负担而非替代。百度健康等企业推动从单点智能走向全局协同，利用AI缓解慢病管理供需矛盾，构建价值闭环。</p><h4>评论</h4><p>AI医疗回归临床刚需，标志着行业进入成熟期。通过解决供需矛盾和提升诊疗效率，AI技术正成为医疗供给侧改革的重要基础设施，其价值在于赋能而非颠覆。</p></section>
+
 
       <details class="sources">
-        <summary>查看来源</summary>
+        <summary>展开来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="http://www.news.cn/world/2022-12/14/c_1129206416.htm" target="_blank" rel="noopener noreferrer">中国多家驻土机构参加土耳其创新周</a></h4>
-      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
-      <p>土耳其创新周活动12日和13日在伊斯坦布尔金角湾会议中心举办，多家中国驻土机构参加。</p>
+      <h4><a href="https://36kr.com/p/3820150778531972?f=rss" target="_blank" rel="noopener noreferrer">圆桌对话：看见实效：从技术到处方，AI +医疗的场景落地与价值闭环| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
+      <p>从五年前的技术炫技到今天的临床刚需，AI+医疗终于走过了“证明我能”的喧嚣，进入“解决痛点”的深水区。不做替代医生的空想，只做减轻负担的助手——这场对话告诉我们，AI医疗落地的第一步不是说服院长，而是赢得科室主任的信任；关键不是单点突破，而是多元数据联动形成闭环 圆桌对话直面AI进医院的真实卡点：…</p>
+      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://36kr.com/p/3820143885455751?f=rss" target="_blank" rel="noopener noreferrer">以场景为锚，以AI为翼：大健康产业的实践与突破| 2026AI Partner·北京亦庄AI+产业大会</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality A</div>
+      <p>当大健康产业遇上AI，最大的难题不是技术够不够强，而是场景够不够深、信任够不够厚。百度健康用六年时间给出了自己的答案：从单点智能走向全局协同，从技术赋能走向价值创造。 中国慢病人群超5亿，每千人执业医生数却远低于发达国家——供需矛盾之下，AI成为医疗健康供给侧改革的新基建。百度健康总经理杨明璐结合…</p>
+      <p class="source-meta">A 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
     </div>
     </div>
       </details>
@@ -400,23 +385,35 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">匈牙利说就解冻恢复基金与欧盟达成协议</h3>
-        <span class="badge">国际政治</span>
+        <h3 class="topic-title">企业中标与能源保障动态</h3>
+        <span class="badge">科技</span>
       </div>
-      <p class="topic-summary">匈牙利区域发展与欧盟资金利用部长瑙夫劳契奇13日在新闻发布会上表示，匈牙利与欧盟就解冻其数十亿欧元欧盟恢复基金达成协议。</p>
+      <p class="topic-summary">圣晖集成控股子公司中标约2.23亿元印尼厂房项目。马来西亚拟采购海外资源以保障能源供应至年底。</p>
       <div class="topic-tags">
-        <span class="tag">1 条来源</span>
-        <span class="tag">新华网国际</span>
-        <span class="tag">score 1.09</span>
+        <span class="tag quality-b">质量 B</span>
+        <span class="tag">2 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.25</span>
       </div>
+      <section class="topic-body"><h4>详情</h4><p>圣晖集成控股子公司中标约2.23亿元印尼厂房项目，拓展海外业务。受全球能源危机影响，马来西亚政府拟采购海外资源，以确保国家能源供应维持至今年年底。</p><h4>评论</h4><p>企业出海与能源保障反映了当前全球经济的双重挑战。制造业积极拓展海外市场寻求增长，而国家层面则需加强能源战略储备，以应对供应链波动带来的风险。</p></section>
+
 
       <details class="sources">
-        <summary>查看来源</summary>
+        <summary>展开来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="http://www.news.cn/world/2022-12/14/c_1129206410.htm" target="_blank" rel="noopener noreferrer">匈牙利说就解冻恢复基金与欧盟达成协议</a></h4>
-      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
-      <p>匈牙利区域发展与欧盟资金利用部长瑙夫劳契奇13日在新闻发布会上表示，匈牙利与欧盟就解冻其数十亿欧元欧盟恢复基金达成协议。</p>
+      <h4><a href="https://36kr.com/newsflashes/3820206689014149?f=rss" target="_blank" rel="noopener noreferrer">圣晖集成：控股子公司中标约2.23亿元项目</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.15 · quality B</div>
+      <p>36氪获悉，圣晖集成公告，公司控股子公司PT ACTER INTEGRATION TECHNOLOGY INDONESIA（简称“印尼合资公司”）于近日收到PT. Hardases Abadi Indonesia发来的通知，印尼合资公司中标“PT.HAI F12及F12-1胶底与鞋类生产厂房第二期…</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820231868797318?f=rss" target="_blank" rel="noopener noreferrer">马来西亚拟采购海外资源，保障能源供应维持至年底</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality B</div>
+      <p>马来西亚副总理兼能源及水务转型部部长法迪拉22日表示，在全球能源危机冲击产供链并推高能源成本背景下，马来西亚政府正积极采取措施，包括从海外寻求能源供应补充来源，以确保国家能源供应维持至今年12月。（财联社）</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
     </div>
     </div>
       </details>
@@ -425,23 +422,35 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">刚果（金）首都暴雨致141人死亡</h3>
+        <h3 class="topic-title">世界杯票价暴涨与青年就业争议</h3>
         <span class="badge">国际政治</span>
       </div>
-      <p class="topic-summary">刚果（金）首都金沙萨12日夜间至13日凌晨遭遇暴雨，多个地区发生洪涝和山体滑坡，导致至少141人死亡。</p>
+      <p class="topic-summary">世界杯门票价格暴涨五倍引发球迷不满。亚马逊英国负责人呼吁不要因失业问题责怪年轻人，引发关于就业责任归属的讨论。</p>
       <div class="topic-tags">
-        <span class="tag">1 条来源</span>
-        <span class="tag">新华网国际</span>
-        <span class="tag">score 1.09</span>
+        <span class="tag quality-b">质量 B</span>
+        <span class="tag">2 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">BBC 中国</span>
+        <span class="tag">score 1.162</span>
       </div>
+      <section class="topic-body"><h4>详情</h4><p>世界杯门票价格暴涨五倍引发球迷强烈不满。与此同时，亚马逊英国负责人呼吁社会不要因失业问题责怪年轻人，引发关于就业责任归属的广泛讨论。</p><h4>评论</h4><p>商业赛事定价需兼顾公众承受力，过高的溢价可能损害品牌形象。就业问题的复杂性要求社会各界共同承担，而非简单归咎于特定群体，结构性改革才是解决之道。</p></section>
+
 
       <details class="sources">
-        <summary>查看来源</summary>
+        <summary>展开来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="http://www.news.cn/world/2022-12/14/c_1129206388.htm" target="_blank" rel="noopener noreferrer">刚果（金）首都暴雨致141人死亡</a></h4>
-      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
-      <p>刚果（金）首都金沙萨12日夜间至13日凌晨遭遇暴雨，多个地区发生洪涝和山体滑坡，导致至少141人死亡。</p>
+      <h4><a href="https://www.bbc.com/zhongwen/articles/cm2p1d71833o/trad?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">「我愛世界盃，但價格實在太離譜」：門票價暴漲五倍，球迷什麼反應？</a></h4>
+      <div class="source-meta">BBC 中国 · 国际政治 · score 1.062 · quality B</div>
+      <p>圖像來源， Getty Images Article Information Author, 奧爾加・薩夫丘克（Olga Sawczuk）、安東尼奧·古貝羅（Antonio Cubero） Published 閱讀時間: 4 分鐘 圭多・佩拉爾塔（Guido Peralta）是一名會計師，也是阿根…</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.82；有可读摘要；发布时间较新</p>
+    </div>
+
+    <div class="source-item">
+      <h4><a href="https://www.bbc.com/zhongwen/articles/cx21rjpz8e1o/trad?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">亞馬遜英國負責人：別再因失業問題責怪年輕人</a></h4>
+      <div class="source-meta">BBC 中国 · 国际政治 · score 1.032 · quality B</div>
+      <p>圖像來源， Amazon 圖像加註文字， 約翰·鮑姆弗里是亞馬遜英國區的負責人。 Article Information Author, 艾默・莫羅（Emer Moreau） Role, BBC商業記者 和 Author, 肖恩・法靈頓（Sean Farrington） Role, 《Big Bo…</p>
+      <p class="source-meta">B 级：按今日候选内容动态分位数计算；来源权重 0.82；有可读摘要；发布时间较新</p>
     </div>
     </div>
       </details>
@@ -450,23 +459,28 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">COP15主席黄润秋：将通过高级别会议解决关键难点议题</h3>
-        <span class="badge">国际政治</span>
+        <h3 class="topic-title">乘联分会：5月狭义乘用车零售预计152万辆，新能源预计95万辆</h3>
+        <span class="badge">科技</span>
       </div>
-      <p class="topic-summary">《生物多样性公约》第十五次缔约方大会（COP15）主席、中国生态环境部部长黄润秋13日在加拿大蒙特利尔表示，将通过高级别会议凝聚共识，解决一些突出的关键难点议题。预期到17日第二次进程盘点时，除少数关键元素外，第二阶段会议最重要的标志性预期成果“2020年后全球生物多样性框架”（简称“框架”）将高…</p>
+      <p class="topic-summary">36氪获悉，据乘联分会，初步推算本月狭义乘用车总市场约为152万辆，其中新能源零售可达95万左右，渗透率有望突破62.5%。</p>
       <div class="topic-tags">
-        <span class="tag">1 条来源</span>
-        <span class="tag">新华网国际</span>
-        <span class="tag">score 1.09</span>
+        <span class="tag quality-c">质量 C</span>
+        <span class="tag">1 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.15</span>
       </div>
+      <section class="topic-body"><h4>详情</h4><p>这条信息来自 36氪。核心内容是：36氪报道，乘联分会：5月狭义乘用车零售预计152万辆，新能源预计95万辆：36氪获悉，据乘联分会，初步推算本月狭义乘用车总市场约为152万辆，其中新能源零售可达95万左右，渗透率有望突破62.5%。。</p><h4>评论</h4><p>这条线索目前主要来自 36氪，可作为观察入口：36氪获悉，据乘联分会，初步推算本月狭义乘用车总市场约为152万辆，其中新能源零售可达95万左右，渗透率有望突破62.5%。。后续关键是观察技术变化是否能转化为真实产品、成本下降或组织效率提升。仍应回到原文核对，当前质量等级为 C。</p></section>
+
 
       <details class="sources">
         <summary>查看来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="http://www.news.cn/world/2022-12/14/c_1129206317.htm" target="_blank" rel="noopener noreferrer">COP15主席黄润秋：将通过高级别会议解决关键难点议题</a></h4>
-      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
-      <p>《生物多样性公约》第十五次缔约方大会（COP15）主席、中国生态环境部部长黄润秋13日在加拿大蒙特利尔表示，将通过高级别会议凝聚共识，解决一些突出的关键难点议题。预期到17日第二次进程盘点时，除少数关键元素外，第二阶段会议最重要的标志性预期成果“2020年后全球生物多样性框架”（简称“框架”）将高…</p>
+      <h4><a href="https://36kr.com/newsflashes/3820228917317764?f=rss" target="_blank" rel="noopener noreferrer">乘联分会：5月狭义乘用车零售预计152万辆，新能源预计95万辆</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
+      <p>36氪获悉，据乘联分会，初步推算本月狭义乘用车总市场约为152万辆，其中新能源零售可达95万左右，渗透率有望突破62.5%。</p>
+      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
     </div>
     </div>
       </details>
@@ -475,23 +489,88 @@ footer { color: var(--muted); font-size: 13px; }
 
     <article class="topic">
       <div class="topic-head">
-        <h3 class="topic-title">胡春华会见伊朗总统莱希</h3>
-        <span class="badge">国际政治</span>
+        <h3 class="topic-title">赛百味在合肥成立新餐饮管理公司，注册资本1000万</h3>
+        <span class="badge">科技</span>
       </div>
-      <p class="topic-summary">胡春华向莱希总统转达习近平主席的亲切问候和良好祝愿，介绍了中共二十大取得的重大成果和深远意义。他表示，今年7月和9月，习近平主席同总统阁下先后通电话和会见，就深化中伊关系达成重要共识。中方从战略高度看待中伊关系，同伊朗发展全面战略伙伴关系的决心不会动摇，坚定支持伊方反对外部干涉，维护国家主权、领土…</p>
+      <p class="topic-summary">36氪获悉，天眼查App显示，近日，合肥赛百味餐饮管理有限公司成立，法定代表人为冯顺，注册资本1000万人民币，经营范围包括餐饮管理、工艺美术品及礼仪用品销售、玩具销售等，由赛百味餐饮管理（上海）有限公司全资持股。</p>
       <div class="topic-tags">
-        <span class="tag">1 条来源</span>
-        <span class="tag">新华网国际</span>
-        <span class="tag">score 1.09</span>
+        <span class="tag quality-c">质量 C</span>
+        <span class="tag">1 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.15</span>
       </div>
+      <section class="topic-body"><h4>详情</h4><p>这条信息来自 36氪。核心内容是：36氪报道，赛百味在合肥成立新餐饮管理公司，注册资本1000万：36氪获悉，天眼查App显示，近日，合肥赛百味餐饮管理有限公司成立，法定代表人为冯顺，注册资本1000万人民币，经营范围包括餐饮管理、工艺美术品及礼仪用品销售、玩具销售等，由赛百味餐饮管理（上海）有限公司全…。</p><h4>评论</h4><p>这条线索目前主要来自 36氪，可作为观察入口：36氪获悉，天眼查App显示，近日，合肥赛百味餐饮管理有限公司成立，法定代表人为冯顺，注册资本1000万人民币，经营范围包括餐饮管理、工艺美术品及礼仪用品销售、玩具销售等，由…。后续关键是观察技术变化是否能转化为真实产品、成本下降或组织效率提升。仍应回到原文核对，当前质量等级为 C。</p></section>
+
 
       <details class="sources">
         <summary>查看来源</summary>
         <div class="source-list">
     <div class="source-item">
-      <h4><a href="http://www.news.cn/world/2022-12/14/c_1129206095.htm" target="_blank" rel="noopener noreferrer">胡春华会见伊朗总统莱希</a></h4>
-      <div class="source-meta">新华网国际 · 国际政治 · score 0.97</div>
-      <p>胡春华向莱希总统转达习近平主席的亲切问候和良好祝愿，介绍了中共二十大取得的重大成果和深远意义。他表示，今年7月和9月，习近平主席同总统阁下先后通电话和会见，就深化中伊关系达成重要共识。中方从战略高度看待中伊关系，同伊朗发展全面战略伙伴关系的决心不会动摇，坚定支持伊方反对外部干涉，维护国家主权、领土…</p>
+      <h4><a href="https://36kr.com/newsflashes/3820227012890756?f=rss" target="_blank" rel="noopener noreferrer">赛百味在合肥成立新餐饮管理公司，注册资本1000万</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
+      <p>36氪获悉，天眼查App显示，近日，合肥赛百味餐饮管理有限公司成立，法定代表人为冯顺，注册资本1000万人民币，经营范围包括餐饮管理、工艺美术品及礼仪用品销售、玩具销售等，由赛百味餐饮管理（上海）有限公司全资持股。</p>
+      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">雅诗兰黛与Puig终止合并谈判，组建美妆巨头计划作罢</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">美国美妆巨头雅诗兰黛已终止与西班牙竞品Puig的合并谈判，这笔交易原本有望打造一家市值近400亿美元的美妆时尚行业巨头。雅诗兰黛周四表示，双方已终止此次并购磋商，Puig也证实谈判宣告结束。（新浪财经）</p>
+      <div class="topic-tags">
+        <span class="tag quality-c">质量 C</span>
+        <span class="tag">1 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.15</span>
+      </div>
+      <section class="topic-body"><h4>详情</h4><p>这条信息来自 36氪。核心内容是：36氪报道，雅诗兰黛与Puig终止合并谈判，组建美妆巨头计划作罢：美国美妆巨头雅诗兰黛已终止与西班牙竞品Puig的合并谈判，这笔交易原本有望打造一家市值近400亿美元的美妆时尚行业巨头。雅诗兰黛周四表示，双方已终止此次并购磋商，Puig也证实谈判宣告结束。（新浪财经）。</p><h4>评论</h4><p>这条线索目前主要来自 36氪，可作为观察入口：美国美妆巨头雅诗兰黛已终止与西班牙竞品Puig的合并谈判，这笔交易原本有望打造一家市值近400亿美元的美妆时尚行业巨头。雅诗兰黛周四表示，双方已终止此次并购磋商，Puig也证…。后续关键是观察技术变化是否能转化为真实产品、成本下降或组织效率提升。仍应回到原文核对，当前质量等级为 C。</p></section>
+
+
+      <details class="sources">
+        <summary>查看来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820222856237189?f=rss" target="_blank" rel="noopener noreferrer">雅诗兰黛与Puig终止合并谈判，组建美妆巨头计划作罢</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
+      <p>美国美妆巨头雅诗兰黛已终止与西班牙竞品Puig的合并谈判，这笔交易原本有望打造一家市值近400亿美元的美妆时尚行业巨头。雅诗兰黛周四表示，双方已终止此次并购磋商，Puig也证实谈判宣告结束。（新浪财经）</p>
+      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
+    </div>
+    </div>
+      </details>
+
+    </article>
+
+    <article class="topic">
+      <div class="topic-head">
+        <h3 class="topic-title">马来西亚6月1日起推社交媒体监管新政：限制16岁以下用户使用</h3>
+        <span class="badge">科技</span>
+      </div>
+      <p class="topic-summary">马来西亚通信监管机构22日表示，将从6月1日起推出新措施，减少青少年在网络平台上接触有害内容。马来西亚通信与多媒体委员会在一份声明中指出，新规将要求网络服务提供商设置保护机制，限制16岁以下用户注册及拥有账户，并强化平台的内容治理。（财联社）</p>
+      <div class="topic-tags">
+        <span class="tag quality-c">质量 C</span>
+        <span class="tag">1 篇文章</span>
+        <span class="tag">1 个信源</span>
+        <span class="tag">36氪</span>
+        <span class="tag">score 1.15</span>
+      </div>
+      <section class="topic-body"><h4>详情</h4><p>这条信息来自 36氪。核心内容是：36氪报道，马来西亚6月1日起推社交媒体监管新政：限制16岁以下用户使用：马来西亚通信监管机构22日表示，将从6月1日起推出新措施，减少青少年在网络平台上接触有害内容。马来西亚通信与多媒体委员会在一份声明中指出，新规将要求网络服务提供商设置保护机制，限制16岁以下用户注…。</p><h4>评论</h4><p>这条线索目前主要来自 36氪，可作为观察入口：马来西亚通信监管机构22日表示，将从6月1日起推出新措施，减少青少年在网络平台上接触有害内容。马来西亚通信与多媒体委员会在一份声明中指出，新规将要求网络服务提供商设置保护机制…。后续关键是观察技术变化是否能转化为真实产品、成本下降或组织效率提升。仍应回到原文核对，当前质量等级为 C。</p></section>
+
+
+      <details class="sources">
+        <summary>查看来源</summary>
+        <div class="source-list">
+    <div class="source-item">
+      <h4><a href="https://36kr.com/newsflashes/3820217821417602?f=rss" target="_blank" rel="noopener noreferrer">马来西亚6月1日起推社交媒体监管新政：限制16岁以下用户使用</a></h4>
+      <div class="source-meta">36氪 · 科技 · score 1.03 · quality C</div>
+      <p>马来西亚通信监管机构22日表示，将从6月1日起推出新措施，减少青少年在网络平台上接触有害内容。马来西亚通信与多媒体委员会在一份声明中指出，新规将要求网络服务提供商设置保护机制，限制16岁以下用户注册及拥有账户，并强化平台的内容治理。（财联社）</p>
+      <p class="source-meta">C 级：按今日候选内容动态分位数计算；来源权重 0.78；有可读摘要；发布时间较新</p>
     </div>
     </div>
       </details>

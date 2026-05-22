@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>信源健康 - DailyHot 2026-05-22</title>
+  <style>
+:root {
+  color-scheme: light;
+  --bg: #f7f8fa;
+  --text: #20242a;
+  --muted: #69707d;
+  --line: #e3e6eb;
+  --panel: #ffffff;
+  --accent: #1f6feb;
+  --soft: #f0f4f8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+  line-height: 1.62;
+}
+header, main, footer { max-width: 920px; margin: 0 auto; padding: 20px; }
+header { padding-top: 30px; padding-bottom: 12px; }
+h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: 0; }
+h2 { margin: 28px 0 12px; font-size: 18px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.meta, .badge, .source-meta { color: var(--muted); font-size: 13px; }
+.quality-a { color: #116329; border-color: #b7e2c0; background: #eaf8ee; }
+.quality-b { color: #1f6feb; border-color: #bfd7ff; background: #eef5ff; }
+.quality-c { color: #8a5a00; border-color: #efd5a6; background: #fff8e8; }
+.quality-d { color: #8c2f0f; border-color: #f0c2b8; background: #fff1ee; }
+.nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.nav a {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+.brief {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 16px 0;
+  margin: 12px 0 18px;
+}
+.brief h2 { margin-top: 0; }
+.brief p { margin: 0 0 8px; }
+.topic-list { display: grid; gap: 10px; }
+.topic {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+.topic-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: flex-start;
+}
+.topic-title { margin: 0; font-size: 17px; line-height: 1.45; }
+.topic-summary { margin: 8px 0 10px; color: #343a42; }
+.topic-body {
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.topic-body h4 { margin: 0 0 4px; font-size: 14px; color: #252b33; }
+.topic-body p { margin: 0 0 10px; color: #343a42; }
+.topic-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 8px;
+  background: var(--soft);
+  color: var(--muted);
+  font-size: 12px;
+}
+details.sources { margin-top: 10px; }
+details.sources summary { cursor: pointer; color: var(--accent); font-size: 14px; }
+.source-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+.source-item { padding: 0 0 8px; border-bottom: 1px dashed var(--line); }
+.source-item:last-child { border-bottom: 0; padding-bottom: 0; }
+.source-item h4 { margin: 0 0 4px; font-size: 15px; }
+.source-item p { margin: 4px 0; color: #3d444d; }
+.event-review {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 14px 0;
+  margin: 14px 0 10px;
+}
+.event-review h4 { margin: 0 0 8px; font-size: 16px; }
+.event-review p { margin: 0 0 10px; color: #252b33; }
+.event-review sup a { font-size: 12px; font-weight: 600; }
+.review-note { color: var(--muted); font-size: 12px; margin-top: 8px; }
+.reference-list {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+.reference-list li { margin: 4px 0; font-size: 13px; color: #3d444d; }
+.warning {
+  border: 1px solid #efd5a6;
+  background: #fff8e8;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+.health-table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); }
+.health-table th, .health-table td { border-bottom: 1px solid var(--line); padding: 8px; text-align: left; vertical-align: top; font-size: 14px; }
+.health-table th { background: var(--soft); }
+.status-healthy { color: #116329; }
+.status-failed { color: #b42318; }
+.status-disabled, .status-reserved { color: var(--muted); }
+.status-stale, .status-low-yield { color: #8a5a00; }
+footer { color: var(--muted); font-size: 13px; }
+@media (max-width: 640px) {
+  header, main, footer { padding-left: 14px; padding-right: 14px; }
+  .topic-head { display: block; }
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>信源健康 - DailyHot 2026-05-22</h1>
+    <div class="meta">生成时间：2026-05-22T09:01:17+00:00 · 最近 24 小时 · 30 个主题 · 40 条来源</div>
+    <nav class="nav">
+      <a href="index.html">首页</a>
+      <a href="daily/2026-05-22.html">完整日报</a>
+      <a href="source-health.html">信源健康</a>
+      <a href="categories/tech.html">科技</a> <a href="categories/finance.html">金融财经</a> <a href="categories/politics.html">国际政治</a> <a href="categories/war.html">战争与安全</a>
+    </nav>
+  </header>
+  <main>
+    <section class="brief">
+      <h2>信源健康报告</h2>
+      <p>healthy: 10、low-yield: 1</p>
+      <p class="meta">失败、低产出或过期信源只影响健康状态，不阻断日报生成。</p>
+    </section>
+    <table class="health-table">
+      <thead>
+        <tr><th>信源</th><th>状态</th><th>文章数</th><th>最近内容</th><th>提示</th></tr>
+      </thead>
+      <tbody>
+    <tr>
+      <td><strong>36氪</strong><br><span class="meta">36kr · rss · 科技</span></td>
+      <td class="status-healthy">healthy</td>
+      <td>30<br><span class="meta">近 7 天 30</span></td>
+      <td><span class="meta">first: 2026-05-22T17:01:09+08:00<br>last: 2026-05-22T17:01:09+08:00</span></td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><strong>BBC 中国</strong><br><span class="meta">bbc-zhongwen · rss · 国际政治</span></td>
+      <td class="status-healthy">healthy</td>
+      <td>5<br><span class="meta">近 7 天 5</span></td>
+      <td><span class="meta">first: 2026-05-22T08:20:48+08:00<br>last: 2026-05-22T16:00:44+08:00</span></td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><strong>DW 中文</strong><br><span class="meta">dw-zhongwen · rss · 国际政治</span></td>
+      <td class="status-low-yield">low-yield</td>
+      <td>1<br><span class="meta">近 7 天 1</span></td>
+      <td><span class="meta">first: 2026-05-22T17:01:12+08:00<br>last: 2026-05-22T17:01:12+08:00</span></td>
+      <td>Source dw-zhongwen is low-yield</td>
+    </tr>
+
+    <tr>
+      <td><strong>FT 中文网</strong><br><span class="meta">ftchinese · rss · 金融财经</span></td>
+      <td class="status-healthy">healthy</td>
+      <td>20<br><span class="meta">近 7 天 20</span></td>
+      <td><span class="meta">first: 2026-05-21T00:00:00+08:00<br>last: 2026-05-22T00:00:00+08:00</span></td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><strong>端传媒</strong><br><span class="meta">theinitium-rss · rss · 国际政治</span></td>
+      <td class="status-healthy">healthy</td>
+      <td>15<br><span class="meta">近 7 天 15</span></td>
+      <td><span class="meta">first: 2026-05-19T10:50:43+08:00<br>last: 2026-05-22T07:00:59+08:00</span></td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><strong>经济学者</strong><br><span class="meta">economist-china · rss · 国际政治</span></td>
+      <td class="status-healthy">healthy</td>
+      <td>300<br><span class="meta">近 7 天 4</span></td>
+      <td><span class="meta">first: 2026-05-15T23:17:12+08:00<br>last: 2026-05-21T20:47:57+08:00</span></td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><strong>三联生活周刊</strong><br><span class="meta">lifeweek · rss · 国际政治</span></td>
+      <td class="status-healthy">healthy</td>
+      <td>5<br><span class="meta">近 7 天 5</span></td>
+      <td><span class="meta">first: 2026-05-21T12:00:00+08:00<br>last: 2026-05-21T21:00:00+08:00</span></td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><strong>中国数字时代</strong><br><span class="meta">chinadigitaltimes · rss · 国际政治</span></td>
+      <td class="status-healthy">healthy</td>
+      <td>7<br><span class="meta">近 7 天 7</span></td>
+      <td><span class="meta">first: 2026-05-21T15:18:45+08:00<br>last: 2026-05-22T08:00:29+08:00</span></td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><strong>今日话题-雪球</strong><br><span class="meta">xueqiu-hot-topic · rss · 金融财经</span></td>
+      <td class="status-healthy">healthy</td>
+      <td>20<br><span class="meta">近 7 天 20</span></td>
+      <td><span class="meta">first: 2026-05-19T17:45:23+08:00<br>last: 2026-05-21T17:57:17+08:00</span></td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><strong>纽约时报中文</strong><br><span class="meta">nytimes-cn · rss · 国际政治</span></td>
+      <td class="status-healthy">healthy</td>
+      <td>20<br><span class="meta">近 7 天 20</span></td>
+      <td><span class="meta">first: 2026-05-20T01:23:19+08:00<br>last: 2026-05-22T10:31:55+08:00</span></td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><strong>联合早报</strong><br><span class="meta">zaobao · rss · 国际政治</span></td>
+      <td class="status-healthy">healthy</td>
+      <td>20<br><span class="meta">近 7 天 20</span></td>
+      <td><span class="meta">first: 2026-05-22T09:48:01+08:00<br>last: 2026-05-22T12:48:02+08:00</span></td>
+      <td>-</td>
+    </tr>
+    </tbody>
+    </table>
+    </main>
+  <footer>DailyHot 保留原文链接；摘要用于快速浏览，关键判断请回到原文核对。</footer>
+</body>
+</html>
